@@ -33,16 +33,13 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-end justify-center gap-1 min-[1200px]:h-[700px] min-[1200px]:w-[50%]">
+      <div className="flex items-end justify-center gap-1 min-[1200px]:h-[700px] min-[1200px]:w-[55%]">
         <div className="relative h-[150px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[180px] lg:h-[250px] min-[1200px]:h-[215px] cursor-pointer">
           <Image
             src={"/images/gorilla.jpg"}
             alt=""
             fill={true}
-            style={{
-              objectFit: "cover",
-            }}
-            className="rounded-t-[144.5px]"
+            className="rounded-t-[144.5px] object-cover"
           />
         </div>
         <div className="relative h-[200px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[230px] lg:h-[300px] min-[1200px]:h-[428px] cursor-pointer">
@@ -50,10 +47,7 @@ const Hero = () => {
             src={"/images/tiger.jpg"}
             alt=""
             fill={true}
-            style={{
-              objectFit: "cover",
-            }}
-            className="rounded-t-[144.5px]"
+            className="rounded-t-[144.5px] object-cover"
           />
         </div>
         <div className="relative h-[300px] w-[40%] rounded-tl-[300px] min-[900px]:h-[330px] lg:h-[400px] min-[1200px]:h-full cursor-pointer">
@@ -61,10 +55,7 @@ const Hero = () => {
             src={"/images/giraffe.jpg"}
             alt=""
             fill={true}
-            style={{
-              objectFit: "cover",
-            }}
-            className="rounded-tl-[300px]"
+            className="rounded-tl-[300px] object-cover"
           />
         </div>
       </div>
