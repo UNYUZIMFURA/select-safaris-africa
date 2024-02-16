@@ -4,7 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 const Hero = () => {
   return (
     <div className="flex flex-col gap-6 bg-[#0E150F] text-white min-[1200px]:flex-row min-[1200px]:justify-between">
-      <div className="flex w-full flex-col items-center gap-6 px-4 pt-[4.5rem] text-center min-[370px]:gap-8 min-[1200px]:w-[45%] min-[1200px]:items-start min-[1200px]:text-start min-[1200px]:gap-12 lg:pl-[3rem] min-[1600px]:pl-[7rem] 2xl:px-">
+      <div className="flex w-full flex-col items-center gap-6 px-4 pt-[4.5rem] text-center min-[370px]:gap-8 min-[1200px]:w-[45%] min-[1200px]:items-start min-[1200px]:text-start min-[1200px]:gap-12 lg:pl-[3rem] min-[1700px]:pl-[7rem]">
         <h1 className="text-sm font-bold text-[#10A969] min-[370px]:text-[16px] min-[1200px]:text-[20px]">
           SELECT SAFARIS EAST AFRICA CO.
         </h1>
