@@ -2,9 +2,9 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Travel = () => {
   return (
-    <div className="flex w-full flex-col items-center gap-4 rounded-xl border border-[#00000094] px-5 py-4 shadow-lg xl:max-w-[380px]">
-      <div className="h-[20rem] w-full cursor-pointer rounded-xl border border-[#0000006b] min-[600px]:h-[22rem] min-[700px]:h-[20rem]"></div>
-      <div className="flex w-full flex-col gap-4 xl:gap-3">
+    <div className="flex w-full flex-col items-center gap-4 rounded-[20px] border border-[#00000094] p-5 shadow-lg xl:max-w-[380px]">
+      <div className="h-[20rem] w-full cursor-pointer rounded-[20px] border border-[#0000006b] min-[600px]:h-[22rem] min-[700px]:h-[20rem]"></div>
+      <div className="flex w-full flex-col gap-4 xl:gap-3 px-1 sm:px-2">
         <span className="cursor-pointer text-lg font-semibold">
           Muhazi lake resort
         </span>

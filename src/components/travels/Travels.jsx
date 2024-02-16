@@ -3,12 +3,12 @@ import "./styles/index.css";
 
 const Travels = () => {
   return (
-    <div className="flex flex-col gap-14 px-4 py-7 lg:py-[3rem] 2xl:px-[4.5rem]">
-      <div className="flex flex-col gap-6 2xl:px-[1.5rem]">
+    <div className="bg-white flex flex-col gap-12 px-4 py-7 lg:py-[3rem]">
+      <div className="flex flex-col gap-6">
         <h2 className="font-bold text-[#10A969] sm:text-lg lg:text-xl">
           TRAVELS
         </h2>
-        <p className="text-2xl font-bold sm:text-3xl lg:text-4xl xl:w-[35rem] xl:text-[40px] xl:leading-[3.3rem]">
+        <p className="xl:w-[35rem] tracking-[0.022rem] text-2xl font-bold sm:text-3xl lg:text-4xl xl:text-[40px] xl:leading-[3.3rem]">
           Some of the most visited places{" "}
           <span className="text-[#10A969]">you should visit</span>
         </p>
