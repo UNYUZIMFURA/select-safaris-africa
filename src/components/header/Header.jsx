@@ -11,7 +11,12 @@ const Header = () => {
         width={42}
         className="cursor-pointer"
       />
-      <RxHamburgerMenu color="#10A969" size={28} cursor="pointer" className="min-[700px]:hidden" />
+      <RxHamburgerMenu
+        color="#10A969"
+        size={28}
+        cursor="pointer"
+        className="min-[700px]:hidden"
+      />
     </div>
   );
 };

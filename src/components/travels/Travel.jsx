@@ -1,22 +1,27 @@
-const Travel = () => {
-    return (
-      <div className="p-4 border border-black gap-4 flex flex-col items-center rounded-lg shadow-lg max-w-[420px]">
-        <div className="h-[18rem] w-full border border-black"></div>
-        <div className="flex flex-col w-full gap-4">
-          <span className="text-lg font-semibold">Muhazi lake resort</span>
-          <div className="flex  justify-between">
-            <span className="text-[#10A969] font-semibold">RWF 4,500</span>
-            <span className="text-[#10A969] text-base font-medium">Kigali</span>
-          </div>
-          <span className="text-base text-[#AAB2BA] font-medium">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-          </span>
-          <button className="rounded-lg bg-[#10A969] p-4 text-white">
-            Details
-          </button>
-        </div>
-      </div>
-    );
-}
+import { FaLocationDot } from "react-icons/fa6";
 
-export default Travel
+const Travel = () => {
+  return (
+    <div className="flex w-full flex-col items-center gap-4 rounded-xl border border-[#00000094] px-5 py-4 shadow-lg xl:max-w-[380px]">
+      <div className="cursor-pointer h-[20rem] w-full rounded-xl border border-[#0000006b] min-[600px]:h-[22rem] min-[700px]:h-[20rem]"></div>
+      <div className="flex w-full flex-col gap-4 xl:gap-3">
+        <span className="text-lg font-semibold cursor-pointer">Muhazi lake resort</span>
+        <div className="flex justify-between">
+          <span className="font-semibold text-[#10A969]">RWF 4,500</span>
+          <div className="flex items-center gap-3">
+            <FaLocationDot color="#10A969" />
+            <span className="text-base font-medium text-[#10A969]">Kigali</span>
+          </div>
+        </div>
+        <span className="text-base font-medium text-[#AAB2BA]">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+        </span>
+        <button className="cursor-pointer rounded-lg bg-[#10A969] p-4 font-medium text-white">
+          Details
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Travel;
