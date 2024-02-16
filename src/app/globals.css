@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  display: flex;
+  justify-content: center;
+  background-color: #0e150f;
   font-family: var(--font-gensans);
+}
+
+@media only screen and (min-width: 1500px) {
+  body {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
