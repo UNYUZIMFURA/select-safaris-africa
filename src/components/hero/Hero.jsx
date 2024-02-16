@@ -1,5 +1,6 @@
 import { PiPlayBold } from "react-icons/pi";
 import { BsArrowRight } from "react-icons/bs";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -8,10 +9,10 @@ const Hero = () => {
         <h1 className="text-sm font-bold text-[#10A969] min-[370px]:text-[16px] min-[1200px]:text-[20px]">
           SELECT SAFARIS EAST AFRICA CO.
         </h1>
-        <p className="max-w-[50rem] text-2xl font-bold leading-10 min-[370px]:text-[30px] min-[370px]:leading-[3.5rem] min-[400px]:text-[36px] min-[700px]:text-[2.8rem] min-[700px]:leading-[4.2rem] min-[1200px]:text-[50px] 2xl:leading-[5rem] 2xl:text-[60px]">
+        <p className="max-w-[50rem] text-2xl font-bold leading-10 min-[370px]:text-[30px] min-[370px]:leading-[3.5rem] min-[400px]:text-[36px] min-[700px]:text-[2.8rem] min-[700px]:leading-[4.2rem] min-[1200px]:text-[50px] 2xl:leading-[5rem] 2xl:text-[58px]">
           No dream, enjoy the adventure of East Africa with us
         </p>
-        <span className="max-w-[40rem] text-[1rem] leading-[28px] text-[#88939E] min-[370px]:text-lg min-[400px]:px-3 min-[400px]:text-xl">
+        <span className="max-w-[32rem] text-[1rem] leading-[28px] text-[#88939E] min-[370px]:text-lg min-[400px]:px-3 min-[400px]:text-xl">
           Lorem ipsum dolor sit amet, consecteuer adipiscing elit. Donec odio.
           Quisque volutpat mattis eros.
         </span>
@@ -33,9 +34,39 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex items-end justify-center gap-1 min-[1200px]:h-[700px] min-[1200px]:w-[50%]">
-        <div className="relative h-[150px] w-[30%] rounded-t-[144.5px] border min-[900px]:h-[180px] lg:h-[250px] min-[1200px]:h-[21 5px] cursor-pointer"></div>
-        <div className="relative h-[200px] w-[30%] rounded-t-[144.5px] border min-[900px]:h-[230px] lg:h-[300px] min-[1200px]:h-[428px] cursor-pointer"></div>
-        <div className="relative h-[300px] w-[40%] rounded-tl-[300px] border min-[900px]:h-[330px] lg:h-[400px] min-[1200px]:h-full cursor-pointer"></div>
+        <div className="relative h-[150px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[180px] lg:h-[250px] min-[1200px]:h-[215px] cursor-pointer">
+          <Image
+            src={"/images/gorilla.jpg"}
+            alt=""
+            fill={true}
+            style={{
+              objectFit: "cover",
+            }}
+            className="rounded-t-[144.5px]"
+          />
+        </div>
+        <div className="relative h-[200px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[230px] lg:h-[300px] min-[1200px]:h-[428px] cursor-pointer">
+          <Image
+            src={"/images/tiger.jpg"}
+            alt=""
+            fill={true}
+            style={{
+              objectFit: "cover",
+            }}
+            className="rounded-t-[144.5px]"
+          />
+        </div>
+        <div className="relative h-[300px] w-[40%] rounded-tl-[300px] min-[900px]:h-[330px] lg:h-[400px] min-[1200px]:h-full cursor-pointer">
+          <Image
+            src={"/images/giraffe.jpg"}
+            alt=""
+            fill={true}
+            style={{
+              objectFit: "cover",
+            }}
+            className="rounded-tl-[300px]"
+          />
+        </div>
       </div>
     </div>
   );
