@@ -4,7 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 const Hero = () => {
   return (
     <div className="flex flex-col gap-6 bg-[#0E150F] text-white min-[1200px]:flex-row min-[1200px]:justify-between">
-      <div className="flex w-full flex-col items-center gap-6 px-4 pt-[4.5rem] text-center min-[370px]:gap-8 min-[1200px]:w-[45%] min-[1200px]:items-start min-[1200px]:text-start min-[1200px]:gap-12">
+      <div className="flex w-full flex-col items-center gap-6 px-4 pt-[4.5rem] text-center min-[370px]:gap-8 min-[1200px]:w-[45%] min-[1200px]:items-start min-[1200px]:text-start min-[1200px]:gap-12 min-[1700px]:pl-[8rem">
         <h1 className="text-sm font-bold text-[#10A969] min-[370px]:text-[16px] min-[1200px]:text-[20px]">
           SELECT SAFARIS EAST AFRICA CO.
         </h1>
@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex items-end justify-center gap-1 min-[1200px]:h-[700px] min-[1200px]:w-[50%]">
-        <div className="relative h-[150px] w-[30%] rounded-t-[144.5px] border min-[900px]:h-[180px] lg:h-[250px] min-[1200px]:h-[215px] cursor-pointer"></div>
+        <div className="relative h-[150px] w-[30%] rounded-t-[144.5px] border min-[900px]:h-[180px] lg:h-[250px] min-[1200px]:h-[21 5px] cursor-pointer"></div>
         <div className="relative h-[200px] w-[30%] rounded-t-[144.5px] border min-[900px]:h-[230px] lg:h-[300px] min-[1200px]:h-[428px] cursor-pointer"></div>
         <div className="relative h-[300px] w-[40%] rounded-tl-[300px] border min-[900px]:h-[330px] lg:h-[400px] min-[1200px]:h-full cursor-pointer"></div>
       </div>
