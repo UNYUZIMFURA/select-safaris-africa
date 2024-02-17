@@ -14,10 +14,3 @@ body {
   background-color: #0e150f;
   font-family: var(--font-gensans);
 }
-
-@media only screen and (min-width: 1500px) {
-  body {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
