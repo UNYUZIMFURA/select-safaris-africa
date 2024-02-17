@@ -9,7 +9,7 @@ const Travel = (props) => {
           src={`/images/${props.img}.jpg`}
           alt=""
           fill={true}
-          className="object-cover rounded-[20px] brightness-50 transition hover:brightness-100"
+          className="object-cover rounded-[20px] brightness-75 transition hover:brightness-100"
         />
       </div>
       <div className="flex w-full flex-col gap-4 xl:gap-3 px-1 sm:px-2">
