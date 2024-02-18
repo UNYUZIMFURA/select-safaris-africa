@@ -28,7 +28,7 @@ const Description2 = () => {
       </div>
       <div className="relative w-full md:max-w-[714px] p-4 h-[20rem] md:h-[22rem] border rounded-[20px] lg:h-[30rem] cursor-pointer">
         <Image
-          src={"/images/giraffes.jpg"}
+          src={"/images/elephants.jpg"}
           alt=""
           fill={true}
           className="object-cover rounded-[20px] brightness-75 transition hover:brightness-100"

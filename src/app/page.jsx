@@ -1,5 +1,6 @@
 import Description1 from "@/components/description/Description1";
 import Description2 from "@/components/description/Description2";
+import Explore from "@/components/explore/Explore";
 import Header from "@/components/header/Header";
 import Hero from "@/components/hero/Hero";
 import Travels from "@/components/travels/Travels";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Travels />
       <Description1 />
+      <Explore />
       <Description2 />
     </main>
   );
