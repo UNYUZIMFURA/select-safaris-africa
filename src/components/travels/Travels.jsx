@@ -3,8 +3,8 @@ import "./styles/index.css";
 
 const Travels = () => {
   return (
-    <div className="bg-white flex flex-col gap-12 px-4 py-7 lg:py-[3rem]">
-      <div className="flex flex-col gap-6 min-[1700px]:pl-10">
+    <div className="bg-white flex flex-col gap-12 px-4 py-7 lg:py-[3rem] 2xl:px-[8rem]">
+      <div className="flex flex-col gap-6 min-[1700px]:pl-5">
         <h2 className="font-bold text-[#10A969] sm:text-lg lg:text-xl">
           TRAVELS
         </h2>
@@ -14,10 +14,10 @@ const Travels = () => {
         </p>
       </div>
       <div className="travels">
-        <Travel img="hand"/>
-        <Travel img="mountain"/>
-        <Travel img="road"/>
-        <Travel img="zebra"/>
+        <Travel img="hand" name="Kigali City"/>
+        <Travel img="mountain" name="Gishwati Forest"/>
+        <Travel img="road" name="Nyungwe Park"/>
+        <Travel img="zebra" name="Akagera Park"/>
       </div>
     </div>
   );
