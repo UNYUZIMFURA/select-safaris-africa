@@ -2,7 +2,7 @@ import React from 'react'
 
 const Explore = () => {
   return (
-    <div className="w-full flex justify-center 2xl:px-[9.5rem] py-7 lg:py-[5rem] bg-white px-4 text-white from-black-500 from-50% via-sky-500 via-30%">
+    <div className="w-full flex justify-center 2xl:px-[9.5rem] py-7 lg:py-[5rem] bg-white px-4 text-white min-[1200px]:px-[3rem]">
       <div
         className="h-[25rem] w-full border p-10 rounded-[20px] flex flex-col gap-4 justify-center bg-cover md:gap-6 "
         style={{

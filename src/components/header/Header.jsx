@@ -3,7 +3,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-between bg-[#0E150F] px-6 py-8 text-white 2xl:px-[8.5rem]">
+    <div className="flex items-center justify-between bg-[#0E150F] px-6 py-8 text-white min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
       <Image
         src="/images/logo.png"
         alt="Lion head logo"
