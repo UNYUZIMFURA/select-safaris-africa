@@ -6,6 +6,7 @@ import Explore from "@/components/explore/Explore";
 import Description2 from "@/components/description/Description2";
 import Process from "@/components/process/Process";
 import Reviews from "@/components/reviews/Reviews";
+import Footer from "@/components/footer/Footer"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Description2 />
       <Process />
       <Reviews />
+      <Footer />
     </main>
   );
 }
