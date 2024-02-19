@@ -2,7 +2,7 @@ import Step from "./Step";
 
 const Process = () => {
   return (
-    <div className="py-8 px-5 flex flex-col gap-6 bg-black text-white 2xl:px-[8rem] min-[1200px]:px-[3rem] md:gap-[2rem] lg:py-[4rem] lg:gap-[3rem]">
+    <div className="py-10 px-5 flex flex-col gap-10 bg-black text-white 2xl:px-[8rem] min-[1200px]:px-[3rem] md:gap-[2rem] lg:py-[4rem] lg:gap-[3rem]">
       <div className="flex flex-col gap-5 max-w-[36rem]">
         <p className="text-[#10A969] text-[20px] font-bold">JOYFUL & FAST</p>
         <h2 className="text-[24px] font-bold lg:text-[32px] xl:text-[40px]">

@@ -5,6 +5,7 @@ import Description1 from "@/components/description/Description1";
 import Explore from "@/components/explore/Explore";
 import Description2 from "@/components/description/Description2";
 import Process from "@/components/process/Process";
+import Reviews from "@/components/reviews/Reviews";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Explore />
       <Description2 />
       <Process />
+      <Reviews />
     </main>
   );
 }
