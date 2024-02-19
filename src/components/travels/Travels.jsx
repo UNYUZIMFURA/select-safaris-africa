@@ -14,10 +14,10 @@ const Travels = () => {
         </p>
       </div>
       <div className="travels">
-        <Travel img="hand" name="Kigali City"/>
-        <Travel img="mountain" name="Gishwati Forest"/>
-        <Travel img="road" name="Nyungwe Park"/>
-        <Travel img="zebra" name="Akagera Park"/>
+        <Travel img="hand" name="Kigali City" />
+        <Travel img="mountain" name="Gishwati Forest" />
+        <Travel img="road" name="Nyungwe Park" />
+        <Travel img="zebra" name="Akagera Park" />
       </div>
     </div>
   );

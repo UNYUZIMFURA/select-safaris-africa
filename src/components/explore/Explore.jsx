@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Explore = () => {
   return (
@@ -23,6 +23,6 @@ const Explore = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Explore
+export default Explore;
