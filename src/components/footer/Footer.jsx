@@ -18,7 +18,7 @@ const Footer = () => {
           width={42}
           className="cursor-pointer"
         />
-        <span className="font-thin text-[#AAB2BA] leading-[2rem] max-w-[20rem] md:max-w-[15rem] xl:max-w-[20rem]">
+        <span className="font-thin text-[#AAB2BA] leading-[2rem] max-w-[20rem] md:max-w-[15rem] xl:max-w-[30rem]">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
           Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
           Suspendisse
