@@ -6,6 +6,7 @@ import { MdPhone } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { LuMail } from "react-icons/lu";
 import { FaLocationDot } from "react-icons/fa6";
+import { HiArrowUp } from "react-icons/hi2";
 
 const Footer = () => {
   return (
@@ -55,6 +56,9 @@ const Footer = () => {
           <FaLocationDot color="#10A969" size={20} />
           <span>Somewhere, Kigali - Rwanda</span>
         </div>
+      </div>
+      <div className="h-[5rem] w-[5rem] rounded-full flex items-center justify-center bg-[#10A969] text-white">
+        <HiArrowUp size={20}/>
       </div>
     </div>
   );
