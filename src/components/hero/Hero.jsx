@@ -36,7 +36,10 @@ const Hero = () => {
       <div className="flex items-end justify-center gap-1 min-[1200px]:h-[700px] min-[1200px]:w-[55%]">
         <div className="relative h-[150px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[180px] lg:h-[250px] min-[1200px]:h-[215px] cursor-pointer">
           <Image
-            src={"/images/gorilla.svg"}
+            // src={"/images/gorilla.svg"}
+            src={
+              "https://firebasestorage.googleapis.com/v0/b/select-safaris-africa.appspot.com/o/Landing%2Fgorilla.jpg?alt=media&token=79e1ddee-f668-4430-a1ac-c55160501a5d"
+            }
             alt=""
             fill={true}
             className="rounded-t-[144.5px] object-cover"
@@ -44,7 +47,10 @@ const Hero = () => {
         </div>
         <div className="relative h-[200px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[230px] lg:h-[300px] min-[1200px]:h-[428px] cursor-pointer">
           <Image
-            src={"/images/tiger.jpg"}
+            // src={"/images/tiger.jpg"}
+            src={
+              "https://firebasestorage.googleapis.com/v0/b/select-safaris-africa.appspot.com/o/Landing%2Ftiger.jpg?alt=media&token=12f0de2f-e086-47f0-9c90-4ba75520364e"
+            }
             alt=""
             fill={true}
             className="rounded-t-[144.5px] object-cover"
@@ -52,7 +58,10 @@ const Hero = () => {
         </div>
         <div className="relative h-[300px] w-[40%] rounded-tl-[300px] min-[900px]:h-[330px] lg:h-[400px] min-[1200px]:h-full cursor-pointer">
           <Image
-            src={"/images/giraffe.jpg"}
+            // src={"/images/giraffe.jpg"}
+            src={
+              "https://firebasestorage.googleapis.com/v0/b/select-safaris-africa.appspot.com/o/Landing%2Fgiraffe.jpg?alt=media&token=be3b898e-6fc7-4c2f-bfc2-fb891b8f0878"
+            }
             alt=""
             fill={true}
             className="rounded-tl-[300px] object-cover"
