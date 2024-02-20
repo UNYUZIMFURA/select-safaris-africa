@@ -6,18 +6,18 @@ const Review = () => {
   return (
     <div className="relative flex flex-col items-center bg-white px-4 pb-[3rem] pt-[5.5rem] rounded-3xl">
       <div className="h-[7.5rem] w-[7.5rem] flex items-center justify-center bg-white absolute -top-14 rounded-full p-4">
-        <div className="relative h-full w-full rounded-full cursor-pointer">
+        <div className="relative overflow-hidden h-full w-full rounded-full cursor-pointer">
           <Image
-            src="/images/client.jpg"
+            src="/images/client.webp"
             alt=""
             fill={true}
-            className="object-cover rounded-full"
+            className="object-cover"
           />
         </div>
       </div>
       <div className="flex flex-col gap-6 text-center items-center">
         <h2 className="font-bold text-[22px] md:text-[24px]">Jeff Davis</h2>
-        <span className="text-[#AAB2BA] leading-[28px] sm:max-w-[28rem] font-light">
+        <span className="text-secondary leading-[28px] sm:max-w-[28rem] font-light">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
           Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
           Suspendisse urna nibh viverra non semper suscipit posuere a pede

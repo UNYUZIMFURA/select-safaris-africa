@@ -3,14 +3,14 @@ import Step from "./Step";
 
 const Process = () => {
   return (
-    <div className="py-10 px-5 flex flex-col gap-10 bg-black text-white 2xl:px-[8rem] min-[1200px]:px-[3rem] md:gap-[2rem] lg:py-[4rem] lg:gap-[3rem]">
+    <div className="py-10 px-5 flex flex-col gap-10 bg-black text-tertiary1 2xl:px-[8rem] min-[1200px]:px-[3rem] md:gap-[2rem] lg:py-[4rem] lg:gap-[3rem]">
       <div className="flex flex-col gap-5 max-w-[36rem]">
-        <p className="text-[#10A969] text-[20px] font-bold">JOYFUL & FAST</p>
+        <p className="text-brand text-[20px] font-bold">JOYFUL & FAST</p>
         <h2 className="text-[24px] font-bold lg:text-[32px] xl:text-[40px]">
           It's just simple steps that turn your{" "}
-          <span className="text-[#10A969]">adventure into enjoyment</span>
+          <span className="text-brand">adventure into enjoyment</span>
         </h2>
-        <h3 className="text-[#ffffffc2] lg:max-w-[23rem] xl:text-[17px]">
+        <h3 className="text-secondary lg:max-w-[23rem] xl:text-[17px]">
           Lorem ipsum dolor sit amet, consectetuer adipscing elit. Donec odio.
         </h3>
       </div>
