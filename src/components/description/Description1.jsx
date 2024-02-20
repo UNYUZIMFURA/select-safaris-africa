@@ -3,7 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Description1 = () => {
   return (
-    <div className="py-7 px-4 flex flex-col items-center gap-6 md:gap-8 text-white border-white bg-white md:flex-row lg:gap-[4rem] xl:justify-between lg:py-[5rem] lg:px-[2rem] 2xl:px-[9.5rem]">
+    <div className="py-7 px-4 flex flex-col items-center gap-6 md:gap-8 text-white border-white bg-white md:flex-row lg:gap-[4rem] xl:justify-between lg:py-[5rem] lg:px-[2rem] 2xl:px-[9.5rem] min-[1200px]:px-[3rem]">
       <div className="relative w-full md:max-w-[714px] p-4 h-[20rem] md:h-[22rem] border rounded-[20px] lg:h-[30rem] cursor-pointer">
         <Image
           src={"/images/giraffes.jpg"}

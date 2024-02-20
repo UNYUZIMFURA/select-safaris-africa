@@ -3,7 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Description2 = () => {
   return (
-    <div className="py-7 px-4 flex flex-col items-center gap-6 md:gap-8 text-white border-white bg-white md:flex-row lg:gap-[4rem] xl:justify-between lg:py-[5rem] lg:px-[2rem] 2xl:px-[9.5rem]">
+    <div className="py-7 px-4 flex flex-col items-center gap-6 md:gap-8 text-white border-white bg-white md:flex-row lg:gap-[4rem] xl:justify-between lg:py-[5rem] lg:px-[2rem] 2xl:px-[9.5rem] min-[1200px]:px-[3rem]">
       <div className="flex flex-col gap-6 md:max-w-[47rem]">
         <h1 className="text-[#10A969] text-md font-bold lg:text-lg xl:text-xl">
           SELECT SAFARIS EAST AFRICA CO.
@@ -28,7 +28,7 @@ const Description2 = () => {
       </div>
       <div className="relative w-full md:max-w-[714px] p-4 h-[20rem] md:h-[22rem] border rounded-[20px] lg:h-[30rem] cursor-pointer">
         <Image
-          src={"/images/elephants.jpg"}
+          src={"/images/mountains.jpg"}
           alt=""
           fill={true}
           className="object-cover rounded-[20px] brightness-75 transition hover:brightness-100"

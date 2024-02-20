@@ -1,9 +1,12 @@
-import Description1 from "@/components/description/Description1";
-import Description2 from "@/components/description/Description2";
-import Explore from "@/components/explore/Explore";
 import Header from "@/components/header/Header";
 import Hero from "@/components/hero/Hero";
 import Travels from "@/components/travels/Travels";
+import Description1 from "@/components/description/Description1";
+import Explore from "@/components/explore/Explore";
+import Description2 from "@/components/description/Description2";
+import Process from "@/components/process/Process";
+import Reviews from "@/components/reviews/Reviews";
+import Footer from "@/components/footer/Footer"
 
 export default function Home() {
   return (
@@ -14,6 +17,9 @@ export default function Home() {
       <Description1 />
       <Explore />
       <Description2 />
+      <Process />
+      <Reviews />
+      <Footer />
     </main>
   );
 }
