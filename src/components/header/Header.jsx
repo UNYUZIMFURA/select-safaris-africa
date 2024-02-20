@@ -11,12 +11,20 @@ const Header = () => {
         width={42}
         className="cursor-pointer"
       />
+      <div className="items-center gap-4 hidden min-[700px]:flex">
+        <span className="text-[#10A969]">Home</span>
+        <span>Destinations</span>
+        <span>About</span>
+        <span>Contact us</span>
+        <span>Get Started</span>
+      </div>
       <RxHamburgerMenu
         color="#10A969"
         size={28}
         cursor="pointer"
         className="min-[700px]:hidden"
       />
+      
     </div>
   );
 };
