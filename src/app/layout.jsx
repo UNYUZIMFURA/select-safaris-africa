@@ -11,8 +11,8 @@ const gensans = localFont({
 });
 
 export const metadata = {
-  title: "Select Safaris",
-  description: "Enjoy the Adventure of East Africa",
+  title: "Select Safaris Africa",
+  description: "Enjoy the Adventure of Africa",
 };
 
 export default function RootLayout({ children }) {

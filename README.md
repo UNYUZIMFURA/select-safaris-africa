@@ -1,3 +1,3 @@
 # Select Safaris
 
-# Enjoy the adventure of East Africa
+Enjoy the adventure of Africa

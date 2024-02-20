@@ -6,10 +6,10 @@ const Description2 = () => {
     <div className="py-7 px-4 flex flex-col items-center gap-6 md:gap-8 text-white border-white bg-white md:flex-row lg:gap-[4rem] xl:justify-between lg:py-[5rem] lg:px-[2rem] 2xl:px-[9.5rem] min-[1200px]:px-[3rem]">
       <div className="flex flex-col gap-6 md:max-w-[47rem]">
         <h1 className="text-[#10A969] text-md font-bold lg:text-lg xl:text-xl">
-          SELECT SAFARIS EAST AFRICA CO.
+          SELECT SAFARIS AFRICA CO.
         </h1>
         <h2 className="font-bold text-2xl text-black lg:text-3xl xl:text-4xl">
-          No dream, enjoy the adventure of East Africa with us
+          No dream, enjoy the adventure of Africa with us
         </h2>
         <span className="text-[#AAB2BA] lg:text-[20px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
