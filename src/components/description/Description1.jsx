@@ -13,11 +13,11 @@ const Description1 = () => {
         />
       </div>
       <div className="flex flex-col gap-6 md:max-w-[47rem]">
-        <h1 className="text-brand text-md font-bold lg:text-lg xl:text-xl">
-          SELECT SAFARIS EAST AFRICA CO.
+        <h1 className="text-[#10A969] text-md font-bold lg:text-lg xl:text-xl">
+          SELECT SAFARIS AFRICA CO.
         </h1>
-        <h2 className="font-bold text-2xl text-tertiary2 lg:text-3xl xl:text-4xl">
-          No dream, enjoy the adventure of East Africa with us
+        <h2 className="font-bold text-2xl text-black lg:text-3xl xl:text-4xl">
+          No dream, enjoy the adventure of Africa with us
         </h2>
         <span className="text-secondary lg:text-[18px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
