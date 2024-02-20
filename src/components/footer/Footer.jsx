@@ -10,7 +10,7 @@ import { HiArrowUp } from "react-icons/hi2";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col py-8 gap-8 px-5 min-[600px]:px-14 lg:py-[4rem] md:flex-row 2xl:px-[8rem] min-[1200px]:px-[3rem md:px-0 md:gap-2 md:justify-around text-white">
+    <div className="flex flex-col py-8 gap-8 px-5 min-[600px]:px-14 lg:py-[4rem] md:flex-row 2xl:px-[8rem] min-[1200px]:px-[3rem  md:gap-2 md:justify-between text-white">
       <div className="flex flex-col gap-4">
         <Image
           src="/images/logo.png"
@@ -57,7 +57,7 @@ const Footer = () => {
           <span>Somewhere, Kigali - Rwanda</span>
         </div>
       </div>
-      <div className="h-[5rem] w-[5rem] rounded-full flex items-center justify-center bg-[#10A969] text-white">
+      <div className="h-[4rem] w-[4rem] cursor-pointer rounded-full flex items-center justify-center bg-[#10A969] text-white mt-2">
         <HiArrowUp size={20}/>
       </div>
     </div>
