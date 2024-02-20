@@ -10,7 +10,7 @@ import { HiArrowUp } from "react-icons/hi2";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col py-8 gap-8 px-5 min-[600px]:px-14 lg:py-[4rem] md:flex-row 2xl:px-[8rem] min-[1200px]:px-[3rem  md:gap-2 md:justify-between text-white">
+    <div className="flex flex-col py-8 gap-8 px-5 min-[600px]:px-14 lg:py-[4rem] md:flex-row 2xl:px-[8rem] min-[1200px]:px-[3rem  md:gap-2 md:justify-between text-tertiary1">
       <div className="flex flex-col gap-4">
         <Image
           src="/images/logo.png"
@@ -19,7 +19,7 @@ const Footer = () => {
           width={42}
           className="cursor-pointer"
         />
-        <span className="font-thin text-[#AAB2BA] leading-[2rem] max-w-[20rem] md:max-w-[15rem] xl:max-w-[30rem]">
+        <span className="font-thin text-secondary leading-[2rem] max-w-[20rem] md:max-w-[15rem] xl:max-w-[30rem]">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
           Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
           Suspendisse
@@ -30,16 +30,16 @@ const Footer = () => {
           <FaInstagram color="#10A969" size={20} />
         </div>
       </div>
-      <div className="flex flex-col gap-4 text-[#AAB2BA]">
-        <span className="font-bold text-lg py-2 text-white ">Quick Links</span>
+      <div className="flex flex-col gap-4 text-secondary">
+        <span className="font-bold text-lg py-2 text-tertiary1">Quick Links</span>
         <span>Home</span>
         <span>Destinations</span>
         <span>About</span>
         <span>Contact us</span>
         <span>Get started</span>
       </div>
-      <div className="flex flex-col gap-2 text-[#AAB2BA]">
-        <span className="font-bold text-lg py-2 text-white">Find Us</span>
+      <div className="flex flex-col gap-2 text-secondary">
+        <span className="font-bold text-lg py-2 text-tertiary1">Find Us</span>
         <div className="flex items-center gap-4 py-2">
           <MdPhone color="#10A969" size={20} />
           <span>+250 788 995 497</span>
@@ -57,7 +57,7 @@ const Footer = () => {
           <span>Somewhere, Kigali - Rwanda</span>
         </div>
       </div>
-      <div className="h-[4rem] w-[4rem] cursor-pointer rounded-full flex items-center justify-center bg-[#10A969] text-white mt-2">
+      <div className="h-[4rem] w-[4rem] cursor-pointer rounded-full flex items-center justify-center bg-brand text-tertiary1 mt-2">
         <HiArrowUp size={20}/>
       </div>
     </div>
