@@ -15,9 +15,9 @@ const Process = () => {
         </h3>
       </div>
       <div className="flex flex-col items-center gap-5 md:flex-row md:gap-2 lg:gap-4 xl:gap-8">
-        <Step no="1" title="Select a destination" />
-        <Step no="2" title="Submit a reservation" />
-        <Step no="3" title="Enjoy Adventure" />
+        <Step no={1} title="Select a destination" />
+        <Step no={2} title="Submit a reservation" />
+        <Step no={3} title="Enjoy Adventure" />
       </div>
     </div>
   );

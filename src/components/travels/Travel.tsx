@@ -1,7 +1,12 @@
 import Image from "next/image";
 import { FaLocationDot } from "react-icons/fa6";
 
-const Travel = (props) => {
+interface Props {
+  img: string
+  name: string
+}
+
+const Travel:React.FC<Props> = (props) => {
   return (
     <div className="flex w-full flex-col items-center gap-4 rounded-[20px] p-5 shadow-lg xl:max-w-[380px]">
       <div className="relative overflow-hidden h-[20rem] w-full cursor-pointer rounded-[20px] min-[600px]:h-[22rem] min-[700px]:h-[20rem]">

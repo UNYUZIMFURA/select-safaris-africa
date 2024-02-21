@@ -15,7 +15,11 @@ export const metadata = {
   description: "Enjoy the Adventure of Africa",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={`${gensans.variable}`}>
       <body>{children}</body>

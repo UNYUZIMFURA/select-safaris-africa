@@ -31,7 +31,7 @@ const Description1 = () => {
         </span>
         <div className="flex items-center gap-4">
           <span className="text-brand font-semibold">Learn more</span>
-          <BsArrowRight color="#10A969" size={20} />
+          <BsArrowRight color="#10A969" size={20} className="animate-bounce" />
         </div>
       </div>
     </div>
