@@ -34,7 +34,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "postcss.config.js", "prettier.config.js"  ],
   "exclude": [
     "node_modules"
   ]
