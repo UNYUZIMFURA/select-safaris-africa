@@ -21,7 +21,7 @@ const Hero = () => {
             <span className="text-[0.9rem] font-medium text-tertiary1 min-[370px]:text-base">
               Explore destinations
             </span>
-            <BsArrowRight size={20} color="white" />
+            <BsArrowRight size={22} color="white" className="animate-bounce" />
           </div>
           <div className="flex items-center gap-4">
             <div className="cursor-pointer rounded-full bg-brand p-3">
@@ -52,7 +52,7 @@ const Hero = () => {
         </div>
         <div className="relative overflow-hidden h-[300px] w-[40%] rounded-tl-[300px] min-[900px]:h-[330px] lg:h-[400px] min-[1200px]:h-full cursor-pointer">
           <Image
-            src={"/images/giraffe.webp"}
+            src={"/images/elephant.webp"}
             alt=""
             fill={true}
             className="object-cover"

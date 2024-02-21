@@ -3,6 +3,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { HiLanguage } from "react-icons/hi2";
 
 const Header = () => {
+  const links = ["Destinations", "About", "Contact us", "Get started"];
   return (
     <div className="flex items-center justify-between bg-theme1 px-6 py-10 text-tertiary1 min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
       <Image
@@ -14,10 +15,11 @@ const Header = () => {
       />
       <div className="md:flex items-center gap-6 hidden lg:gap-8 xl:gap-14">
         <span className="text-brand font-bold cursor-pointer">Home</span>
-        <span className="cursor-pointer">Destinations</span>
-        <span className="cursor-pointer">About</span>
-        <span className="cursor-pointer">Contact us</span>
-        <span className="cursor-pointer">Get started</span>
+        {links.map((el, index) => (
+          <span key={index} className="cursor-pointer hover:text-brand">
+            {el}
+          </span>
+        ))}
       </div>
       <RxHamburgerMenu
         color="#10A969"

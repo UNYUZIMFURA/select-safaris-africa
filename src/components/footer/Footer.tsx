@@ -63,7 +63,7 @@ const Footer = () => {
         <span className="font-bold text-lg py-2 text-tertiary1">Find Us</span>
         {contacts.map((el, index) => (
           <div key={index} className="flex items-center gap-4 py-2">
-            <el.icon color="#10A969" size={24} className="cursor-pointer"/>
+            <el.icon color="#10A969" size={24} className="cursor-pointer" />
             <span>{el.contact}</span>
           </div>
         ))}

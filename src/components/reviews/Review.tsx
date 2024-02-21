@@ -32,6 +32,6 @@ const Review = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Review
+export default Review;

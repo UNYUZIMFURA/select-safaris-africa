@@ -22,8 +22,14 @@ const Description2 = () => {
           minim veniam, quis nostrud exercitation
         </span>
         <div className="flex items-center gap-4">
-          <span className="text-brand font-semibold">Learn more</span>
-          <BsArrowRight color="#10A969" size={20} className="animate-bounce"/>
+          <span className="text-brand font-semibold cursor-pointer">
+            Learn more
+          </span>
+          <BsArrowRight
+            color="#10A969"
+            size={24}
+            className="animate-bounce cursor-pointer"
+          />
         </div>
       </div>
       <div className="relative overflow-hidden w-full md:max-w-[714px] p-4 h-[20rem] md:h-[22rem] border rounded-[20px] lg:h-[30rem] cursor-pointer">
