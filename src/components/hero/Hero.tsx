@@ -1,6 +1,7 @@
 import { PiPlayBold } from "react-icons/pi";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
+import "@/app/globals.css";
 
 const Hero = () => {
   return (
@@ -21,7 +22,7 @@ const Hero = () => {
             <span className="text-[0.9rem] font-medium text-tertiary1 min-[370px]:text-base">
               Explore destinations
             </span>
-            <BsArrowRight size={22} color="white" className="animate-bounce" />
+            <BsArrowRight size={22} color="white" />
           </div>
           <div className="flex items-center gap-4">
             <div className="cursor-pointer rounded-full bg-brand p-3">
@@ -34,7 +35,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex items-end justify-center gap-1 min-[1200px]:h-[700px] min-[1200px]:w-[55%]">
-        <div className="overflow-hidden relative h-[150px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[180px] lg:h-[250px] min-[1200px]:h-[215px] cursor-pointer">
+        <div className="load-light overflow-hidden relative h-[150px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[180px] lg:h-[250px] min-[1200px]:h-[215px] cursor-pointer">
           <Image
             src={"/images/mountain.webp"}
             alt=""
@@ -42,7 +43,7 @@ const Hero = () => {
             className="object-cover"
           />
         </div>
-        <div className="overflow-hidden relative h-[200px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[230px] lg:h-[300px] min-[1200px]:h-[428px] cursor-pointer">
+        <div className="load-light overflow-hidden relative h-[200px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[230px] lg:h-[300px] min-[1200px]:h-[428px] cursor-pointer">
           <Image
             src={"/images/gorilla.webp"}
             alt=""
@@ -50,7 +51,7 @@ const Hero = () => {
             className="object-cover"
           />
         </div>
-        <div className="relative overflow-hidden h-[300px] w-[40%] rounded-tl-[300px] min-[900px]:h-[330px] lg:h-[400px] min-[1200px]:h-full cursor-pointer">
+        <div className="load-light relative overflow-hidden h-[300px] w-[40%] rounded-tl-[300px] min-[900px]:h-[330px] lg:h-[400px] min-[1200px]:h-full cursor-pointer">
           <Image
             src={"/images/elephant.webp"}
             alt=""

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
+import "@/app/globals.css";
 
 const Description2 = () => {
   return (
@@ -32,7 +33,7 @@ const Description2 = () => {
           />
         </div>
       </div>
-      <div className="relative overflow-hidden w-full md:max-w-[714px] p-4 h-[20rem] md:h-[22rem] border rounded-[20px] lg:h-[30rem] cursor-pointer">
+      <div className="load-dark relative overflow-hidden w-full md:max-w-[714px] p-4 h-[20rem] md:h-[22rem] border rounded-[20px] lg:h-[30rem] cursor-pointer">
         <Image
           src={"/images/mountains.webp"}
           alt=""
