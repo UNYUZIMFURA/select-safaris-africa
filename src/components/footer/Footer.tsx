@@ -9,6 +9,25 @@ import { FaLocationDot } from "react-icons/fa6";
 import { HiArrowUp } from "react-icons/hi2";
 
 const Footer = () => {
+  const links = ["Home", "Destinations", "About", "Contact us", "Get started"];
+  const contacts = [
+    {
+      icon: MdPhone,
+      contact: "+250 788 995 497",
+    },
+    {
+      icon: FaWhatsapp,
+      contact: "+250 738 995 497",
+    },
+    {
+      icon: LuMail,
+      contact: "info@selectsafaris.com",
+    },
+    {
+      icon: FaLocationDot,
+      contact: "Somewhere, Kigali - Rwanda",
+    },
+  ];
   return (
     <div className="flex flex-col py-8 gap-8 px-5 min-[600px]:px-14 lg:py-[4rem] md:flex-row 2xl:px-[8rem] min-[1200px]:px-[3rem  md:gap-2 md:justify-between text-tertiary1">
       <div className="flex flex-col gap-6">
@@ -25,37 +44,29 @@ const Footer = () => {
           Suspendisse
         </span>
         <div className="flex items-center gap-6">
-          <FaTwitter color="#10A969" size={20} className="cursor-pointer" />
-          <FaLinkedin color="#10A969" size={20} className="cursor-pointer"/>
-          <FaInstagram color="#10A969" size={20} className="cursor-pointer" />
+          <FaTwitter color="#10A969" size={24} className="cursor-pointer" />
+          <FaLinkedin color="#10A969" size={24} className="cursor-pointer" />
+          <FaInstagram color="#10A969" size={24} className="cursor-pointer" />
         </div>
       </div>
       <div className="flex flex-col gap-4 text-secondary">
-        <span className="font-bold text-lg py-2 text-tertiary1">Quick Links</span>
-        <span className="cursor-pointer hover:text-brand font-bold  ">Home</span>
-        <span className="cursor-pointer hover:text-brand">Destinations</span>
-        <span className="cursor-pointer hover:text-brand">About</span>
-        <span className="cursor-pointer hover:text-brand">Contact us</span>
-        <span className="cursor-pointer hover:text-brand">Get started</span>
+        <span className="font-bold text-lg py-2 text-tertiary1">
+          Quick Links
+        </span>
+        {links.map((el, index) => (
+          <span key={index} className="cursor-pointer hover:text-brand">
+            {el}
+          </span>
+        ))}
       </div>
       <div className="flex flex-col gap-2 text-secondary">
         <span className="font-bold text-lg py-2 text-tertiary1">Find Us</span>
-        <div className="flex items-center gap-4 py-2">
-          <MdPhone color="#10A969" size={20} />
-          <span>+250 788 995 497</span>
-        </div>
-        <div className="flex items-center gap-4 py-2">
-          <FaWhatsapp color="#10A969" size={20} />
-          <span>Whatsapp</span>
-        </div>
-        <div className="flex items-center gap-4 py-2">
-          <LuMail color="#10A969" size={20} />
-          <span>info@selectsafaris.com</span>
-        </div>
-        <div className="flex items-center gap-4 py-2">
-          <FaLocationDot color="#10A969" size={20} />
-          <span>Somewhere, Kigali - Rwanda</span>
-        </div>
+        {contacts.map((el, index) => (
+          <div key={index} className="flex items-center gap-4 py-2">
+            <el.icon color="#10A969" size={24} className="cursor-pointer"/>
+            <span>{el.contact}</span>
+          </div>
+        ))}
       </div>
       <div className="sticky bottom-0 h-[4rem] w-[4rem] cursor-pointer rounded-full flex items-center justify-center bg-brand text-tertiary1 mt-2">
         <HiArrowUp size={20} />
