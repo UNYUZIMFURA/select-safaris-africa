@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
+import "@/app/globals.css";
 
 const Description1 = () => {
   return (
     <div className="py-7 px-4 flex flex-col items-center gap-6 md:gap-8 text-tertiary1 border-white bg-white md:flex-row lg:gap-[4rem] xl:justify-between lg:py-[5rem] lg:px-[2rem] 2xl:px-[9.5rem] min-[1200px]:px-[3rem]">
-      <div className="relative overflow-hidden w-full md:max-w-[714px] p-4 h-[20rem] md:h-[22rem] border rounded-[20px] lg:h-[30rem] cursor-pointer">
+      <div className="load-dark relative overflow-hidden w-full md:max-w-[714px] p-4 h-[20rem] md:h-[22rem] border rounded-[20px] lg:h-[30rem] cursor-pointer">
         <Image
           src={"/images/island.webp"}
           alt=""
