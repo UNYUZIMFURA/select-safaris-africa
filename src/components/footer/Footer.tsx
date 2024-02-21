@@ -11,7 +11,7 @@ import { HiArrowUp } from "react-icons/hi2";
 const Footer = () => {
   return (
     <div className="flex flex-col py-8 gap-8 px-5 min-[600px]:px-14 lg:py-[4rem] md:flex-row 2xl:px-[8rem] min-[1200px]:px-[3rem  md:gap-2 md:justify-between text-tertiary1">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-6">
         <Image
           src="/images/logo.png"
           alt="Lion head logo"
@@ -25,18 +25,18 @@ const Footer = () => {
           Suspendisse
         </span>
         <div className="flex items-center gap-6">
-          <FaTwitter color="#10A969" size={20} />
-          <FaLinkedin color="#10A969" size={20} />
-          <FaInstagram color="#10A969" size={20} />
+          <FaTwitter color="#10A969" size={20} className="cursor-pointer" />
+          <FaLinkedin color="#10A969" size={20} className="cursor-pointer"/>
+          <FaInstagram color="#10A969" size={20} className="cursor-pointer" />
         </div>
       </div>
       <div className="flex flex-col gap-4 text-secondary">
         <span className="font-bold text-lg py-2 text-tertiary1">Quick Links</span>
-        <span>Home</span>
-        <span>Destinations</span>
-        <span>About</span>
-        <span>Contact us</span>
-        <span>Get started</span>
+        <span className="cursor-pointer hover:text-brand font-bold  ">Home</span>
+        <span className="cursor-pointer hover:text-brand">Destinations</span>
+        <span className="cursor-pointer hover:text-brand">About</span>
+        <span className="cursor-pointer hover:text-brand">Contact us</span>
+        <span className="cursor-pointer hover:text-brand">Get started</span>
       </div>
       <div className="flex flex-col gap-2 text-secondary">
         <span className="font-bold text-lg py-2 text-tertiary1">Find Us</span>
@@ -57,8 +57,8 @@ const Footer = () => {
           <span>Somewhere, Kigali - Rwanda</span>
         </div>
       </div>
-      <div className="h-[4rem] w-[4rem] cursor-pointer rounded-full flex items-center justify-center bg-brand text-tertiary1 mt-2">
-        <HiArrowUp size={20}/>
+      <div className="sticky bottom-0 h-[4rem] w-[4rem] cursor-pointer rounded-full flex items-center justify-center bg-brand text-tertiary1 mt-2">
+        <HiArrowUp size={20} />
       </div>
     </div>
   );
