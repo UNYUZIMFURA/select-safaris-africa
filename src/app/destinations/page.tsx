@@ -1,9 +1,9 @@
 import Image from "next/image";
+import { BiSearch } from "react-icons/bi";
+import "@/app/globals.css";
+import "@/components/travels/styles/travels.css";
 import Header from "@/components/header/Header";
 import Travel from "@/components/travels/Travel";
-import { BiSearch } from "react-icons/bi";
-import "@/components/travels/styles/travels.css";
-import "@/components/footer/Footer";
 import Footer from "@/components/footer/Footer";
 
 const Destinations = () => {
@@ -97,7 +97,7 @@ const Destinations = () => {
         </div>
         <div className="travels">
           {travelCategories.map((el, index) => (
-            <div className="w-full relative cursor-pointer" key={index}>
+            <div className="load-dark w-full relative cursor-pointer" key={index}>
               <div className="overflow-hidden relative h-[22rem] border rounded-xl">
                 <Image
                   src={`/images/${el.image}.webp`}
