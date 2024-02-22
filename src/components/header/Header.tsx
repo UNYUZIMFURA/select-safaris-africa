@@ -5,7 +5,7 @@ import { HiLanguage } from "react-icons/hi2";
 const Header = () => {
   const links = ["Destinations", "About", "Contact us", "Get started"];
   return (
-    <div className="flex items-center justify-between bg-theme1 px-6 py-10 text-tertiary1 min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
+    <div className="bg-transparent w-full flex items-center justify-between px-6 py-10 text-tertiary1 min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
       <Image
         src="/images/logo.png"
         alt="Lion head logo"
