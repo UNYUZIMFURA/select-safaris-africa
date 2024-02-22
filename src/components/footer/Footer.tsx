@@ -29,7 +29,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="flex flex-col py-8 gap-8 px-5 min-[600px]:px-14 lg:py-[4rem] md:flex-row 2xl:px-[8rem] min-[1200px]:px-[3rem  md:gap-2 md:justify-between text-tertiary1">
+    <div className="flex flex-col py-8 gap-8 px-5 min-[600px]:px-14 lg:py-[4rem] md:flex-row 2xl:px-[8rem] md:gap-2 md:justify-between text-tertiary1">
       <div className="flex flex-col gap-6">
         <Image
           src="/images/logo.png"

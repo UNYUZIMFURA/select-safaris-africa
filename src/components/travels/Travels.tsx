@@ -1,5 +1,5 @@
 import Travel from "./Travel";
-import "./styles/index.css";
+import "./styles/travels.css";
 
 const Travels = () => {
   return (
