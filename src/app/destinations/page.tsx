@@ -39,7 +39,7 @@ const Destinations = () => {
           </button>
         </div>
         <form className="w-full px-7 absolute -bottom-8 md:max-w-[55rem] md:left-0 md:right-0 mx-auto">
-          <div className="items-center flex justify-between pr-2 h-[4rem] rounded-full bg-white shadow-lg w-full md:max-w-[80rem]">
+          <div className="items-center flex justify-between pr-2 h-[4.3rem] rounded-full bg-white shadow-lg w-full md:max-w-[80rem]">
             <input
               className="text-tertiary2 pl-7 rounded-l-full h-full w-[75%] outline-none"
               placeholder="Where to?"
