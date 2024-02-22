@@ -55,3 +55,7 @@ body {
   background-color: #0e150f;
   font-family: var(--font-gensans);
 }
+
+button {
+  outline: none;
+}
