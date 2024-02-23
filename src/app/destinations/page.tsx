@@ -30,7 +30,7 @@ const Destinations = () => {
       <Header />
 
       <div
-        className="relative py-8 pb-[8rem] w-full bg-slate-200 flex flex-col gap-8 bg-cover"
+        className="relative py-[4rem] pb-[8rem] w-full bg-slate-200 flex flex-col gap-8 bg-cover"
         style={{
           backgroundImage:
             "linear-gradient(to bottom, rgba(0,0,0,0.6), transparent),url('/images/mountain.webp')",
