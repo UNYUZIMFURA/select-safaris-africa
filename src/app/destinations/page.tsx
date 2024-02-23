@@ -99,10 +99,10 @@ const Destinations = () => {
         <div className="travels">
           {travelCategories.map((el, index) => (
             <div
-              className="load-dark w-full relative cursor-pointer"
+              className="load-dark w-full relative cursor-pointer rounded-xl"
               key={index}
             >
-              <div className="overflow-hidden relative h-[22rem] border rounded-xl">
+              <div className="overflow-hidden relative h-[22rem] rounded-xl">
                 <Image
                   src={`/images/${el.image}.webp`}
                   alt=""
