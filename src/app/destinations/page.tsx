@@ -27,14 +27,15 @@ const Destinations = () => {
   ];
   return (
     <div className="flex flex-col w-full text-white">
+      <Header />
+
       <div
-        className="relative pb-[8rem] w-full bg-slate-200 flex flex-col gap-8 bg-cover"
+        className="relative py-8 pb-[8rem] w-full bg-slate-200 flex flex-col gap-8 bg-cover"
         style={{
           backgroundImage:
             "linear-gradient(to bottom, rgba(0,0,0,0.6), transparent),url('/images/mountain.webp')",
         }}
       >
-        <Header />
         <div className="flex flex-col gap-3 items-center">
           <h2 className="text-4xl font-bold">Destinations</h2>
           <Image src="/images/underline.png" alt="" height={1} width={210} />
@@ -97,7 +98,10 @@ const Destinations = () => {
         </div>
         <div className="travels">
           {travelCategories.map((el, index) => (
-            <div className="load-dark w-full relative cursor-pointer" key={index}>
+            <div
+              className="load-dark w-full relative cursor-pointer"
+              key={index}
+            >
               <div className="overflow-hidden relative h-[22rem] border rounded-xl">
                 <Image
                   src={`/images/${el.image}.webp`}

@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { HiLanguage } from "react-icons/hi2";
 
 const Header = () => {
   const links = ["Destinations", "About", "Contact us", "Get started"];
   return (
-    <div className="bg-transparent w-full flex items-center justify-between px-6 py-10 text-tertiary1 min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
+    <div className="sticky top-0 z-20 bg-theme1 w-full flex items-center justify-between px-6 py-6 text-tertiary1 min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
       <Image
         src="/images/logo.png"
         alt="Lion head logo"
@@ -14,12 +15,28 @@ const Header = () => {
         className="cursor-pointer"
       />
       <div className="md:flex items-center gap-6 hidden lg:gap-8 xl:gap-14">
-        <span className="text-brand font-bold cursor-pointer">Home</span>
-        {links.map((el, index) => (
-          <span key={index} className="cursor-pointer hover:text-brand">
-            {el}
-          </span>
-        ))}
+        <Link className="text-brand font-bold cursor-pointer" href="/">
+          Home
+        </Link>
+        {links.map((el, index) =>
+          el === "About" || el === "Contact us" || el === "Get started" ? (
+            <Link
+              key={index}
+              className="cursor-pointer hover:text-brand"
+              href="#"
+            >
+              {el}
+            </Link>
+          ) : (
+            <Link
+              key={index}
+              className="cursor-pointer hover:text-brand"
+              href={`/${el.toLowerCase()}`}
+            >
+              {el}
+            </Link>
+          ),
+        )}
       </div>
       <RxHamburgerMenu
         color="#10A969"

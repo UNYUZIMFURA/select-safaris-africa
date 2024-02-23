@@ -1,7 +1,6 @@
-import { PiPlayBold } from "react-icons/pi";
-import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
 import "@/app/globals.css";
+import HeroButtons from "./HeroButtons";
 
 const Hero = () => {
   return (
@@ -17,22 +16,7 @@ const Hero = () => {
           Lorem ipsum dolor sit amet, consecteuer adipiscing elit. Donec odio.
           Quisque volutpat mattis eros.
         </span>
-        <div className="flex flex-col items-center gap-8 min-[1200px]:flex-row">
-          <div className="flex cursor-pointer items-center gap-4 rounded-lg bg-brand px-4 py-4 text-tertiary2 min-[320px]:px-4 min-[370px]:px-14 min-[1200px]:px-12">
-            <span className="text-[0.9rem] font-medium text-tertiary1 min-[370px]:text-base">
-              Explore destinations
-            </span>
-            <BsArrowRight size={22} color="white" />
-          </div>
-          <div className="flex items-center gap-4">
-            <div className="cursor-pointer rounded-full bg-brand p-3">
-              <PiPlayBold color="white" size={17} />
-            </div>
-            <span className="cursor-pointer text-base font-medium text-brand">
-              Watch video
-            </span>
-          </div>
-        </div>
+       <HeroButtons />
       </div>
       <div className="flex items-end justify-center gap-1 min-[1200px]:h-[700px] min-[1200px]:w-[55%]">
         <div className="load-light overflow-hidden relative h-[150px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[180px] lg:h-[250px] min-[1200px]:h-[215px] cursor-pointer">
