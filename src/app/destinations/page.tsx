@@ -1,7 +1,7 @@
-import Image from "next/image";
-import { BiSearch } from "react-icons/bi";
 import "@/app/globals.css";
 import "@/components/travels/styles/travels.css";
+import Image from "next/image";
+import { BiSearch } from "react-icons/bi";
 import Header from "@/components/header/Header";
 import Travel from "@/components/travels/Travel";
 import Footer from "@/components/footer/Footer";
@@ -28,7 +28,6 @@ const Destinations = () => {
   return (
     <div className="flex flex-col w-full text-white">
       <Header />
-
       <div
         className="relative py-[4rem] pb-[8rem] w-full bg-slate-200 flex flex-col gap-8 bg-cover"
         style={{
@@ -67,54 +66,74 @@ const Destinations = () => {
           </div>
         </form>
       </div>
-      <div className="flex flex-col bg-white py-[5rem] px-4 lg:py-[8rem] 2xl:px-[8rem] gap-6">
-        <div className="flex flex-col gap-4 pl-2">
-          <span className="text-brand font-bold">TRAVELS</span>
-          <h2 className="font-bold text-tertiary2 text-[24px] lg:text-[28px]">
-            Suggested for you
-          </h2>
-          <span className="text-lg text-secondary max-w-[34rem]">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-            odio. Quisque volutpat mattis eros.
-          </span>
+      <div className="flex flex-col 2xl:px-[8rem] px-4 pt-[5rem] gap-[5rem] pb-[4rem] w-full bg-white">
+        <div className="flex flex-col bg-white gap-6">
+          <div className="flex flex-col gap-4 pl-2">
+            <span className="text-brand font-bold">TRAVELS</span>
+            <h2 className="font-bold text-tertiary2 text-[24px] lg:text-[28px]">
+              Suggested for you
+            </h2>
+            <span className="text-lg text-secondary max-w-[34rem]">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+              odio. Quisque volutpat mattis eros.
+            </span>
+          </div>
+          <div className="travels">
+            <Travel img="hand" name="Kigali City" />
+            <Travel img="mountain" name="Gishwati Forest" />
+            <Travel img="road" name="Nyungwe Park" />
+            <Travel img="zebra" name="Akagera Park" />
+          </div>
         </div>
-        <div className="travels">
-          <Travel img="hand" name="Kigali City" />
-          <Travel img="mountain" name="Gishwati Forest" />
-          <Travel img="road" name="Nyungwe Park" />
-          <Travel img="zebra" name="Akagera Park" />
+        <div className="flex flex-col bg-white gap-6">
+          <div className="flex flex-col gap-4 pl-2">
+            <span className="text-brand font-bold">TRAVELS</span>
+            <h2 className="font-bold text-tertiary2 text-[24px] lg:text-[28px]">
+              Most visited places
+            </h2>
+            <span className="text-lg text-secondary max-w-[34rem]">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+              odio. Quisque volutpat mattis eros.
+            </span>
+          </div>
+          <div className="travels">
+            <Travel img="hand" name="Kigali City" />
+            <Travel img="mountain" name="Gishwati Forest" />
+            <Travel img="road" name="Nyungwe Park" />
+            <Travel img="zebra" name="Akagera Park" />
+          </div>
         </div>
-      </div>
-      <div className="flex flex-col bg-white pb-8 px-4 2xl:px-[8rem] gap-6">
-        <div className="flex flex-col gap-4 pl-2">
-          <span className="text-brand font-bold">CATEGORIES</span>
-          <h2 className="font-bold text-tertiary2 text-[24px] lg:text-[28px]">
-            Choose by Type
-          </h2>
-          <span className="text-lg text-secondary max-w-[34rem]">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-            odio. Quisque volutpat mattis eros.
-          </span>
-        </div>
-        <div className="travels">
-          {travelCategories.map((el, index) => (
-            <div
-              className="load-dark w-full relative cursor-pointer rounded-xl"
-              key={index}
-            >
-              <div className="overflow-hidden relative h-[22rem] rounded-xl">
-                <Image
-                  src={`/images/${el.image}.webp`}
-                  alt=""
-                  fill={true}
-                  className="object-cover brightness-75 transition hover:brightness-100"
-                />
+        <div className="flex flex-col bg-white gap-6">
+          <div className="flex flex-col gap-4 pl-2">
+            <span className="text-brand font-bold">CATEGORIES</span>
+            <h2 className="font-bold text-tertiary2 text-[24px] lg:text-[28px]">
+              Book by Category
+            </h2>
+            <span className="text-lg text-secondary max-w-[34rem]">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+              odio. Quisque volutpat mattis eros.
+            </span>
+          </div>
+          <div className="travels">
+            {travelCategories.map((el, index) => (
+              <div
+                className="load-dark w-full relative cursor-pointer rounded-xl"
+                key={index}
+              >
+                <div className="overflow-hidden relative h-[22rem] rounded-xl">
+                  <Image
+                    src={`/images/${el.image}.webp`}
+                    alt=""
+                    fill={true}
+                    className="object-cover brightness-75 transition hover:brightness-100"
+                  />
+                </div>
+                <span className="text-tertiary1 font-bold text-tertiary absolute bottom-6 left-6">
+                  {el.title}
+                </span>
               </div>
-              <span className="text-tertiary1 font-bold text-tertiary absolute bottom-6 left-6">
-                {el.title}
-              </span>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
       <Footer />
