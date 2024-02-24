@@ -69,7 +69,7 @@ const Destinations = () => {
       <div className="flex flex-col 2xl:px-[8rem] px-4 pt-[5rem] gap-[5rem] pb-[4rem] w-full bg-white">
         <div className="flex flex-col bg-white gap-6">
           <div className="flex flex-col gap-4 pl-2">
-            <span className="text-brand font-bold">TRAVELS</span>
+            <span className="text-brand font-bold">RECOMMENDED</span>
             <h2 className="font-bold text-tertiary2 text-[24px] lg:text-[28px]">
               Suggested for you
             </h2>
@@ -87,7 +87,7 @@ const Destinations = () => {
         </div>
         <div className="flex flex-col bg-white gap-6">
           <div className="flex flex-col gap-4 pl-2">
-            <span className="text-brand font-bold">TRAVELS</span>
+            <span className="text-brand font-bold">POPULAR</span>
             <h2 className="font-bold text-tertiary2 text-[24px] lg:text-[28px]">
               Most visited places
             </h2>
