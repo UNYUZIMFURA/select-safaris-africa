@@ -26,7 +26,7 @@ const Destinations = () => {
     },
   ];
   return (
-    <div className="flex flex-col w-full text-white">
+    <div className="max-w-[125rem] flex flex-col w-full text-white">
       <Header />
       <div
         className="relative py-[4rem] pb-[8rem] w-full bg-slate-200 flex flex-col gap-8 bg-cover"
