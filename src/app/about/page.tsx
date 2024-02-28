@@ -18,14 +18,14 @@ const page = () => {
           <Image src="/images/underline.png" alt="" height={1} width={190} />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row gap-6 items-center md:justify-center md:py-[4rem] md:items-start md:gap-[5vw text-center px-4 py-8 bg-white">
-        <div className="flex flex-col gap-7 md:w-1/2  md:items-start md:text-start">
+      <div className="flex flex-col lg:flex-row gap-6 items-center lg:justify-center md:py-[4rem] lg:items-start text-center px-4 py-8 bg-white">
+        <div className="flex flex-col gap-7 lg:w-1/2 lg:items-start lg:text-start">
         <span className="text-brand font-bold text-[20px]">JOYFUL & FAST</span>
-        <h2 className="text-tertiary2 text-2xl font-bold md:max-w-[35rem] lg:text-3xl lg:leading-[2.5rem]">
+        <h2 className="text-tertiary2 text-2xl md:text-3xl font-bold lg:max-w-[35rem] md:leading-[3rem] lg:leading-[2.5rem]">
           We're just a dedicated team that believes adventures in{" "}
           <span className="text-brand">East Africa</span> can be better
         </h2>
-        <span className="text-secondary leading-[1.8rem] md:max-w-[45rem]">
+        <span className="text-secondary leading-[1.8rem] lg:max-w-[45rem] md:px-10 lg:px-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -33,7 +33,7 @@ const page = () => {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur
         </span>
-        <span className="text-secondary leading-[1.8rem] md:max-w-[45rem]">
+        <span className="text-secondary leading-[1.8rem] lg:max-w-[45rem] md:px-10 lg:px-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -42,7 +42,7 @@ const page = () => {
           pariatur
         </span>
         </div>   
-          <Image src="/images/team.png" alt="" height={500} width={500} className="md:py-12" />
+          <Image src="/images/team.png" alt="" height={500} width={500} className="py-12 px-8" />
       </div>
       <Footer />
     </div>
