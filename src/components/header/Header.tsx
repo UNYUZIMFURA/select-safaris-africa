@@ -19,7 +19,7 @@ const Header = () => {
           Home
         </Link>
         {links.map((el, index) =>
-          el === "About" || el === "Contact us" || el === "Get started" ? (
+          el === "Contact us" || el === "Get started" ? (
             <Link
               key={index}
               className="cursor-pointer hover:text-brand"
