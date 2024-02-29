@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/no-unescaped-entities */
 import Objective from "./Objective";
 import { GoGoal } from "react-icons/go";
 import { BiSolidBinoculars } from "react-icons/bi";
