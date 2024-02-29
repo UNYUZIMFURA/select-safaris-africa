@@ -7,7 +7,7 @@ import { FaMountainSun } from "react-icons/fa6";
 
 const Objectives = () => {
   return (
-    <div className="flex flex-col items-center gap-14 px-4 py-8 bg-[#F5FBFA] lg:pl-10 min-[1200px]:pl-[4rem] 2xl:pl-[8.5rem] xl:py-[6rem]">
+    <div className="flex flex-col items-center gap-14 2xl:gap-20 px-4 py-8 bg-[#F5FBFA] lg:pl-10 min-[1200px]:pl-[4rem] 2xl:pl-[8.5rem] xl:py-[6rem]">
       <div className="flex flex-col items-center gap-5 text-center max-w-[30rem] lg:max-w-[45rem]">
         <span className="text-brand font-bold text-xl">JOYFUL & FAST</span>
         <h2 className="font-bold text-2xl text-tertiary2 md:text-[1.6rem] lg:text-[1.9rem] leading-10 xl:text-[2.2rem] 2xl:text-[2.3rem] xl:leading-[3.3rem]">

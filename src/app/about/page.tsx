@@ -1,5 +1,6 @@
 import AboutUs from "@/components/about/AboutUs";
 import Objectives from "@/components/about/Objectives";
+import Partners from "@/components/about/Partners";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import Image from "next/image";
@@ -22,6 +23,7 @@ const page = () => {
       </div>
       <AboutUs />
       <Objectives />
+      <Partners />
       <Footer />
     </div>
   );
