@@ -1,4 +1,5 @@
 import AboutUs from "@/components/about/AboutUs";
+import Objectives from "@/components/about/Objectives";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import Image from "next/image";
@@ -19,7 +20,8 @@ const page = () => {
           <Image src="/images/underline.png" alt="" height={1} width={190} />
         </div>
       </div>
-     <AboutUs />
+      <AboutUs />
+      <Objectives />
       <Footer />
     </div>
   );
