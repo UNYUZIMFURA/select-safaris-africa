@@ -10,7 +10,7 @@ interface Props {
 
 const Objective: React.FC<Props> = ({ Icon, title }) => {
   return (
-    <div className="cursor-pointer shadow-lg w-full flex flex-col gap-5 py-12 px-3 md:px-5 xl:px-3 text-tertiary2 bg-white items-center rounded-[10px]">
+    <div className="border-2 border-brand cursor-pointer shadow-lg w-full flex flex-col gap-5 py-12 px-3 md:px-5 xl:px-3 text-tertiary2 bg-white items-center rounded-[10px]">
       <div className="flex flex-col items-center gap-4">
         <div className="flex items-center justify-center h-[3.5rem] w-[3.5rem] rounded-[18px] bg-[#E7F6F3]">
           <Icon fill="#10A969" size={20} />
