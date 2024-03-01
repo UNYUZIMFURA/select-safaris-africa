@@ -96,7 +96,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <div className="h-[4rem] w-[4rem] cursor-pointer rounded-full flex items-center justify-center bg-brand text-tertiary1 mt-2">
+      <div className="sticky bottom-[2rem] h-[4rem] w-[4rem] cursor-pointer rounded-full flex items-center justify-center bg-brand text-tertiary1 mt-2">
         <HiArrowUp size={20} />
       </div>
     </div>
