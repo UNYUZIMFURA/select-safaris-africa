@@ -17,10 +17,10 @@ const Objective: React.FC<Props> = ({ Icon, title }) => {
         </div>
         <h3 className="text-xl font-bold md:text-[1.4rem]">{title}</h3>
       </div>
-      <p className="text-center text-secondary max-w-[28rem] xl:w-full md:text-[1.2rem] 2xl:px-10 leading-[2rem] min-[880px]:text-[16px]">
+      <p className="text-center text-secondary max-w-[28rem] xl:w-full md:text-[1.2rem] 2xl:px-6 leading-[2rem] min-[880px]:text-[16px]">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
         odio.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-        odio.
+        odio consectetuer adipiscing.
       </p>
     </div>
   );

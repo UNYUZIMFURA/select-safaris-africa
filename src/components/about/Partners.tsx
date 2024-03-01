@@ -23,15 +23,15 @@ const Partners = () => {
     <div className="flex flex-col bg-white items-center py-10 lg:py-[3rem]">
       <div className="flex flex-col items-center gap-6 text-center max-w-[30rem] lg:max-w-[35rem]">
         <span className="text-brand font-bold text-xl">TRUSTED PARTNERS</span>
-        <h2 className="font-bold text-2xl text-tertiary2 md:text-[1.6rem] lg:text-[1.9rem] leading-10 xl:text-[2.2rem] 2xl:text-[2.5rem] xl:leading-[3.3rem]">
+        <h2 className="font-bold text-2xl text-tertiary2 md:text-[1.6rem] lg:text-[1.9rem] leading-10 xl:text-[2.2rem] 2xl:text-[2.2rem] xl:leading-[3rem]">
           Checkout the companies that{" "}
           <span className="text-brand">we partner with</span>
         </h2>
-        <p className="text-[#000B0B] lg:text-[1.2rem] xl:max-w-[30rem]">
+        <p className="text-[#000B0B] lg:text-[1.1rem] xl:max-w-[30rem]">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
         </p>
       </div>
-      <div className="w-full grid grid-cols-2 justify-items-center gap-8 md:grid-cols-3 md:justify-between py-10 xl:py-[3rem] 2xl:px-[8rem]">
+      <div className="w-full grid grid-cols-2 justify-items-center gap-6 md:grid-cols-3 md:justify-between py-10 xl:py-[3rem] 2xl:px-[10rem]">
         {arrayImgs.map((img, index) => (
           <Image
             key={index}
