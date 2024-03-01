@@ -16,7 +16,7 @@ const Hero = () => {
           Lorem ipsum dolor sit amet, consecteuer adipiscing elit. Donec odio.
           Quisque volutpat mattis eros.
         </span>
-       <HeroButtons />
+        <HeroButtons />
       </div>
       <div className="flex items-end justify-center gap-1 min-[1200px]:h-[650px] min-[1200px]:w-[60%]">
         <div className="load-light overflow-hidden relative h-[150px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[180px] lg:h-[250px] min-[1200px]:h-[215px] min-[1200px]:w-[300px cursor-pointer">

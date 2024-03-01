@@ -6,9 +6,9 @@ import { BsArrowRight } from "react-icons/bs";
 const HeroButtons = () => {
   const router = useRouter();
   return (
-    <div className="flex flex-col items-center gap-8 min-[1200px]:flex-row">
+    <div className="flex flex-col items-center gap-8 2xl:gap-[5rem] min-[1200px]:flex-row">
       <div
-        className="flex cursor-pointer items-center gap-4 rounded-lg bg-brand px-4 py-4 text-tertiary2 min-[320px]:px-4 min-[370px]:px-14 min-[1200px]:px-4"
+        className="flex cursor-pointer items-center gap-4 rounded-lg bg-brand px-4 py-4 text-tertiary2 min-[320px]:px-4 min-[370px]:px-14 min-[1200px]:px-4 2xl:px-7"
         onClick={() => router.push("/destinations")}
       >
         <span className="text-[0.9rem] font-medium text-tertiary1 min-[370px]:text-base">

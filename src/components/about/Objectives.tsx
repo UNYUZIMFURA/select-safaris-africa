@@ -13,7 +13,7 @@ const Objectives = () => {
         <h2 className="font-bold text-2xl text-tertiary2 md:text-[1.6rem] lg:text-[1.9rem] leading-10 xl:text-[2.2rem] 2xl:text-[2.3rem] xl:leading-[3.3rem]">
           We aim for our customer's satisfaction and that's all
         </h2>
-        <p className="text-[#000B0B] lg:text-[1.2rem] xl:max-w-[30rem]">
+        <p className="text-[#000b0ba1] fff lg:text-lg xl:max-w-[30rem]">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
         </p>
       </div>

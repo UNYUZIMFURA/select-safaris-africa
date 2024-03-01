@@ -33,7 +33,7 @@ const AboutUs = () => {
           alt=""
           height={400}
           width={400}
-          className="lg:h-[400px] lg:w-[450px] xl:h-[440px] xl:w-[490px] 2xl:-translate-x-44"
+          className="lg:h-[400px] lg:w-[450px] xl:h-[430px] xl:w-[480px] 2xl:-translate-x-44"
         />
         <div className="hidden lg:flex -z-10 w-11/12 h-full bg-[#96c47f2f] absolute bottom-0 right-0  rounded-tl-[300px] rounded-bl-[300px]"></div>
       </div>

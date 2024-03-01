@@ -1,4 +1,7 @@
+"use client"
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -9,6 +12,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { HiArrowUp } from "react-icons/hi2";
 
 const Footer = () => {
+  const pathname = usePathname();
   const links = ["Home", "Destinations", "About", "Contact us", "Get started"];
   const contacts = [
     {
@@ -21,11 +25,11 @@ const Footer = () => {
     },
     {
       icon: LuMail,
-      contact: "info@selectsafaris.com",
+      contact: "info@selectsafarisafrica.com",
     },
     {
       icon: FaLocationDot,
-      contact: "Somewhere, Kigali - Rwanda",
+      contact: "Nyarutarama, Kigali - Rwanda",
     },
   ];
   return (
@@ -53,11 +57,35 @@ const Footer = () => {
         <span className="font-bold text-lg py-2 text-tertiary1">
           Quick Links
         </span>
-        {links.map((el, index) => (
-          <span key={index} className="cursor-pointer hover:text-brand">
-            {el}
-          </span>
-        ))}
+        {links.map((el, index) => {
+          const currentPathname = pathname === "/" ? "/home" : pathname;
+          const isActive = currentPathname === `/${el.toLowerCase()}`;
+          return el === "Contact us" || el === "Get started" ? (
+            <Link
+              key={index}
+              className={`${isActive ? "text-brand font-bold" : ""} tracking-wide cursor-pointer hover:text-brand`}
+              href="#"
+            >
+              {el}
+            </Link>
+          ) : el === "Home" ? (
+            <Link
+              key={index}
+              className={`${isActive ? "text-brand font-bold" : ""} tracking-wide cursor-pointer hover:text-brand`}
+              href="/"
+            >
+              {el}
+            </Link>
+          ) : (
+            <Link
+              key={index}
+              className={`${isActive ? "text-brand font-bold" : ""} tracking-wide cursor-pointer hover:text-brand`}
+              href={`/${el.toLowerCase()}`}
+            >
+              {el}
+            </Link>
+          );
+        })}
       </div>
       <div className="flex flex-col gap-2 text-secondary">
         <span className="font-bold text-lg py-2 text-tertiary1">Find Us</span>

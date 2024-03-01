@@ -1,6 +1,8 @@
-import React from "react";
+"use client"
+import { useRouter } from "next/navigation";
 
 const Explore = () => {
+  const router = useRouter(); 
   return (
     <div className="w-full flex justify-center 2xl:px-[9.5rem] py-8 lg:py-[5rem] bg-white px-4 text-tertiary1 min-[1200px]:px-[3rem]">
       <div
@@ -17,7 +19,7 @@ const Explore = () => {
         <span className="text-secondary">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit
         </span>
-        <button className="p-4 bg-theme3 rounded-md max-w-[22rem]">
+        <button className="p-4 bg-theme3 rounded-md max-w-[22rem]" onClick={() => router.push("/destinations")}>
           Explore Destinations
         </button>
       </div>
