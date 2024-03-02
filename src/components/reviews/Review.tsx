@@ -12,7 +12,7 @@ const Review = () => {
             src="/images/client.webp"
             alt=""
             fill={true}
-            className="object-cover"
+            className="object-cover object-top"
           />
         </div>
       </div>
