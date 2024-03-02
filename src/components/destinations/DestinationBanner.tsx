@@ -25,7 +25,7 @@ const DestinationBanner = () => {
         <FaLocationDot color="#10A969" size={22} />
         <span className="font-medium text-brand">Kigali</span>
       </div>
-      <div className="flex lg:gap-8 h-[25rem] md:h-[28rem] xl:h-[32rem] md:-bottom-[18rem] absolute w-full px-4 min-[1200px]:px-14 -bottom-[20rem] left-0 right-0 mx-auto 2xl:px-[8rem]">
+      <div className="flex lg:gap-8 h-[25rem] md:h-[28rem] xl:h-[32rem] md:-bottom-[18rem] absolute w-full px-3 min-[1200px]:px-14 -bottom-[20rem] left-0 right-0 mx-auto 2xl:px-[8rem]">
         <div
           onMouseOver={() => setHoveredImg("banner-1")}
           className={`cursor-pointer w-full flex flex-col px-4 pb-4 gap-4 justify-end rounded-lg h-full bg-cover md:px-8 md:pb-8 ${hoveredImg == "banner-1" ? "lg:w-[60%]" : "lg:w-[20%]"} `}
