@@ -1,6 +1,8 @@
+"use client"
 import Image from "next/image";
 import "@/app/globals.css";
 import { FaLocationDot } from "react-icons/fa6";
+import { useRouter } from "next/navigation";
 
 interface Props {
   img: string;
@@ -8,6 +10,7 @@ interface Props {
 }
 
 const Travel: React.FC<Props> = (props) => {
+  const router = useRouter()
   return (
     <div className="flex w-full flex-col items-center gap-4 rounded-[20px] p-5 shadow-lg xl:max-w-[380px]">
       <div className="load-dark relative overflow-hidden h-[20rem] w-full cursor-pointer rounded-[20px] min-[600px]:h-[22rem] min-[700px]:h-[20rem]">
@@ -32,7 +35,7 @@ const Travel: React.FC<Props> = (props) => {
         <span className="text-base font-medium text-secondary">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit
         </span>
-        <button className="cursor-pointer rounded-lg bg-brand p-4 font-medium text-tertiary1">
+        <button className="cursor-pointer rounded-lg bg-brand p-4 font-medium text-tertiary1" onClick={() => router.push("/destination")}>
           Details
         </button>
       </div>
