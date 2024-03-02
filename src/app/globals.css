@@ -66,10 +66,5 @@ button {
 }
 
 .back-to-top {
-  position: fixed;
-  bottom: 4rem;
-  right: 4rem;
-  z-index: 10;
-  visibility: hidden;
   transition: all 0.4s;
 }
