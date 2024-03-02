@@ -2,7 +2,6 @@ import Image from "next/image";
 import Header from "@/components/header/Header";
 import { FaLocationDot } from "react-icons/fa6";
 import { RiArrowRightSLine } from "react-icons/ri";
-import Footer from "@/components/footer/Footer";
 
 const Destination = () => {
   return (
@@ -29,10 +28,10 @@ const Destination = () => {
         </div>
         <div className="flex lg:gap-8 h-[25rem] md:h-[28rem] xl:h-[32rem] md:-bottom-[18rem] absolute w-full px-4 min-[1200px]:px-14 -bottom-[20rem] left-0 right-0 mx-auto 2xl:px-[8rem]">
           <div
-            className="w-full flex flex-col px-4 pb-4 gap-4 justify-end rounded-lg h-full border bg-cover md:px-8 md:pb-8 lg:w-[60%]"
+            className="cursor-pointer w-full flex flex-col px-4 pb-4 gap-4 justify-end rounded-lg h-full bg-cover md:px-8 md:pb-8 lg:w-[60%]"
             style={{
               backgroundImage:
-                "linear-gradient(to top, rgba(0,0,0,0.7), transparent),url('/images/gorilla.webp')",
+                "linear-gradient(to top, rgba(0,0,0,0.7), transparent),url('/images/car.webp')",
             }}
           >
             <span className="font-bold text-lg tracking-wide md:text-xl">
@@ -42,10 +41,24 @@ const Destination = () => {
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit
             </span>
           </div>
-          <div className="border hidden lg:flex h-full w-[20%] rounded-[20px]"></div>
-          <div className="border hidden lg:flex h-full w-[20%] rounded-[20px]"></div>
-        </div>
+          <div className="cursor-pointer transition relative brightness-75 hover:brightness-100 hidden lg:flex h-full w-[20%] rounded-[20px] overflow-hidden">
+            <Image
+              src="/images/mountains.webp"
+              fill
+              alt=""
+              className="object-cover"
+            />
           </div>
+          <div className="cursor-pointer transition relative brightness-75 hover:brightness-100 overflow-hidden hidden lg:flex h-full w-[20%] rounded-[20px]">
+            <Image
+              src="/images/about.webp"
+              fill
+              alt=""
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
