@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -11,6 +11,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { LuMail } from "react-icons/lu";
 import { FaLocationDot } from "react-icons/fa6";
 import { HiArrowUp } from "react-icons/hi2";
+import BackToTop from "../back-to-top/BackToTop";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -99,9 +100,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <div onClick={() => router.push("#")} className="sticky z-30 bottom-[2rem] h-[4rem] w-[4rem] cursor-pointer rounded-full flex items-center justify-center bg-brand text-tertiary1 mt-2">
-        <HiArrowUp size={20} />
-      </div>
+      <BackToTop />
     </div>
   );
 };

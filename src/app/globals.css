@@ -22,7 +22,7 @@
 }
 
 html {
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -63,4 +63,13 @@ body {
 
 button {
   outline: none;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  z-index: 10;
+  visibility: hidden;
+  transition: all 0.4s;
 }
