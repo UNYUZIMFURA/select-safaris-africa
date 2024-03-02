@@ -21,6 +21,18 @@
   box-sizing: border-box;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #0e150f;
+  font-family: var(--font-gensans);
+}
+
+
 @keyframes skeleton-light {
   0% {
     background-color: #5b8d783a;
@@ -47,13 +59,6 @@
 
 .load-dark {
   animation: skeleton-dark 1s linear infinite alternate;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  background-color: #0e150f;
-  font-family: var(--font-gensans);
 }
 
 button {

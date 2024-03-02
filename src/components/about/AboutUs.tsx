@@ -10,7 +10,7 @@ const AboutUs = () => {
           We're just a small dedicated team that believes adventures in{" "}
           <span className="text-brand">East Africa</span> can be better.
         </h2>
-        <span className="text-secondary leading-[1.8rem] lg:max-w-[45rem] xl:max-w-[52rem] xl:leading-[2rem] md:px-10 lg:px-0 xl:text-[1.1rem]">
+        <span className="text-secondary leading-[1.8rem] lg:max-w-[45rem] xl:max-w-[52rem] xl:leading-[2rem] md:px-10 lg:px-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -18,7 +18,7 @@ const AboutUs = () => {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur
         </span>
-        <span className="text-secondary leading-[1.8rem] lg:max-w-[45rem] xl:max-w-[52rem] xl:leading-[2rem] md:px-10 lg:px-0 xl:text-[1.1rem]">
+        <span className="text-secondary leading-[1.8rem] lg:max-w-[45rem] xl:max-w-[52rem] xl:leading-[2rem] md:px-10 lg:px-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

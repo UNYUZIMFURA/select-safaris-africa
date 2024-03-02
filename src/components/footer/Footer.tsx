@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -13,6 +14,8 @@ import { HiArrowUp } from "react-icons/hi2";
 
 const Footer = () => {
   const pathname = usePathname();
+  const router = useRouter();
+
   const links = ["Home", "Destinations", "About", "Contact us", "Get started"];
   const contacts = [
     {
@@ -96,7 +99,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <div className="sticky bottom-[2rem] h-[4rem] w-[4rem] cursor-pointer rounded-full flex items-center justify-center bg-brand text-tertiary1 mt-2">
+      <div onClick={() => router.push("#")} className="sticky z-30 bottom-[2rem] h-[4rem] w-[4rem] cursor-pointer rounded-full flex items-center justify-center bg-brand text-tertiary1 mt-2">
         <HiArrowUp size={20} />
       </div>
     </div>
