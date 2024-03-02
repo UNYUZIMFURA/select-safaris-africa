@@ -8,9 +8,9 @@ type Props = {
 
 const DestinationReview: React.FC<Props> = ({ reviewer }) => {
   return (
-    <div className="cursor-pointer border border-brand w-full flex flex-col gap-6 p-4 shadow-lg py-8 max-w-[40rem] rounded-lg">
+    <div className="cursor-pointer border border-brand w-full flex flex-col gap-7 px-4 2xl:px-8 shadow-lg py-10 max-w-[40rem] rounded-lg">
       <div className="flex flex-col gap-4">
-        <div className="relative overflow-hidden h-[3rem] w-[3rem] rounded-full">
+        <div className="relative overflow-hidden h-[3.3rem] w-[3.3rem] rounded-full">
           <Image src="/images/reviewer.webp" fill alt="Reviewer" className="object-cover" />
         </div>
         <span className="font-bold tracking-wide">{reviewer}</span>
