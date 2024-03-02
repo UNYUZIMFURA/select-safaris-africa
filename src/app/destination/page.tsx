@@ -5,6 +5,7 @@ import DestinationInfo from "@/components/destinations/DestinationInfo";
 import DestinationServices from "@/components/destinations/DestinationServices";
 import DestinationReviews from "@/components/destinations/DestinationReviews";
 import Footer from "@/components/footer/Footer";
+import DestinationsRecommended from "@/components/destinations/DestinationsRecommended";
 
 const Destination = () => {
   return (
@@ -14,6 +15,7 @@ const Destination = () => {
       <DestinationInfo />
       <DestinationServices />
       <DestinationReviews />
+      <DestinationsRecommended />
       <Footer />
     </div>
   );
