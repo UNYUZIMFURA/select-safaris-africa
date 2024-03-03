@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 import "@/app/globals.css";
+import Link from "next/link";
 
 const Description2 = () => {
   return (
@@ -23,9 +24,9 @@ const Description2 = () => {
           minim veniam, quis nostrud exercitation
         </span>
         <div className="flex items-center gap-4">
-          <span className="text-brand font-semibold cursor-pointer">
+          <Link href="/about" className="text-brand font-semibold cursor-pointer">
             Learn more
-          </span>
+          </Link>
           <BsArrowRight
             color="#10A969"
             size={24}

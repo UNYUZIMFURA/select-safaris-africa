@@ -10,6 +10,7 @@ const Page = () => {
     <MainLayout
       inputs={inputs}
       name="login"
+      buttonName = "Login"
       title="Booking has never been this easier"
       subtitle="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros."
     />

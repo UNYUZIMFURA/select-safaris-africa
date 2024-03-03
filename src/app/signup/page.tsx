@@ -9,8 +9,9 @@ const Page = () => {
   ];
   return (
     <MainLayout
-      inputs={inputs}
       name="signup"
+      inputs={inputs}
+      buttonName="Sign up"
       title="Join the best booking platform in Africa"
       subtitle="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros."
     />

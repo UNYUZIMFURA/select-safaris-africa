@@ -44,7 +44,7 @@ const DestinationBanner = () => {
         </div>
         <div
           className={`load-light cursor-pointer relative brightness-75 hidden lg:flex h-full rounded-[20px] overflow-hidden ${hoveredImg == "banner-2" ? "lg:w-[60%]" : "lg:w-[20%]"}`}
-          onMouseOver={(e) => setHoveredImg("banner-2")}
+          onMouseOver={() => setHoveredImg("banner-2")}
         >
           <Image
             src="/images/mountains.webp"
@@ -55,7 +55,7 @@ const DestinationBanner = () => {
         </div>
         <div
           className={`load-light cursor-pointer relative brightness-75 overflow-hidden hidden lg:flex h-full w-[20%] rounded-[20px] ${hoveredImg == "banner-3" ? "lg:w-[60%]" : "lg:w-[20%]"}`}
-          onMouseOver={(e) => setHoveredImg("banner-3")}
+          onMouseOver={() => setHoveredImg("banner-3")}
         >
           <Image
             src="/images/about.webp"

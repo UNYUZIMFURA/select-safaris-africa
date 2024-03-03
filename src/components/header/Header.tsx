@@ -1,11 +1,12 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { HiLanguage } from "react-icons/hi2";
 
 const Header = () => {
+  const router = useRouter()
   const pathname = usePathname();
   const links = ["Home", "Destinations", "About", "Contact us", "Get started"];
 
@@ -22,11 +23,19 @@ const Header = () => {
         {links.map((el, index) => {
           const currentPathname = pathname === "/" ? "/home" : pathname
           const isActive = currentPathname === `/${el.toLowerCase()}`
-          return el === "Contact us" || el === "Get started" ? (
+          return el === "Contact us" ? (
             <Link
               key={index}
               className={`${isActive ? "text-brand font-bold" : ""} tracking-wide cursor-pointer hover:text-brand`}
               href="#"
+            >
+              {el}
+            </Link>
+          ) : el === "Get started" ? (
+            <Link
+              key={index}
+              className={`${isActive ? "text-brand font-bold" : ""} tracking-wide cursor-pointer hover:text-brand`}
+              href="/signup"
             >
               {el}
             </Link>
@@ -57,7 +66,7 @@ const Header = () => {
       />
       <div className="min-[800px]:flex items-center gap-4 hidden lg:gap-8 xl:gap-10 2xl:gap-12">
         <HiLanguage color="white" size={27} className="cursor-pointer" />
-        <button className="py-3 px-10 rounded-lg border-2 outline-none border-brand text-brand">
+        <button className="py-3 px-10 rounded-lg border-2 outline-none border-brand text-brand" onClick={() => router.push("/login")}>
           Sign in
         </button>
       </div>

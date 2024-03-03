@@ -5,12 +5,13 @@ import { InputProps } from "@/app/types";
 
 type Props = {
   name: string;
+  buttonName: string
   title: string;
   subtitle: string;
   inputs: InputProps[];
 };
 
-const MainLayout: React.FC<Props> = ({ name, title, subtitle, inputs }) => {
+const MainLayout: React.FC<Props> = ({ name,buttonName, title, subtitle, inputs }) => {
   return (
     <div className="min-h-screen flex flex-co w-full">
       <div className="bg-white border w-full lg:w-[40%] h-full flex flex-col items-center justify-center p-4">
@@ -44,7 +45,7 @@ const MainLayout: React.FC<Props> = ({ name, title, subtitle, inputs }) => {
               ))}
             </div>
             <button className="bg-brand w-full p-4 text-white rounded-md mt-4">
-              Login
+              {buttonName}
             </button>
             <div className="cursor-pointer flex p-4 items-center w-full mt-4 gap-8 border rounded-md">
               <FcGoogle size={25} />
@@ -63,15 +64,15 @@ const MainLayout: React.FC<Props> = ({ name, title, subtitle, inputs }) => {
       </div>
       <div className="text-white hidden lg:w-[60%] items-center lg:flex justify-center flex-col h-full">
         <div
-          className={`flex flex-col gap-8  mb-[5rem] ${name === "login" ? "max-w-[29rem]" : "max-w-[34rem]"}`}
+          className={`flex flex-col gap-8 mb-[5rem] ${name === "login" ? "max-w-[29rem] 2xl:max-w-[35rem]" : "max-w-[34rem] 2xl:max-w-[43rem]"}`}
         >
-          <span className="text-brand mr-[12rem]">
+          <span className="text-brand mr-[12rem] 2xl:text-lg">
             SELECT SAFARIS EAST AFRICA CO.
           </span>
-          <h2 className="text-5xl font-bold tracking-wider leading-[4rem]">
+          <h2 className="text-5xl font-bold tracking-wider leading-[4rem] 2xl:text-6xl 2xl:leading-[5rem]">
             {title}
           </h2>
-          <p className="text-secondary text-lg">{subtitle}</p>
+          <p className="text-secondary text-lg 2xl:text-xl 2xl:leading-[2rem]">{subtitle}</p>
         </div>
       </div>
     </div>

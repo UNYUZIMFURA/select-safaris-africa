@@ -64,11 +64,19 @@ const Footer = () => {
         {links.map((el, index) => {
           const currentPathname = pathname === "/" ? "/home" : pathname;
           const isActive = currentPathname === `/${el.toLowerCase()}`;
-          return el === "Contact us" || el === "Get started" ? (
+          return el === "Contact us" ? (
             <Link
               key={index}
               className={`${isActive ? "text-brand font-bold" : ""} tracking-wide cursor-pointer hover:text-brand`}
               href="#"
+            >
+              {el}
+            </Link>
+          ) : el === "Get started" ? (
+            <Link
+              key={index}
+              className={`${isActive ? "text-brand font-bold" : ""} tracking-wide cursor-pointer hover:text-brand`}
+              href="/signup"
             >
               {el}
             </Link>
