@@ -1,0 +1,81 @@
+import Image from "next/image";
+import { FcGoogle } from "react-icons/fc";
+import { FaFacebook } from "react-icons/fa";
+import { InputProps } from "@/app/types";
+
+type Props = {
+  name: string;
+  title: string;
+  subtitle: string;
+  inputs: InputProps[];
+};
+
+const MainLayout: React.FC<Props> = ({ name, title, subtitle, inputs }) => {
+  return (
+    <div className="min-h-screen flex flex-co w-full">
+      <div className="bg-white border w-full lg:w-[40%] h-full flex flex-col items-center justify-center p-4">
+        <div className="text-black lg:py-[4rem] rounded-md flex flex-col w-full p-4 max-w-[28rem]">
+          <div className="flex flex-col gap-4 py-5">
+            <Image
+              src="/images/logo-black.png"
+              alt="Lion head logo"
+              height={42}
+              width={42}
+              className="cursor-pointer"
+            />
+            <span className="font-bold text-lg tracking-wide">
+              Welcome back!
+            </span>
+            <span className="text-secondary">
+              Enter your credentials to login
+            </span>
+          </div>
+          <form className="w-full">
+            <div className="flex flex-col w-full">
+              {inputs.map((input, index) => (
+                <div key={index} className="py-3 flex flex-col gap-4">
+                  <label>{input.label}</label>
+                  <input
+                    placeholder={input.placeholder}
+                    type={input.type}
+                    className="border p-4 outline-none rounded-md"
+                  />
+                </div>
+              ))}
+            </div>
+            <button className="bg-brand w-full p-4 text-white rounded-md mt-4">
+              Login
+            </button>
+            <div className="cursor-pointer flex p-4 items-center w-full mt-4 gap-8 border rounded-md">
+              <FcGoogle size={25} />
+              <span className="text-secondary">Continue with google</span>
+            </div>
+            <div className="cursor-pointer flex p-4 items-center w-full mt-4 gap-8 border rounded-md">
+              <Image height={23} width={23} alt="" src="/icons/instagram.png" />
+              <span className="text-secondary">Continue with instagram</span>
+            </div>
+            <div className="cursor-pointer flex p-4 items-center w-full mt-4 gap-8 border rounded-md">
+              <FaFacebook size={25} fill="#1877F2" />
+              <span className="text-secondary">Continue with facebook</span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div className="text-white hidden lg:w-[60%] items-center lg:flex justify-center flex-col h-full">
+        <div
+          className={`flex flex-col gap-8  mb-[5rem] ${name === "login" ? "max-w-[29rem]" : "max-w-[34rem]"}`}
+        >
+          <span className="text-brand mr-[12rem]">
+            SELECT SAFARIS EAST AFRICA CO.
+          </span>
+          <h2 className="text-5xl font-bold tracking-wider leading-[4rem]">
+            {title}
+          </h2>
+          <p className="text-secondary text-lg">{subtitle}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MainLayout;
