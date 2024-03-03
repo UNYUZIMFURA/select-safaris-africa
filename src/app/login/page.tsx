@@ -4,7 +4,7 @@ import { InputProps } from "../types";
 const Page = () => {
   const inputs: InputProps[] = [
     { label: "Email address", placeholder: "johndoe@gmail.com", type: "text" },
-    { label: "Password", placeholder: "..............", type: "password" },
+    { label: "Password", placeholder: "Enter password", type: "password" },
   ];
   return (
     <MainLayout
