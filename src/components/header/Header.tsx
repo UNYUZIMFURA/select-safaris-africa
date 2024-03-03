@@ -18,6 +18,7 @@ const Header = () => {
         height={42}
         width={42}
         className="cursor-pointer"
+        onClick={() => router.push("/")}
       />
       <div className="min-[800px]:flex items-center gap-6 hidden lg:gap-12 xl:gap-16 2xl:gap-18">
         {links.map((el, index) => {

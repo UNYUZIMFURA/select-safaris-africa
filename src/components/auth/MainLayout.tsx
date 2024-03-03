@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { InputProps } from "@/app/types";
+import { useRouter } from "next/navigation";
 
 type Props = {
   name: string;
@@ -11,7 +12,8 @@ type Props = {
   inputs: InputProps[];
 };
 
-const MainLayout: React.FC<Props> = ({ name,buttonName, title, subtitle, inputs }) => {
+const MainLayout: React.FC<Props> = ({ name, buttonName, title, subtitle, inputs }) => {
+  const router = useRouter()
   return (
     <div className="min-h-screen flex flex-co w-full">
       <div className="bg-white border w-full lg:w-[40%] h-full flex flex-col items-center justify-center p-4">
@@ -23,6 +25,7 @@ const MainLayout: React.FC<Props> = ({ name,buttonName, title, subtitle, inputs 
               height={42}
               width={42}
               className="cursor-pointer"
+              onClick={() => router.push("/")}
             />
             <span className="font-bold text-lg tracking-wide">
               Welcome back!
