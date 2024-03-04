@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { MdLibraryBooks } from "react-icons/md";
-import { IoSettingsOutline } from "react-icons/io5";
+import { IoSettingsSharp } from "react-icons/io5";
 
 const TopSection = () => {
   return (
@@ -15,21 +15,21 @@ const TopSection = () => {
               className="object-cover object-top"
             />
           </div>
-          <span className="text-xs min-[350px]:text-sm sm:text-base lg:text-lg font-semibold">
+          <span className="text-xs min-[350px]:text-sm sm:text-base lg:text-lg xl:text-xl font-semibold">
             John Ivan Doe
           </span>
-          <span className="text-xs min-[350px]:text-sm text-secondary">
+          <span className="text-xs min-[350px]:text-sm text-secondary xl:text-[0.9rem]">
             johnivan130@gmail.com
           </span>
         </div>
-        <div className="text-xs flex items-center w-full rounded-md">
-          <div className="w-full flex-col flex min-[450px]:flex-row p-4 gap-6 bg-white rounded-md sm:gap-8 md:gap-[4rem]">
+        <div className="text-xs sm:text-base flex items-center w-full rounded-md">
+          <div className="w-full flex-col flex min-[450px]:flex-row p-4 sm:px-10 gap-6 bg-white rounded-md sm:gap-10 md:gap-[4rem] lg:gap-[6rem] xl:gap-[7rem]">
             <div className="flex gap-4 items-center cursor-pointer">
               <MdLibraryBooks size={24} fill="#10A969" />
               <span className="text-brand font-bold">Bookings</span>
             </div>
             <div className="flex gap-4 items-center cursor-pointer">
-              <IoSettingsOutline size={24} color="#aab2ba" />
+              <IoSettingsSharp size={24} color="#aab2ba" />
               <span className="text-secondary font-bold">Settings</span>
             </div>
           </div>

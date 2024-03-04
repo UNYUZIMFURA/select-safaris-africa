@@ -16,12 +16,14 @@ const Page = () => {
           }}
         ></div>
         <TopSection />
-        <div className="flex flex-col py-[7rem] md:py-[4rem] md:ml-[17rem] px-4 min-[1200px]:px-[4rem] lg:ml-[20rem] xl:ml-[23rem] 2xl:px-[8.5rem]">
-          <span className="text-white text-xl font-bold">Your bookings</span>
-          <div className="flex flex-col gap-4 py-4">
-            <Booking />
-            <Booking />
-            <Booking />
+        <div className="flex flex-col py-[14rem] xs:py-[7rem] md:py-[4rem] md:ml-[17rem] px-4 min-[1200px]:px-[4rem] lg:ml-[20rem] xl:ml-[23rem] 2xl:px-[8.5rem]">
+          <span className="text-xl font-bold sm:py-4 md:text-2xl xl:text-3xl xl:py-8">
+            Your bookings
+          </span>
+          <div className="flex flex-col gap-4 py-8">
+            <Booking booking="Selena Hotels, Kivu - Rwanda" image="car" amount={200000} />
+            <Booking booking="Muhazi Lake Resort" image="lake" amount={300000} />
+            <Booking booking="Akagera Tour" image="lion" amount={400000} />
           </div>
         </div>
       </div>
