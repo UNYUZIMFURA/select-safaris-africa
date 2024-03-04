@@ -3,7 +3,7 @@ import Image from "next/image";
 const Booking = () => {
   return (
     <div className="flex flex-col xs:flex-row w-full gap-4 items-center xs:rounded-md bg-white text-black">
-      <div className="relative overflow-hidden h-[9rem] w-[100%] xs:w-[30%] max-w-[10rem]">
+      <div className="cursor-pointer relative overflow-hidden h-[9rem] w-[100%] xs:w-[30%] max-w-[10rem]">
         <Image
           src="/images/car.webp"
           fill
@@ -20,7 +20,7 @@ const Booking = () => {
             <div className="flex items-center">5 people</div>
           </div>
         </div>
-        <span className="text-[#FF7E7E]">Cancel</span>
+        <span className="cursor-pointer text-[#FF7E7E]">Cancel</span>
       </div>
     </div>
   );

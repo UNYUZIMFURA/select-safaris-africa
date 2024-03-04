@@ -19,6 +19,8 @@ const Page = () => {
         <span className="text-white text-xl font-bold">Your bookings</span>
         <div className="flex flex-col gap-4 py-4">
           <Booking />
+          <Booking />
+          <Booking />
         </div>
       </div>
       {/* <Footer />   */}
