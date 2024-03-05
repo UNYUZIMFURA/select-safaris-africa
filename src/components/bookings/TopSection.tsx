@@ -1,4 +1,5 @@
 "use client"
+import "@/app/globals.css"
 import Image from "next/image";
 import { useAppSelector } from "@/redux/store";
 import {
@@ -14,8 +15,6 @@ const TopSection = () => {
   const dispatch = useDispatch<AppDispatch>()
   const activeLink = useAppSelector((state) => state.togglerReducer.value);
 
-  console.log(activeLink)
-
   const onClickBookings = () => {
     dispatch(toggleToBookings())
   }
@@ -27,7 +26,7 @@ const TopSection = () => {
     <div className="w-full relative flex flex-col">
       <div className="w-full flex-col min-[500px]:px-4 min-[500px]:gap-6 md:gap-8 absolute -bottom-[13rem] sm:-bottom-[6.5rem] md:-bottom-[8rem] lg:-bottom-[8.5rem] xl:-bottom-[9rem] lg:gap-[3rem] xs:items-center xs:-bottom-[5rem] min-[500px]:-bottom-[5.5rem] px-2 xs:flex-row flex py-2 gap-2 min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
         <div className="bg-white rounded-md py-4 px-2 min-[500px]:px-4 md:p-10 lg:px-14 xl:px-[5rem] border flex flex-col items-center justify-center gap-4">
-          <div className="h-[3rem] w-[3rem] sm:h-[5rem] sm:w-[5rem] xl:h-[7rem] xl:w-[7rem] rounded-full relative overflow-hidden border cursor-pointer">
+          <div className="load-dark h-[3rem] w-[3rem] sm:h-[5rem] sm:w-[5rem] xl:h-[7rem] xl:w-[7rem] rounded-full relative overflow-hidden border cursor-pointer">
             <Image
               fill
               src="/images/client.webp"

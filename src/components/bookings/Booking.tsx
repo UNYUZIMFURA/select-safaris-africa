@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { IoIosPeople } from "react-icons/io";
+import "@/app/globals.css"
 
 type BookingProps = {
   image: string;
@@ -11,7 +12,7 @@ type BookingProps = {
 const Booking: React.FC<BookingProps> = ({ image, booking, amount }) => {
   return (
     <div className="flex flex-col xs:flex-row w-full gap-4 items-center xs:rounded-md bg-white text-black">
-      <div className="cursor-pointer relative overflow-hidden h-[9rem] w-[100%] xs:w-[30%] max-w-[10rem]">
+      <div className="load-dark cursor-pointer relative overflow-hidden h-[9rem] w-[100%] xs:w-[30%] max-w-[10rem]">
         <Image
           src={`/images/${image}.webp`}
           fill
