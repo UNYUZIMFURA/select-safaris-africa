@@ -32,6 +32,10 @@ body {
   font-family: var(--font-gensans);
 }
 
+input, button, textarea {
+  outline: none;
+}
+
 
 @keyframes skeleton-light {
   0% {

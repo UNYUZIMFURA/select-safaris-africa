@@ -67,7 +67,7 @@ const Header = () => {
       />
       <div className="min-[800px]:flex items-center gap-4 hidden lg:gap-8 xl:gap-10 2xl:gap-12">
         <HiLanguage color="white" size={27} className="cursor-pointer" />
-        <button className="py-3 px-10 rounded-lg border-2 outline-none border-brand text-brand" onClick={() => router.push("/login")}>
+        <button className="py-3 px-10 rounded-lg border-2 border-brand text-brand" onClick={() => router.push("/login")}>
           Sign in
         </button>
       </div>

@@ -40,23 +40,23 @@ const Destinations = () => {
           <Image src="/images/underline.png" alt="" height={1} width={210} />
         </div>
         <div className="flex w-full flex-wrap justify-center gap-3">
-          <button className="outline-none py-4 px-8 rounded-full bg-theme3">
+          <button className="py-4 px-8 rounded-full bg-theme3">
             Hotels
           </button>
-          <button className="outline-none py-4 px-8 rounded-full bg-theme3">
+          <button className="py-4 px-8 rounded-full bg-theme3">
             Bars and Restaurants
           </button>
-          <button className="outline-none py-4 px-8 rounded-full bg-theme3">
+          <button className="py-4 px-8 rounded-full bg-theme3">
             Game parks
           </button>
-          <button className="outline-none py-4 px-8 rounded-full bg-theme3">
+          <button className="py-4 px-8 rounded-full bg-theme3">
             Lakes and rivers
           </button>
         </div>
         <form className="w-full px-7 absolute -bottom-8 md:max-w-[55rem] md:left-0 md:right-0 mx-auto">
           <div className="items-center flex justify-between pr-2 h-[4.3rem] rounded-full bg-white shadow-lg w-full md:max-w-[80rem]">
             <input
-              className="text-tertiary2 pl-7 rounded-l-full h-full w-[75%] outline-none"
+              className="text-tertiary2 pl-7 rounded-l-full h-full w-[75%]"
               placeholder="Where to?"
             />
             <div className="cursor-pointer h-4/5 bg-brand px-6 md:px-8 gap-6 rounded-full flex items-center justify-center">

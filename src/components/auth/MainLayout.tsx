@@ -43,7 +43,7 @@ const MainLayout: React.FC<Props> = ({ name, buttonName, title, subtitle, inputs
                   <input
                     placeholder={input.placeholder}
                     type={input.type}
-                    className="text-[#0000008e] border p-4 outline-none rounded-md"
+                    className="text-[#0000008e] border p-4 rounded-md"
                   />
                 </div>
               ))}
@@ -70,7 +70,7 @@ const MainLayout: React.FC<Props> = ({ name, buttonName, title, subtitle, inputs
         className="text-white hidden lg:w-[60%] items-center lg:flex justify-center flex-col h-full bg-cover"
         style={{
           backgroundImage:
-            "linear-gradient(to left, rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('/images/auth-bg.webp')",
+            "linear-gradient(to left, rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('/images/sunset.webp')",
         }}
       >
         <div

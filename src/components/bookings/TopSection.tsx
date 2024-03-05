@@ -2,14 +2,14 @@
 import "@/app/globals.css"
 import Image from "next/image";
 import { useAppSelector } from "@/redux/store";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "@/redux/store";
 import {
   toggleToBookings,
   toggleToSettings,
 } from "@/redux/features/togglerSlice";
 import { MdLibraryBooks } from "react-icons/md";
 import { IoSettingsSharp } from "react-icons/io5";
-import {useDispatch} from "react-redux"
-import { AppDispatch } from "@/redux/store";
 
 const TopSection = () => {
   const dispatch = useDispatch<AppDispatch>()

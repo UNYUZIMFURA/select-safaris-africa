@@ -48,11 +48,11 @@ const Page = () => {
               <span className="text-brand font-bold">User settings</span>
               <div className="flex flex-col gap-5">
                 <label>Full names:</label>
-                <input placeholder="" className="outline-none px-4 py-4 rounded-md" />
+                <input placeholder="" className="px-4 py-4 rounded-md" />
               </div>
               <div className="flex flex-col gap-5">
                 <label>Email address:</label>
-                <input placeholder="" className="outline-none px-4 py-4 rounded-md" />
+                <input placeholder="" className="px-4 py-4 rounded-md" />
               </div>
               <button className="bg-[#96c47f2c] text-brand p-4 rounded-md mt-4 max-w-[10rem] font-bold">
                 Save changes
