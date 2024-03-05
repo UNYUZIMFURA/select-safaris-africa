@@ -1,3 +1,4 @@
+import { ReduxProvider } from "@/redux/provider";
 import "./globals.css";
 import localFont from "next/font/local";
 
@@ -22,7 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${gensans.variable}`}>
-      <body>{children}</body>
+      <body>
+        <ReduxProvider>{children}</ReduxProvider>
+      </body>
     </html>
   );
 }

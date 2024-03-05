@@ -1,8 +1,28 @@
+"use client"
 import Image from "next/image";
+import { useAppSelector } from "@/redux/store";
+import {
+  toggleToBookings,
+  toggleToSettings,
+} from "@/redux/features/togglerSlice";
 import { MdLibraryBooks } from "react-icons/md";
 import { IoSettingsSharp } from "react-icons/io5";
+import {useDispatch} from "react-redux"
+import { AppDispatch } from "@/redux/store";
 
 const TopSection = () => {
+  const dispatch = useDispatch<AppDispatch>()
+  const activeLink = useAppSelector((state) => state.togglerReducer.value);
+
+  console.log(activeLink)
+
+  const onClickBookings = () => {
+    dispatch(toggleToBookings())
+  }
+  
+  const onClickSettings = () => {
+    dispatch(toggleToSettings())
+  }
   return (
     <div className="w-full relative flex flex-col">
       <div className="w-full flex-col min-[500px]:px-4 min-[500px]:gap-6 md:gap-8 absolute -bottom-[13rem] sm:-bottom-[6.5rem] md:-bottom-[8rem] lg:-bottom-[8.5rem] xl:-bottom-[9rem] lg:gap-[3rem] xs:items-center xs:-bottom-[5rem] min-[500px]:-bottom-[5.5rem] px-2 xs:flex-row flex py-2 gap-2 min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
@@ -23,14 +43,40 @@ const TopSection = () => {
           </span>
         </div>
         <div className="text-xs sm:text-base flex items-center w-full rounded-md">
-          <div className="w-full flex-col flex min-[450px]:flex-row p-4 sm:px-10 gap-6 bg-white rounded-md sm:gap-10 md:gap-[4rem] lg:gap-[6rem] xl:gap-[7rem]">
-            <div className="flex gap-4 items-center cursor-pointer">
-              <MdLibraryBooks size={24} fill="#10A969" />
-              <span className="text-brand font-bold">Bookings</span>
+          <div className="w-full flex-col flex min-[450px]:flex-row p-4 sm:px-10 gap-6 bg-white rounded-md sm:gap-10 md:gap-[4rem] lg:gap-[6rem]">
+            <div
+              className="flex gap-4 items-center cursor-pointer"
+              onClick={onClickBookings}
+            >
+              <MdLibraryBooks
+                size={24}
+                style={{
+                  color:
+                    activeLink.state === "bookings" ? "#10A969" : "#aab2ba",
+                }}
+              />
+              <span
+                className={`${activeLink.state === "bookings" ? "text-brand" : "text-secondary"} font-bold`}
+              >
+                Bookings
+              </span>
             </div>
-            <div className="flex gap-4 items-center cursor-pointer">
-              <IoSettingsSharp size={24} color="#aab2ba" />
-              <span className="text-secondary font-bold">Settings</span>
+            <div
+              className="flex gap-4 items-center cursor-pointer"
+              onClick={onClickSettings}
+            >
+              <IoSettingsSharp
+                size={24}
+                style={{
+                  color:
+                    activeLink.state === "settings" ? "#10A969" : "#aab2ba",
+                }}
+              />
+              <span
+                className={`${activeLink.state === "settings" ? "text-brand" : "text-secondary"} font-bold`}
+              >
+                Settings
+              </span>
             </div>
           </div>
         </div>
