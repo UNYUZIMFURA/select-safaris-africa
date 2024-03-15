@@ -19,13 +19,13 @@ const DestinationInfo = () => {
           adipiscing elit
         </p>
         <button className="bg-brand text-white py-3 px-4 rounded-lg max-w-[15rem]" onClick={() => dispatch(showDiv())}>
-          New booking
+          Place a book
         </button>
       </div>
       <div className="flex flex-col gap-3">
         <span className="text-xl font-bold tracking-wide">User rating</span>
         <div className="flex gap-4">
-          <span className="text-brand text-xl font-bold">3.0</span>
+          <span className="text-brand text-xl font-bold">4.0</span>
           <div className="flex items-center gap-4">
             <FaStar color="#10A969" size={20} />
             <FaStar color="#10A969" size={20} />

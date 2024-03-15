@@ -1,9 +1,8 @@
 import Header from "@/components/header/Header";
 import Hero from "@/components/hero/Hero";
 import Travels from "@/components/travels/Travels";
-import Description1 from "@/components/description/Description1";
+import OurWork from "@/components/OurWork/OurWork";
 import Explore from "@/components/explore/Explore";
-import Description2 from "@/components/description/Description2";
 import Process from "@/components/process/Process";
 import Reviews from "@/components/reviews/Reviews";
 import Footer from "@/components/footer/Footer";
@@ -14,9 +13,8 @@ export default function Home() {
       <Header />
       <Hero />
       <Travels />
-      <Description1 />
+      <OurWork />
       <Explore />
-      <Description2 />
       <Process />
       <Reviews />
       <Footer />

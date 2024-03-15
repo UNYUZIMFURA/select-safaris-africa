@@ -47,6 +47,16 @@ input, button, textarea {
   }
 }
 
+@keyframes skeleton-light-2 {
+  0% {
+    background-color: rgba(0, 0, 0, 0.603);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.801);
+  }
+}
+
 @keyframes skeleton-dark {
   0% {
     background-color: rgba(0, 0, 0, 0.137);
@@ -63,6 +73,11 @@ input, button, textarea {
 
 .load-dark {
   animation: skeleton-dark 1s linear infinite alternate;
+}
+
+.load-light-2 {
+  animation: skeleton-light-2 1s linear infinite alternate;
+
 }
 
 button {

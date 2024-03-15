@@ -1,12 +1,12 @@
+import "@/app/globals.css";
 import Image from "next/image";
 import { FaRegStar } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
-import "@/app/globals.css";
 
 const Review = () => {
   return (
-    <div className="relative flex flex-col items-center bg-white px-4 pb-[3rem] pt-[5.5rem] rounded-3xl">
-      <div className="h-[7.5rem] w-[7.5rem] flex items-center justify-center bg-white absolute -top-14 rounded-full p-4">
+    <div className="relative flex flex-col items-center bg-white px-4 pb-[3rem] pt-[5.5rem] rounded-3xl border border-brand">
+      <div className="h-[7.5rem] w-[7.5rem] flex items-center justify-center bg-white absolute -top-14 rounded-full p-4 border border-brand">
         <div className="load-light relative overflow-hidden h-full w-full rounded-full cursor-pointer">
           <Image
             src="/images/client.webp"
