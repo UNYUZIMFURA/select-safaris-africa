@@ -32,7 +32,7 @@ const FAQ = () => {
       question:
         "What culinary delights can I expect to savor while visiting Rwanda?",
       answer:
-        "Rwanda boasts a diverse culinary scene, offering both traditional and international cuisine. Indulge in local delicacies such as 'Ugali' (maize porridge), 'Isombe' (cassava leaves), and 'Brochettes' (grilled skewered meat), alongside globally inspired dishes. Restaurants, cafes, and street vendors across the country cater to various tastes and dietary preferences.",
+        "Rwanda boasts a diverse culinary scene, offering both traditional and international cuisine. Indulge in local delicacies such as 'Ugali' (cassava bread), 'Isombe' (cassava leaves), and 'Brochettes' (grilled skewered meat), alongside globally inspired dishes. Restaurants, cafes, and street vendors across the country cater to various tastes and dietary preferences.",
     },
   ];
   return (
