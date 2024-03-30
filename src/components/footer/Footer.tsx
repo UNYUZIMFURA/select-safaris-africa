@@ -23,10 +23,10 @@ const Footer = () => {
       icon: MdPhone,
       contact: "+250 788 995 497",
     },
-    {
-      icon: FaWhatsapp,
-      contact: "+250 738 995 497",
-    },
+    // {
+    //   icon: FaWhatsapp,
+    //   contact: "+250 738 995 497",
+    // },
     {
       icon: LuMail,
       contact: "info@selectsafarisafrica.com",
@@ -52,7 +52,6 @@ const Footer = () => {
           Suspendisse
         </span>
         <div className="flex items-center gap-6">
-          <FaTwitter color="#10A969" size={24} className="cursor-pointer" />
           <FaLinkedin color="#10A969" size={24} className="cursor-pointer" />
           <FaInstagram color="#10A969" size={24} className="cursor-pointer" />
         </div>

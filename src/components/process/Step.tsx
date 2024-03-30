@@ -5,7 +5,7 @@ interface Props {
 
 const Step: React.FC<Props> = (props) => {
   return (
-    <div className="w-full md:h-[16rem] flex flex-col gap-5 pt-6 pb-8 px-4 text-tertiary1 bg-theme2 rounded-[10px] cursor-pointer">
+    <div className="w-full flex flex-col gap-8 pt-6 pb-12 px-4 text-tertiary1 bg-theme1 rounded-[10px] cursor-pointer">
       <div className="h-[3.5rem] w-[3.5rem] flex items-center justify-center text-primary rounded-full bg-theme4">
         <span className="font-bold text-brand">{props.no}</span>
       </div>

@@ -18,11 +18,11 @@ const Travel: React.FC<Props> = (props) => {
           src={`/images/${props.img}.webp`}
           alt=""
           fill={true}
-          className="object-cover brightness-75 transition hover:brightness-100"
+          className="object-cover 2xl:brightness-75 transition 2xl:hover:brightness-100"
         />
       </div>
-      <div className="flex w-full flex-col gap-4 xl:gap-3 px-1 sm:px-2">
-        <span className="cursor-pointer text-lg font-semibold">
+      <div className="flex w-full flex-col gap-4 pt-4 px-1 sm:px-2">
+        <span className="cursor-pointer font-semibold text-brand">
           {props.name}
         </span>
         <div className="flex justify-between">

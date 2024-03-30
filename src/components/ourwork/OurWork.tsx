@@ -11,7 +11,7 @@ const OurWork = () => {
           src={"/images/island.webp"}
           alt=""
           fill={true}
-          className="object-cover brightness-75 transition hover:brightness-100"
+          className="object-cover 2xl:brightness-75 transition 2xl:hover:brightness-100"
         />
       </div>
       <div className="flex flex-col gap-6 md:max-w-[47rem]">

@@ -40,9 +40,7 @@ const Destinations = () => {
           <Image src="/images/underline.png" alt="" height={1} width={210} />
         </div>
         <div className="flex w-full flex-wrap justify-center gap-3">
-          <button className="py-4 px-8 rounded-full bg-theme3">
-            Hotels
-          </button>
+          <button className="py-4 px-8 rounded-full bg-theme3">Hotels</button>
           <button className="py-4 px-8 rounded-full bg-theme3">
             Bars and Restaurants
           </button>
@@ -71,7 +69,7 @@ const Destinations = () => {
           <div className="flex flex-col gap-4 pl-2">
             <span className="text-brand font-bold">RECOMMENDED</span>
             <h2 className="font-bold text-tertiary2 text-[24px] lg:text-[28px]">
-              Suggested for you
+              Most visited places
             </h2>
             <span className="text-lg text-secondary max-w-[34rem]">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
@@ -87,7 +85,7 @@ const Destinations = () => {
         </div>
         <div className="flex flex-col bg-white gap-6">
           <div className="flex flex-col gap-4 pl-2">
-            <span className="text-brand font-bold">POPULAR</span>
+            <span className="text-brand font-bold">NATIONAL PARKS</span>
             <h2 className="font-bold text-tertiary2 text-[24px] lg:text-[28px]">
               Most visited places
             </h2>
@@ -104,6 +102,41 @@ const Destinations = () => {
           </div>
         </div>
         <div className="flex flex-col bg-white gap-6">
+          <div className="flex flex-col gap-4 pl-2">
+            <span className="text-brand font-bold">VOLCANOES</span>
+            <h2 className="font-bold text-tertiary2 text-[24px] lg:text-[28px]">
+              Suggested for you
+            </h2>
+            <span className="text-lg text-secondary max-w-[34rem]">
+             Explore the 5 Volcanoes in Rwanda with the best tour agency in Africa
+            </span>
+          </div>
+          <div className="travels">
+            <Travel img="hand" name="Kigali City" />
+            <Travel img="mountain" name="Gishwati Forest" />
+            <Travel img="road" name="Nyungwe Park" />
+            <Travel img="zebra" name="Akagera Park" />
+          </div>
+        </div>
+        <div className="flex flex-col bg-white gap-6">
+          <div className="flex flex-col gap-4 pl-2">
+            <span className="text-brand font-bold">LAKES</span>
+            <h2 className="font-bold text-tertiary2 text-[24px] lg:text-[28px]">
+              Suggested for you
+            </h2>
+            <span className="text-lg text-secondary max-w-[34rem]">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+              odio. Quisque volutpat mattis eros.
+            </span>
+          </div>
+          <div className="travels">
+            <Travel img="hand" name="Kigali City" />
+            <Travel img="mountain" name="Gishwati Forest" />
+            <Travel img="road" name="Nyungwe Park" />
+            <Travel img="zebra" name="Akagera Park" />
+          </div>
+        </div>
+        {/* <div className="flex flex-col bg-white gap-6">
           <div className="flex flex-col gap-4 pl-2">
             <span className="text-brand font-bold">CATEGORIES</span>
             <h2 className="font-bold text-tertiary2 text-[24px] lg:text-[28px]">
@@ -134,7 +167,7 @@ const Destinations = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </div>
