@@ -31,10 +31,10 @@ const Footer = () => {
       icon: LuMail,
       contact: "info@selectsafarisafrica.com",
     },
-    {
-      icon: FaLocationDot,
-      contact: "Nyarutarama, Kigali - Rwanda",
-    },
+    // {
+    //   icon: FaLocationDot,
+    //   contact: "Nyarutarama, Kigali - Rwanda",
+    // },
   ];
   return (
     <div className="flex flex-col py-8 gap-8 px-5 min-[600px]:px-14 lg:py-[4rem] md:flex-row 2xl:px-[8rem] md:gap-2 md:justify-between text-tertiary1">

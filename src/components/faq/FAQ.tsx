@@ -34,6 +34,11 @@ const FAQ = () => {
       answer:
         "Rwanda boasts a diverse culinary scene, offering both traditional and international cuisine. Indulge in local delicacies such as 'Ugali' (cassava bread), 'Isombe' (cassava leaves), and 'Brochettes' (grilled skewered meat), alongside globally inspired dishes. Restaurants, cafes, and street vendors across the country cater to various tastes and dietary preferences.",
     },
+    {
+      question: "What are the visa requirements for visiting Rwanda?",
+      answer:
+        "Visa requirements for visiting Rwanda vary depending on your nationality. However, many visitors can obtain a visa upon arrival at Kigali International Airport or at land borders. Alternatively, you may apply for an e-visa online before your trip. It's essential to check the specific visa requirements based on your citizenship before traveling to Rwanda to ensure a smooth entry process.",
+    },
   ];
   return (
     <section className="flex flex-col py-10 bg-white items-center text-center">

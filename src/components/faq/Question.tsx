@@ -25,14 +25,12 @@ const Question: React.FC<Props> = ({ id, question, answer }) => {
     dispatch(updateActiveQuestionId(questionId));
   };
 
-  const closeAccordion = () => {
-    setQuestionOpen((prevState) => !prevState);
-    dispatch(updateActiveQuestionId(0));
-  };
-
   return (
     <div className="flex flex-col md:max-w-[45rem] lg:max-w-[60rem]">
-      <div className="flex items-start text-start p-5 gap-4 border border-brand text-secondary justify-between flex-col xs:items-center xs:flex-row">
+      <div
+        className="flex items-start text-start p-5 gap-4 border border-brand text-secondary justify-between flex-col xs:items-center xs:flex-row cursor-pointer"
+        onClick={() => openAccordion(id)}
+      >
         <span className="text-lg text-brand max-w-full xs:max-w-[80%]">
           {question}
         </span>
@@ -41,15 +39,9 @@ const Question: React.FC<Props> = ({ id, question, answer }) => {
             size={25}
             cursor="pointer"
             fill="#10a969"
-            onClick={closeAccordion}
           />
         ) : (
-          <BiSolidRightArrow
-            size={25}
-            cursor="pointer"
-            fill="#10a969"
-            onClick={() => openAccordion(id)}
-          />
+          <BiSolidRightArrow size={25} cursor="pointer" fill="#10a969" />
         )}
       </div>
       <div
