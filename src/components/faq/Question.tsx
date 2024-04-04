@@ -45,7 +45,7 @@ const Question: React.FC<Props> = ({ id, question, answer }) => {
         )}
       </div>
       <div
-        className={`border-l border-r border-b border-brand text-start text-secondary grid overflow-hidden p- transition-all duration-300 ease-in-out ${questionOpen && activeQuestionId === id ? "grid-rows-[1fr] opacity-100 p-4" : "grid-rows-[0fr] opacity-0"}`}
+        className={`border-l border-r border-b border-brand text-start text-secondary grid overflow-hidden transition-all duration-300 ease-in-out ${questionOpen && activeQuestionId === id ? "grid-rows-[1fr] opacity-100 p-4" : "grid-rows-[0fr] opacity-0"}`}
       >
         <span className="overflow-hidden leading-[2rem] tracking-wide">
           {answer}

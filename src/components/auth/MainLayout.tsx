@@ -16,8 +16,8 @@ type Props = {
 const MainLayout: React.FC<Props> = ({ name, buttonName, title, subtitle, inputs }) => {
   const router = useRouter()
   return (
-    <div className="flex w-full">
-      <div className="bg-white border w-full lg:w-[40%] h-full flex flex-col items-center justify-center p-4">
+    <div className="flex w-full min-h-screen">
+      <div className="bg-white border w-full lg:w-[40%] h-full  flex flex-col items-center justify-center p-4">
         <div className="text-black lg:py-[4rem] rounded-md flex flex-col w-full p-4 max-w-[28rem]">
           <div className="flex flex-col gap-4 py-5">
             <Image

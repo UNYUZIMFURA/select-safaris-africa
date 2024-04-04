@@ -1,29 +1,50 @@
 "use client"
 import "@/app/globals.css";
 import Image from "next/image";
+import WaterBody1 from "../../../public/images/waterbody_1.webp"
+import WaterBody2 from "../../../public/images/waterbody_2.webp";
+import WaterBody3 from "../../../public/images/waterbody_3.webp";
+import WaterBody4 from "../../../public/images/waterbody_4.webp";
+import WaterBody5 from "../../../public/images/waterbody_5.webp";
+import Landscape1 from "../../../public/images/landscape_1.webp";
+import Landscape2 from "../../../public/images/landscape_2.webp";
+import Landscape3 from "../../../public/images/landscape_3.webp";
+import Landscape4 from "../../../public/images/landscape_4.webp";
+import Landscape5 from "../../../public/images/landscape_5.webp";
+import Wildlife1 from "../../../public/images/wildlife_1.webp"
+import Wildlife2 from "../../../public/images/wildlife_2.webp"
+import Wildlife3 from "../../../public/images/wildlife_3.webp";
+import Wildlife4 from "../../../public/images/wildlife_4.webp";
+import Wildlife5 from "../../../public/images/wildlife_5.webp";
+
+
 import {useState, useEffect} from "react"
 import HeroButtons from "./HeroButtons";
 
 const Hero = () => {
-  // const [imgIndex, setImgIndex] = useState(1);
-  // useEffect(() => {
-  //   console.log("current index", imgIndex)
-  //   const timeout = setTimeout(() => {
-  //     if (imgIndex === 2) setImgIndex(1);
-  //     setImgIndex((prevIndex) => prevIndex + 1);
-  //   }, 3000);
-  //   return () => {
-  //     clearTimeout(timeout);
-  //   };
-  // }, [imgIndex]);
+  const [imgIndex, setImgIndex] = useState(1);
+  const [waterbodies] = useState([WaterBody1, WaterBody2, WaterBody3, WaterBody4, WaterBody5])
+  const [landscapes] = useState([Landscape1, Landscape2, Landscape3, Landscape4, Landscape5])
+  const [wildlife] = useState([
+    Wildlife1,
+    Wildlife2,
+    Wildlife3,
+    Wildlife4,
+    Wildlife5,
+  ]);
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setImgIndex((prevIndex) => prevIndex + 1);
+      if (imgIndex === 5) setImgIndex(1);
+    }, 5000);
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [imgIndex]);
 
   return (
     <div
       className="flex flex-col gap-6 bg-theme1 text-tertiary1 min-[1200px]:flex-row min-[1200px]:justify-between min-[1200px]:pl-[3rem] min-[1200px]:pt-[2rem] min-[1200px] 2xl:pl-[8rem] bg-cover"
-      // style={{
-      //   backgroundImage:
-      //     "linear-gradient(to left, rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('/images/lake_1.jpg')",
-      // }}
     >
       <div className="flex w-full flex-col items-center gap-6 px-4 pt-[4.5rem] text-center min-[370px]:gap-8 min-[1200px]:w-[40%] min-[1200px]:items-start min-[1200px]:text-start min-[1200px]:gap-12">
         <h1 className="text-sm font-bold text-[#10A969] min-[370px]:text-[16px] min-[1200px]:text-[18px] 2xl:text-[20px]">
@@ -40,46 +61,37 @@ const Hero = () => {
       </div>
       <div className="flex items-end justify-center gap-1 min-[1200px]:h-[650px] min-[1200px]:w-[60%]">
         <div className="load-light overflow-hidden relative h-[150px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[180px] lg:h-[250px] min-[1200px]:h-[215px] min-[1200px]:w-[300px cursor-pointer">
-          <Image
-            src={`/images/lake_1.webp`}
-            alt=""
-            fill={true}
-            className="object-cover"
-          />
-          {/* <div className="w-full px-2 absolute bottom-2 justify-center flex gap-3">
-            <div className="h-3 w-3 rounded-full borde xs:h-4 xs:w-4 bg-brand"></div>
-            <div className="h-3 w-3 rounded-full border xs:h-4 xs:w-4"></div>
-            <div className="h-3 w-3 rounded-full border xs:h-4 xs:w-4"></div>
-            <div className="h-3 w-3 rounded-full border xs:h-4 xs:w-4"></div>
-          </div> */}
+          {waterbodies.map((waterbody, index) => (
+            <Image
+              key={index}
+              src={waterbody}
+              alt=""
+              fill={true}
+              className={`transition-all duration-300 ease-in object-cover opacity-0 ${imgIndex === index + 1 ? "opacity-100" : ""}`}
+            />
+          ))}
         </div>
         <div className="load-light overflow-hidden relative h-[200px] w-[32%] rounded-t-[144.5px] min-[900px]:h-[230px] lg:h-[300px] min-[1200px]:h-[428px] cursor-pointer">
-          <Image
-            src={"/images/gorilla.webp"}
-            alt=""
-            fill={true}
-            className="object-cover"
-          />
-          {/* <div className="w-full px-2 absolute bottom-2 justify-center flex gap-4">
-            <div className="h-3 w-3 rounded-full border xs:h-4 xs:w-4"></div>
-            <div className="h-3 w-3 rounded-full border xs:h-4 xs:w-4"></div>
-            <div className="h-3 w-3 rounded-full border xs:h-4 xs:w-4"></div>
-            <div className="h-3 w-3 rounded-full border xs:h-4 xs:w-4"></div>
-          </div> */}
+          {landscapes.map((landscape, index) => (
+            <Image
+              key={index}
+              src={landscape}
+              alt=""
+              fill={true}
+              className={`transition-all duration-300 ease-in object-cover opacity-0 ${imgIndex === index + 1 ? "opacity-100" : ""}`}
+            />
+          ))}
         </div>
         <div className="load-light relative overflow-hidden h-[300px] w-[38%] rounded-tl-[300px] min-[900px]:h-[330px] lg:h-[400px] min-[1200px]:h-full cursor-pointer">
-          <Image
-            src={"/images/elephant.webp"}
-            alt=""
-            fill={true}
-            className="object-cover"
-          />
-          {/* <div className="w-full px-2 absolute bottom-2 justify-center flex gap-4">
-            <div className="h-3 w-3 rounded-full border xs:h-4 xs:w-4"></div>
-            <div className="h-3 w-3 rounded-full border xs:h-4 xs:w-4"></div>
-            <div className="h-3 w-3 rounded-full border xs:h-4 xs:w-4"></div>
-            <div className="h-3 w-3 rounded-full border xs:h-4 xs:w-4"></div>
-          </div> */}
+          {wildlife.map((wildlife, index) => (
+            <Image
+              key={index}
+              src={wildlife}
+              alt=""
+              fill={true}
+              className={`transition-all duration-300 ease-in object-cover opacity-0 ${imgIndex === index + 1 ? "opacity-100" : ""}`}
+            />
+          ))}
         </div>
       </div>
     </div>

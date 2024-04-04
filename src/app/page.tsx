@@ -13,7 +13,7 @@ export default function Home() {
     <main className="main flex min-h-screen flex-col w-full max-w-[125rem]">
       <Header />
       <Hero />
-      <Travels />
+      {/* <Travels /> */}
       <OurWork />
       {/* <Explore /> */}
       <Process />

@@ -8,10 +8,10 @@ const OurWork = () => {
     <div className="py-8 px-4 flex flex-col items-center gap-6 md:gap-8 text-tertiary1 border-white bg-white md:flex-row lg:gap-[4rem] xl:justify-between lg:py-[5rem] lg:px-[2rem] 2xl:px-[9.5rem] min-[1200px]:px-[3rem]">
       <div className="load-dark relative overflow-hidden w-full md:max-w-[714px] p-4 h-[20rem] md:h-[22rem] border rounded-[20px] lg:h-[30rem] cursor-pointer">
         <Image
-          src={"/images/island.webp"}
+          src={"/images/woman-in-tea.webp"}
           alt=""
           fill={true}
-          className="object-cover 2xl:brightness-75 transition 2xl:hover:brightness-100"
+          className="object-cover transition-all ease-in-out 2xl:hover:scale-110"
         />
       </div>
       <div className="flex flex-col gap-6 md:max-w-[47rem]">
@@ -46,7 +46,7 @@ const OurWork = () => {
           <BsArrowRight
             color="#10A969"
             size={24}
-            className="animate-bounce cursor-pointer"
+            className="cursor-pointer"
           />
         </div>
       </div>
