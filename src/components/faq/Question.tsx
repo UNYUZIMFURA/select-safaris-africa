@@ -2,8 +2,6 @@
 import { useState } from "react";
 import { IoChevronDownOutline } from "react-icons/io5";
 import { IoChevronForwardOutline } from "react-icons/io5";
-import { BiSolidRightArrow } from "react-icons/bi";
-import { BiSolidDownArrow } from "react-icons/bi";
 import { useAppSelector } from "@/redux/store";
 import { AppDispatch } from "@/redux/store";
 import { useDispatch } from "react-redux";
@@ -28,7 +26,9 @@ const Question: React.FC<Props> = ({ id, question, answer }) => {
   };
 
   return (
-    <div className={`${questionOpen && activeQuestionId === id ? "border-2 border-brand shadow-none" : ""} shadow-[0px_5px_16px_0_rgba(8,15,52,0.06)] rounded-2xl flex flex-col md:max-w-[45rem] lg:max-w-[60rem] p-4`}>
+    <div
+      className={`${questionOpen && activeQuestionId === id ? "border-2 border-brand shadow-none" : ""} shadow-[0px_5px_16px_0_rgba(8,15,52,0.06)] rounded-2xl flex flex-col md:max-w-[45rem] lg:max-w-[60rem] p-4`}
+    >
       <div
         className="flex items-start text-start p-4 gap-4 justify-between flex-col xs:items-center xs:flex-row cursor-pointer"
         onClick={() => openAccordion(id)}
