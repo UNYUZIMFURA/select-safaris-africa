@@ -41,14 +41,14 @@ const FAQ = () => {
     },
   ];
   return (
-    <section className="flex flex-col py-10 bg-white items-center text-center">
+    <section className="flex flex-col py-14 bg-white items-center text-center">
       <div className="flex flex-col gap-4">
-        <h2 className="text-brand text-xl tracking-wider font-bold lg:text-2xl">
-          Frequently Asked Questions
+        <span className="text-brand font-bold text-lg">FAQ</span>
+        <h2 className="text-xl tracking-wider font-bold lg:text-3xl">
+         Frequently <span className="text-brand">Asked</span> Questions
         </h2>
-        <p className="text-secondary">Got any question? We got an answer!</p>
       </div>
-      <div className="flex flex-col gap-2 py-8 px-2">
+      <div className="flex flex-col gap-6 py-8 px-2">
         {FAQS.map((el, index) => (
           <Question
             id={index + 1}

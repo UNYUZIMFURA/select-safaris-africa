@@ -1,43 +1,28 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
-import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdPhone } from "react-icons/md";
-import { FaWhatsapp } from "react-icons/fa";
 import { LuMail } from "react-icons/lu";
-import { FaLocationDot } from "react-icons/fa6";
-import { HiArrowUp } from "react-icons/hi2";
 import BackToTop from "../back-to-top/BackToTop";
 
 const Footer = () => {
   const pathname = usePathname();
-  const router = useRouter();
-
   const links = ["Home", "Destinations", "About", "Contact us", "Get started"];
   const contacts = [
     {
       icon: MdPhone,
       contact: "+250 788 995 497",
     },
-    // {
-    //   icon: FaWhatsapp,
-    //   contact: "+250 738 995 497",
-    // },
     {
       icon: LuMail,
       contact: "info@selectsafarisafrica.com",
     },
-    // {
-    //   icon: FaLocationDot,
-    //   contact: "Nyarutarama, Kigali - Rwanda",
-    // },
   ];
   return (
-    <div className="flex flex-col py-8 gap-8 px-5 min-[600px]:px-14 lg:py-[4rem] md:flex-row 2xl:px-[8rem] md:gap-2 md:justify-between text-tertiary1">
+    <div className="bg-[#19211A] flex flex-col py-8 gap-8 px-5 min-[600px]:px-14 lg:py-[4rem] md:flex-row 2xl:px-[8rem] md:gap-2 md:justify-between text-tertiary1">
       <div className="flex flex-col gap-6">
         <Image
           src="/images/logo.png"
