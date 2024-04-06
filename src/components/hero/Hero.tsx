@@ -1,6 +1,8 @@
 "use client"
 import "@/app/globals.css";
 import Image from "next/image";
+import { useState, useEffect } from "react";
+import HeroButtons from "./HeroButtons";
 import WaterBody1 from "../../../public/images/waterbody_1.webp"
 import WaterBody2 from "../../../public/images/waterbody_2.webp";
 import WaterBody3 from "../../../public/images/waterbody_3.webp";
@@ -16,13 +18,13 @@ import Wildlife2 from "../../../public/images/wildlife_2.webp"
 import Wildlife3 from "../../../public/images/wildlife_3.webp";
 import Wildlife4 from "../../../public/images/wildlife_4.webp";
 import Wildlife5 from "../../../public/images/wildlife_5.webp";
-
-
-import {useState, useEffect} from "react"
-import HeroButtons from "./HeroButtons";
+import Wildlife6 from "../../../public/images/wildlife_6.webp";
+import Wildlife7 from "../../../public/images/wildlife_7.webp";
+import Wildlife8 from "../../../public/images/wildlife_8.webp";
 
 const Hero = () => {
   const [imgIndex, setImgIndex] = useState(1);
+  const [wildlifeIndex, setWildlifeIndex] = useState(1);
   const [waterbodies] = useState([WaterBody1, WaterBody2, WaterBody3, WaterBody4, WaterBody5])
   const [landscapes] = useState([Landscape1, Landscape2, Landscape3, Landscape4, Landscape5])
   const [wildlife] = useState([
@@ -31,6 +33,9 @@ const Hero = () => {
     Wildlife3,
     Wildlife4,
     Wildlife5,
+    Wildlife6,
+    Wildlife7,
+    Wildlife8,
   ]);
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -42,6 +47,15 @@ const Hero = () => {
     };
   }, [imgIndex]);
 
+ useEffect(() => {
+   const timeout = setTimeout(() => {
+     setWildlifeIndex((prevIndex) => prevIndex + 1);
+     if (wildlifeIndex === 8) setWildlifeIndex(1);
+   }, 5000);
+   return () => {
+     clearTimeout(timeout);
+   };
+ }, [wildlifeIndex]);
   return (
     <div
       className="flex flex-col gap-6 bg-theme1 text-tertiary1 min-[1200px]:flex-row min-[1200px]:justify-between min-[1200px]:pl-[3rem] min-[1200px]:pt-[2rem] min-[1200px] 2xl:pl-[8rem] bg-cover"
@@ -67,7 +81,7 @@ const Hero = () => {
               src={waterbody}
               alt=""
               fill={true}
-              className={`transition-all duration-300 ease-in object-cover opacity-0 ${imgIndex === index + 1 ? "opacity-100" : ""}`}
+              className={`transition-all duration-1000 ease-in object-cover opacity-0 ${imgIndex === index + 1 ? "opacity-100" : ""}`}
             />
           ))}
         </div>
@@ -78,7 +92,7 @@ const Hero = () => {
               src={landscape}
               alt=""
               fill={true}
-              className={`transition-all duration-300 ease-in object-cover opacity-0 ${imgIndex === index + 1 ? "opacity-100" : ""}`}
+              className={`transition-all duration-1000 ease-in object-cover opacity-0 ${imgIndex === index + 1 ? "opacity-100" : ""}`}
             />
           ))}
         </div>
@@ -89,7 +103,7 @@ const Hero = () => {
               src={wildlife}
               alt=""
               fill={true}
-              className={`transition-all duration-300 ease-in object-cover opacity-0 ${imgIndex === index + 1 ? "opacity-100" : ""}`}
+              className={`transition-all duration-1000 ease-in object-cover opacity-0 ${wildlifeIndex === index + 1 ? "opacity-100" : ""}`}
             />
           ))}
         </div>

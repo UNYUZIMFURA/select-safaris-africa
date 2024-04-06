@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface Props {
   no: number;
   title: string;
@@ -5,14 +7,19 @@ interface Props {
 
 const Step: React.FC<Props> = (props) => {
   return (
-    <div className="w-full flex flex-col gap-8 pt-6 pb-12 px-4 text-tertiary1 bg-theme1 rounded-[10px] cursor-pointer relative">
+    <div className="relative w-full flex flex-col gap-10 pt-7 pb-12 px-4 text-tertiary1 bg-[#10a9691c] rounded-[10px] cursor-pointer">
+      <div className="overflow-hidden absolute top-0 right-1 h-[95px] w-[135px] xl:h-[100px] xl:w-[140px] rounded-b-[60px] bg-white">
+        <Image src={`/images/step_${props.no}.webp`} alt="" fill={true} />
+      </div>
       <div className="h-[3.5rem] w-[3.5rem] flex items-center justify-center text-primary rounded-full bg-theme4">
         <span className="font-bold text-brand">{props.no}</span>
       </div>
-      <h2 className="font-bold text-[20px] pl-1">{props.title}</h2>
-      <p className="text-secondary pl-1 xl:max-w-[28rem]">
-        Lorem ipsum dolor sit amet, consectetuer adipscing elit. Donnec odio.
-      </p>
+      <div className="flex flex-col gap-4">
+        <h2 className="font-bold text-black text-[20px] pl-1">{props.title}</h2>
+        <p className="text-secondary pl-1 xl:max-w-[28rem]">
+          Lorem ipsum dolor sit amet, consectetuer adipscing elit. Donnec odio.
+        </p>
+      </div>
     </div>
   );
 };
