@@ -27,10 +27,10 @@ const Question: React.FC<Props> = ({ id, question, answer }) => {
 
   return (
     <div
-      className={`${questionOpen && activeQuestionId === id ? "border-2 border-brand shadow-none" : ""} shadow-[0px_5px_16px_0_rgba(8,15,52,0.06)] rounded-2xl flex flex-col md:max-w-[45rem] lg:max-w-[60rem] p-4`}
+      className={`${questionOpen && activeQuestionId === id ? "border-2 border-brand shadow-none" : ""} shadow-[0px_5px_16px_0_rgba(8,15,52,0.06)] rounded-2xl flex flex-col md:max-w-[45rem] lg:max-w-[60rem] px-4 py-6`}
     >
       <div
-        className="flex items-start text-start p-4 gap-4 justify-between flex-col xs:items-center xs:flex-row cursor-pointer"
+        className="flex items-start text-start px-4 gap-4 justify-between flex-col xs:items-center xs:flex-row cursor-pointer"
         onClick={() => openAccordion(id)}
       >
         <span className="text-lg max-w-full xs:max-w-[80%]">{question}</span>
@@ -49,7 +49,7 @@ const Question: React.FC<Props> = ({ id, question, answer }) => {
         )}
       </div>
       <div
-        className={`text-start text-secondary grid overflow-hidden transition-all duration-300 ease-in-out ${questionOpen && activeQuestionId === id ? "grid-rows-[1fr] opacity-100 p-4" : "grid-rows-[0fr] opacity-0"}`}
+        className={`text-start text-secondary grid overflow-hidden transition-all duration-300 ease-in-out ml-4 ${questionOpen && activeQuestionId === id ? "grid-rows-[1fr] opacity-100 mt-4" : "grid-rows-[0fr] opacity-0"}`}
       >
         <span className="overflow-hidden leading-[2rem] text-[#4C4C4C]">
           {answer}
