@@ -15,7 +15,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="border-b border-[rgba(255,255,255,0.2)] sticky top-0 z-20 bg-theme1 w-full flex items-center justify-between px-6 py-2 text-tertiary1 min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
+    <div className="border-b border-[rgba(255,255,255,0.2)] sticky top-0 z-20 bg-theme1 w-full flex items-center justify-between px-6 py-3 text-tertiary1 min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
       <div
         className="p-3 bg-white rounded-full cursor-pointer"
         onClick={() => router.push("/")}
@@ -23,8 +23,8 @@ const Header = () => {
         <Image
           src="/images/favicon.png"
           alt="Lion head logo"
-          height={36}
-          width={36}
+          height={32}
+          width={32}
           className="cursor-pointer"
         />
       </div>
@@ -48,14 +48,14 @@ const Header = () => {
         cursor="pointer"
         className="min-[800px]:hidden"
       />
-      <div className="min-[800px]:flex items-center gap-4 hidden lg:gap-8 xl:gap-10 2xl:gap-12">
-        <div className="flex items-center gap-3 text-white p-4 rounded-[30px] bg-[#ffffff15] cursor-pointer">
-          <div className="h-[22px] w-[35px] relative">
+      <div className="min-[800px]:flex items-center gap-4 hidden lg:gap-8">
+        <div className="flex items-center gap-2 text-white p-3 rounded-[30px] bg-[#ffffff15] cursor-pointer">
+          <div className="h-[20px] w-[32px] relative">
             <Image src={"/icons/us.png"} alt="" fill={true} />
           </div>
           <div className="flex items-center gap-1">
             <span className="text-sm font-bold">En</span>
-            <IoChevronDownOutline size={18} />
+            <IoChevronDownOutline size={16} />
           </div>
         </div>
         <button
