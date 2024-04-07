@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdPhone } from "react-icons/md";
@@ -9,6 +9,7 @@ import { LuMail } from "react-icons/lu";
 import BackToTop from "../back-to-top/BackToTop";
 
 const Footer = () => {
+  const router = useRouter();
   const pathname = usePathname();
     const links = [
     { linkName: "Home", linkTo: "/" },
@@ -29,13 +30,18 @@ const Footer = () => {
     <div className="bg-[#19211A] flex flex-col py-8 gap-10 px-5 min-[600px]:px-14 lg:py-[4rem] 2xl:px-[8rem] md:gap-12 md:justify-between lg:flex-row  text-tertiary1">
       <div className="flex flex-col gap-8 md:flex-row md:justify-between lg:w-[calc(100%-20rem)] 2xl:w-[calc(90%-20rem)]">
         <div className="flex flex-col gap-6">
-          <Image
-            src="/images/logo.png"
-            alt="Lion head logo"
-            height={42}
-            width={42}
-            className="cursor-pointer"
-          />
+          <div
+            className="h-[4rem] w-[4rem] flex items-center justify-center bg-white rounded-full cursor-pointer"
+            onClick={() => router.push("/")}
+          >
+            <Image
+              src="/images/favicon.png"
+              alt="Lion head logo"
+              height={36}
+              width={36}
+              className="cursor-pointer"
+            />
+          </div>
           <span className="font-thin text-secondary leading-[2rem] max-w-[20rem] md:max-w-[15rem] xl:max-w-[30rem]">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
             odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.

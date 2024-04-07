@@ -17,14 +17,14 @@ const Header = () => {
   return (
     <div className="border-b border-[rgba(255,255,255,0.2)] sticky top-0 z-20 bg-theme1 w-full flex items-center justify-between px-6 py-2 text-tertiary1 min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
       <div
-        className="p-4 bg-white rounded-full cursor-pointer"
+        className="p-3 bg-white rounded-full cursor-pointer"
         onClick={() => router.push("/")}
       >
         <Image
           src="/images/favicon.png"
           alt="Lion head logo"
-          height={42}
-          width={42}
+          height={36}
+          width={36}
           className="cursor-pointer"
         />
       </div>
