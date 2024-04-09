@@ -11,14 +11,14 @@ const initialState = {
 };
 
 export const toggler = createSlice({
-  name: "updateActiveQuestionId",
+  name: "updateFAQQuestion",
   initialState,
   reducers: {
-    updateActiveQuestionId: (state, action: PayloadAction<number>) => {
+    updateFAQQuestion: (state, action: PayloadAction<number>) => {
       state.value.state = action.payload;
     }
   }
 })
 
-export const { updateActiveQuestionId } = toggler.actions;
+export const { updateFAQQuestion } = toggler.actions;
 export default toggler.reducer;

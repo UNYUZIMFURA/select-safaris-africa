@@ -7,13 +7,13 @@ import { AppDispatch } from "@/redux/store";
 import {
   toggleToBookings,
   toggleToSettings,
-} from "@/redux/features/togglerSlice";
+} from "@/redux/features/bookingsToggler";
 import { MdLibraryBooks } from "react-icons/md";
 import { IoSettingsSharp } from "react-icons/io5";
 
 const TopSection = () => {
   const dispatch = useDispatch<AppDispatch>()
-  const activeLink = useAppSelector((state) => state.togglerReducer.value);
+  const activeLink = useAppSelector((state) => state.bookingsTogglerReducer.value);
 
   const onClickBookings = () => {
     dispatch(toggleToBookings())

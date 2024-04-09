@@ -33,7 +33,7 @@ const Page = () => {
               />
               <Booking
                 booking="Muhazi Lake Resort"
-                image="lake"
+                image="waterbody_1"
                 amount={300000}
               />
               <Booking booking="Akagera Tour" image="lion" amount={400000} />

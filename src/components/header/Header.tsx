@@ -1,11 +1,20 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import Sidebar from "../sidebar/Sidebar";
+import { useAppSelector } from "@/redux/store";
+import { AppDispatch } from "@/redux/store";
+import { useDispatch } from "react-redux";
+import { showSidebar } from "@/redux/features/sidebar";
 import { usePathname, useRouter } from "next/navigation";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoChevronDownOutline } from "react-icons/io5";
 
 const Header = () => {
+  const dispatch = useDispatch<AppDispatch>();
+   const sidebarOpen = useAppSelector(
+     (state) => state.sidebarVisibilityReducer.value.state
+   );
   const router = useRouter();
   const pathname = usePathname();
   const links = [
@@ -16,6 +25,7 @@ const Header = () => {
 
   return (
     <div className="border-b border-[rgba(255,255,255,0.2)] sticky top-0 z-20 bg-theme1 w-full flex items-center justify-between px-6 py-3 text-tertiary1 min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
+      {sidebarOpen && <Sidebar />}
       <div
         className="p-3 bg-white rounded-full cursor-pointer"
         onClick={() => router.push("/")}
@@ -28,7 +38,7 @@ const Header = () => {
           className="cursor-pointer"
         />
       </div>
-      <div className="min-[800px]:flex items-center gap-6 hidden lg:gap-12 xl:gap-16 2xl:gap-18">
+      <div className="lg:flex items-center gap-6 hidden lg:gap-12 xl:gap-16 2xl:gap-18">
         {links.map((el, index) => {
           const isActive = pathname === el.linkTo;
           return (
@@ -46,9 +56,10 @@ const Header = () => {
         color="#10A969"
         size={28}
         cursor="pointer"
-        className="min-[800px]:hidden"
+        className="lg:hidden"
+        onClick={() => dispatch(showSidebar())}
       />
-      <div className="min-[800px]:flex items-center gap-4 hidden lg:gap-8">
+      <div className="lg:flex items-center gap-4 hidden lg:gap-8">
         <div className="flex items-center gap-2 text-white p-3 rounded-[30px] bg-[#ffffff15] cursor-pointer">
           <div className="h-[20px] w-[32px] relative">
             <Image src={"/icons/us.png"} alt="" fill={true} />

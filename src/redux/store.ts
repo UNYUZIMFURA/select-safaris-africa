@@ -1,14 +1,16 @@
 import { configureStore } from "@reduxjs/toolkit";
-import togglerReducer from "./features/togglerSlice";
-import visibilityReducer from "./features/bookingVisibilitySlice";
-import activeQuestionIdReducer from "./features/updatedActiveQuestionId";
+import bookingsTogglerReducer from "./features/bookingsToggler";
+import bookingPopupReducer from "./features/bookingPopup";
+import sidebarVisibilityReducer from "./features/sidebar";
+import FAQQuestionReducer from "./features/FAQQuestion";
 import { TypedUseSelectorHook, useSelector } from "react-redux";
 
 export const store = configureStore({
   reducer: {
-    togglerReducer,
-    visibilityReducer,
-    activeQuestionIdReducer,
+    bookingsTogglerReducer,
+    bookingPopupReducer,
+    sidebarVisibilityReducer,
+    FAQQuestionReducer,
   },
 });
 

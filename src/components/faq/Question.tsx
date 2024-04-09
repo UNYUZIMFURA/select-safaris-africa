@@ -5,7 +5,7 @@ import { IoChevronForwardOutline } from "react-icons/io5";
 import { useAppSelector } from "@/redux/store";
 import { AppDispatch } from "@/redux/store";
 import { useDispatch } from "react-redux";
-import { updateActiveQuestionId } from "@/redux/features/updatedActiveQuestionId";
+import { updateFAQQuestion } from "@/redux/features/FAQQuestion";
 
 interface Props {
   id: number;
@@ -17,12 +17,12 @@ const Question: React.FC<Props> = ({ id, question, answer }) => {
   const [questionOpen, setQuestionOpen] = useState(false);
   const dispatch = useDispatch<AppDispatch>();
   const activeQuestionId = useAppSelector(
-    (state) => state.activeQuestionIdReducer.value.state,
+    (state) => state.FAQQuestionReducer.value.state,
   );
 
   const openAccordion = (questionId: number) => {
     setQuestionOpen((prevState) => !prevState);
-    dispatch(updateActiveQuestionId(questionId));
+    dispatch(updateFAQQuestion(questionId));
   };
 
   return (
