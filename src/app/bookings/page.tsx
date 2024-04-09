@@ -6,7 +6,7 @@ import TopSection from "@/components/bookings/TopSection";
 import Booking from "@/components/bookings/Booking";
 
 const Page = () => {
-  const activeLink = useAppSelector((state) => state.togglerReducer.value)
+  const activeLink = useAppSelector((state) => state.bookingsTogglerReducer.value)
 
   return (
     <div className="w-full">
