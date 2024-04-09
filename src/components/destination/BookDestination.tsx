@@ -3,7 +3,7 @@ import "@/app/globals.css"
 import Image from "next/image";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "@/redux/store";
-import { hideDiv } from "@/redux/features/bookingVisibilitySlice";
+import { hideDiv } from "@/redux/features/bookingPopup";
 import { FaLocationDot } from "react-icons/fa6";
 
 const BookDestination = () => {

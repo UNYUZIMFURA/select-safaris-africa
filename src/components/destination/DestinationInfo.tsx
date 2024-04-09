@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "@/redux/store";
-import { showDiv} from "@/redux/features/bookingVisibilitySlice";
+import { showDiv} from "@/redux/features/bookingPopup";
 import { FaRegStar } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 

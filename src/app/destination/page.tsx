@@ -10,7 +10,7 @@ import Footer from "@/components/footer/Footer";
 import DestinationsRecommended from "@/components/destination/DestinationsRecommended";
 
 const Destination = () => {
-  const currentState = useAppSelector((state) => state.visibilityReducer.value.state);
+  const currentState = useAppSelector((state) => state.bookingPopupReducer.value.state);
 
   return (
     <div className="max-w-[125rem] w-full flex flex-col">
