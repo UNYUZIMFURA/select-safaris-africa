@@ -95,7 +95,7 @@ const Sidebar = () => {
         </div>
       </div>
       <div
-        className={`h-full w-[20%] backdrop-blur-[2px] transition-all duration-75 ${sidebarOpen ? "" : "backdrop-blur-0"}`}
+        className={`h-full w-[20%] backdrop-blur-[2px] transition-none ${sidebarOpen ? "" : "backdrop-blur-0"}`}
         onClick={() => dispatch(hideSidebar())}
       ></div>
     </div>
