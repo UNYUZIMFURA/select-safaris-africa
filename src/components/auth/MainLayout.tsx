@@ -21,7 +21,7 @@ const MainLayout: React.FC<Props> = ({ name, buttonName, title, subtitle, inputs
         <div className="text-black lg:py-[4rem] rounded-md flex flex-col w-full p-4 max-w-[28rem]">
           <div className="flex flex-col gap-4 py-5">
             <Image
-              src="/images/logo-black.png"
+              src="/images/favicon.png"
               alt="Lion head logo"
               height={42}
               width={42}

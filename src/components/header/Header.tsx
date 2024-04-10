@@ -9,12 +9,17 @@ import { showSidebar } from "@/redux/features/sidebar";
 import { usePathname, useRouter } from "next/navigation";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoChevronDownOutline } from "react-icons/io5";
+import DestinationsNavigation from "../destinations-navigation/DestinationsNavigation";
+import { showDestinationsNav } from "@/redux/features/destinationsNav";
 
 const Header = () => {
   const dispatch = useDispatch<AppDispatch>();
-   const sidebarOpen = useAppSelector(
-     (state) => state.sidebarVisibilityReducer.value.state
-   );
+  const sidebarOpen = useAppSelector(
+    (state) => state.sidebarVisibilityReducer.value.state,
+  );
+  const destinationsNavOpen = useAppSelector(
+    (state) => state.DestinationsNavReducer.value.state,
+  );
   const router = useRouter();
   const pathname = usePathname();
   const links = [
@@ -26,6 +31,7 @@ const Header = () => {
   return (
     <div className="border-b border-[rgba(255,255,255,0.2)] sticky top-0 z-20 bg-theme1 w-full flex items-center justify-between px-6 py-3 text-tertiary1 min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
       {sidebarOpen && <Sidebar />}
+      {destinationsNavOpen && <DestinationsNavigation />}
       <div
         className="p-3 bg-white rounded-full cursor-pointer"
         onClick={() => router.push("/")}
@@ -41,7 +47,17 @@ const Header = () => {
       <div className="lg:flex items-center gap-6 hidden lg:gap-12 xl:gap-16 2xl:gap-18">
         {links.map((el, index) => {
           const isActive = pathname === el.linkTo;
-          return (
+          return el.linkName === "Destinations" ? (
+            <Link
+              key={index}
+              className={`${isActive ? "text-brand font-bold" : ""} tracking-wide cursor-pointer hover:text-brand flex items-center gap-2`}
+              href=""
+              onClick={() => dispatch(showDestinationsNav())}
+            >
+              {el.linkName}
+              <IoChevronDownOutline />
+            </Link>
+          ) : (
             <Link
               key={index}
               className={`${isActive ? "text-brand font-bold" : ""} tracking-wide cursor-pointer hover:text-brand`}

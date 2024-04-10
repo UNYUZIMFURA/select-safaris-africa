@@ -3,6 +3,7 @@ import bookingsTogglerReducer from "./features/bookingsToggler";
 import bookingPopupReducer from "./features/bookingPopup";
 import sidebarVisibilityReducer from "./features/sidebar";
 import FAQQuestionReducer from "./features/FAQQuestion";
+import DestinationsNavReducer from "./features/destinationsNav"
 import { TypedUseSelectorHook, useSelector } from "react-redux";
 
 export const store = configureStore({
@@ -11,6 +12,7 @@ export const store = configureStore({
     bookingPopupReducer,
     sidebarVisibilityReducer,
     FAQQuestionReducer,
+    DestinationsNavReducer
   },
 });
 

@@ -7,7 +7,6 @@ import Booking from "@/components/bookings/Booking";
 
 const Page = () => {
   const activeLink = useAppSelector((state) => state.bookingsTogglerReducer.value)
-
   return (
     <div className="w-full">
       <div className="bg-[#F3F8F5] w-full flex flex-col">
