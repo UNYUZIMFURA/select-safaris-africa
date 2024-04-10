@@ -113,11 +113,8 @@ const DestinationsNavigation = () => {
             {attraction.category}
           </span>
           {attraction.names.map((name, index) => (
-            <div className="flex flex-col rounded-md">
-              <span
-                key={index}
-                className="p-2 min-[1630px]:pl-4 hover:bg-[rgba(16,169,105,0.2)] cursor-pointer rounded-md"
-              >
+            <div key={index} className="flex flex-col rounded-md">
+              <span className="p-2 min-[1630px]:pl-4 hover:bg-[rgba(16,169,105,0.2)] cursor-pointer rounded-md">
                 {name}
               </span>
             </div>
