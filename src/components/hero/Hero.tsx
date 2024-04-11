@@ -20,7 +20,10 @@ import Wildlife4 from "../../../public/images/wildlife_4.webp";
 import Wildlife5 from "../../../public/images/wildlife_5.webp";
 
 const Hero = () => {
-  const [imgIndex, setImgIndex] = useState(0);
+  const [waterbodyIndex, setWaterbodyIndex] = useState(0);
+  const [landscapeIndex, setLandscapeIndex] = useState(0);
+  const [wildlifeIndex, setWildlifeIndex] = useState(0);
+
   const [waterbodies] = useState([
     WaterBody1,
     WaterBody2,
@@ -45,15 +48,20 @@ const Hero = () => {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setImgIndex((prevIndex) => prevIndex + 1);
-      if (imgIndex === 4) {
-        setImgIndex(0);
+      setWaterbodyIndex((prevIndex) => prevIndex + 1);
+      setLandscapeIndex((prevIndex) => prevIndex + 1);
+      setWildlifeIndex((prevIndex) => prevIndex + 1);
+
+      if (waterbodyIndex === 4 || landscapeIndex === 4 || wildlifeIndex === 4) {
+        setWaterbodyIndex(0);
+        setLandscapeIndex(0);
+        setWildlifeIndex(0);
       }
     }, 5000);
     return () => {
       clearTimeout(timeout);
     };
-  }, [imgIndex]);
+  }, [waterbodyIndex, landscapeIndex, wildlifeIndex]);
 
   return (
     <div className="flex flex-col gap-6 bg-theme1 text-tertiary1 min-[1200px]:flex-row min-[1200px]:justify-between min-[1200px]:pl-[3rem] min-[1200px]:pt-[2rem] min-[1200px] 2xl:pl-[8rem] bg-cover">
@@ -75,44 +83,71 @@ const Hero = () => {
         <HeroButtons />
       </div>
       <div className="flex items-end justify-center gap-1 min-[1200px]:h-[650px] min-[1200px]:w-[60%]">
-        <div className="flex load-light overflow-hidden h-[150px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[180px] lg:h-[250px] min-[1200px]:h-[215px] min-[1200px]:w-[300px cursor-pointer">
+        <div className="relative flex load-light overflow-hidden h-[150px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[180px] lg:h-[250px] min-[1200px]:h-[215px] min-[1200px]:w-[300px cursor-pointer">
           {waterbodies.map((waterbody, index) => (
             <Image
               key={index}
               src={waterbody}
               alt=""
               style={{
-                translate: `${-100.1 * imgIndex}%`,
+                translate: `${-100.1 * waterbodyIndex}%`,
               }}
               className="block h-full w-full shrink-0 grow-0 object-cover transition-all duration-1000 ease-in"
             />
           ))}
+          <div className="hidden sm:flex px-2 gap-2 z-20 w-full justify-between absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black pt-[5rem] pb-2 lg:px-4 min-[1200px]:px-2 xl:px-4 2xl:px-6">
+            {waterbodies.map((_, index) => (
+              <div
+                key={index}
+                className={`h-[5px] w-[15%] rounded-md ${waterbodyIndex === index ? "bg-brand" : "bg-[rgba(255,255,255,.3)] hover:bg-[rgba(16,169,105,0.5)]"}`}
+                onClick={() => setWaterbodyIndex(index)}
+              ></div>
+            ))}
+          </div>
         </div>
-        <div className="flex load-light overflow-hidden relative h-[200px] w-[32%] rounded-t-[144.5px] min-[900px]:h-[230px] lg:h-[300px] min-[1200px]:h-[428px] cursor-pointer">
+        <div className="relative flex load-light overflow-hidden h-[200px] w-[32%] rounded-t-[144.5px] min-[900px]:h-[230px] lg:h-[300px] min-[1200px]:h-[428px] cursor-pointer">
           {landscapes.map((landscape, index) => (
             <Image
               key={index}
               src={landscape}
               alt=""
               style={{
-                translate: `${-100.1 * imgIndex}%`,
+                translate: `${-100.1 * landscapeIndex}%`,
               }}
               className="block h-full w-full shrink-0 grow-0 object-cover transition-all duration-1000 ease-in"
             />
           ))}
+          <div className="hidden sm:flex px-2 gap-2 z-20 w-full justify-between absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black pt-[5rem] pb-2 lg:px-4 min-[1200px]:px-2 xl:px-4 2xl:px-6">
+            {landscapes.map((_, index) => (
+              <div
+                key={index}
+                className={`h-[5px] w-[15%] rounded-md ${landscapeIndex === index ? "bg-brand" : "bg-[rgba(255,255,255,.3)] hover:bg-[rgba(16,169,105,0.5)]"}`}
+                onClick={() => setLandscapeIndex(index)}
+              ></div>
+            ))}
+          </div>
         </div>
-        <div className="flex load-light relative overflow-hidden h-[300px] w-[38%] rounded-tl-[300px] min-[900px]:h-[330px] lg:h-[400px] min-[1200px]:h-full cursor-pointer">
+        <div className="relative flex load-light overflow-hidden h-[300px] w-[38%] rounded-tl-[300px] min-[900px]:h-[330px] lg:h-[400px] min-[1200px]:h-full cursor-pointer">
           {wildlife.map((wildlife, index) => (
             <Image
               key={index}
               src={wildlife}
               alt=""
               style={{
-                translate: `${-100.1 * imgIndex}%`,
+                translate: `${-100.1 * wildlifeIndex}%`,
               }}
               className="block h-full w-full shrink-0 grow-0 object-cover transition-all duration-1000 ease-in"
             />
           ))}
+          <div className="hidden sm:flex px-2 gap-2 z-20 w-full justify-between absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black pt-[5rem] pb-2 lg:px-4 min-[1200px]:px-2 xl:px-4 2xl:px-6">
+            {wildlife.map((_, index) => (
+              <div
+                key={index}
+                className={`h-[5px] w-[15%] rounded-md ${wildlifeIndex === index ? "bg-brand" : "bg-[rgba(255,255,255,.3)] hover:bg-[rgba(16,169,105,0.5)]"}`}
+                onClick={() => setWildlifeIndex(index)}
+              ></div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

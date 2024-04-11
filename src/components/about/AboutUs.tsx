@@ -27,15 +27,15 @@ const AboutUs = () => {
           pariatur
         </span>
       </div>
-      <div className="relative w-1/2 z-10 py-8 xl:w-[40rem] 2xl:pl-44 lg:h-[33rem]">
+      <div className="flex justify-center relative z-10 py-14 w-full xl:w-[40rem] 2xl:pl-44 lg:block lg:h-[33rem] lg:w-1/2 ">
         <Image
-          src="/images/about-us.png"
-          alt=""
+          src="/images/elephants.png"
+          alt="Image showing elephants"
           height={100}
           width={400}
           className="lg:translate-y-[6rem] lg:h-[250px] lg:w-[500px] 2xl:-translate-x-[15.5rem]"
         />
-        <div className="hidden lg:flex -z-10 h-full w-11/12 bg-[#96c47f2f] absolute bottom-0 right-0  rounded-tl-[300px] rounded-bl-[300px]"></div>
+        <div className="h-full w-11/12 hidden -z-10 bg-[#96c47f2f] absolute bottom-0 right-0 rounded-tl-[300px] rounded-bl-[300px] lg:flex"></div>
       </div>
     </div>
   );
