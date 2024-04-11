@@ -24,9 +24,12 @@ const DestinationsNavigation = () => {
   useEffect(() => {
     const handleOutsideClick = (e: MouseEvent) => {
       const destinationsNav = document.getElementById("destinations-nav");
-      const clickedElement = e.target as HTMLElement;
+      const clickedElement = e.target as Node;
       if (destinationsNavOpen && (!destinationsNav || !destinationsNav.contains(clickedElement))) {
+        console.log("You can close!")
         dispatch(hideDestinationsNav())
+      } else {
+        console.log("Cannot close")
       }
     };
     document.addEventListener("mousedown", handleOutsideClick);
