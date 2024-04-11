@@ -1,9 +1,9 @@
 import Image from "next/image";
+import Header from "@/components/header/Header";
 import AboutUs from "@/components/about/AboutUs";
 import Objectives from "@/components/about/Objectives";
 import Partners from "@/components/about/Partners";
 import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
 
 const page = () => {
   return (

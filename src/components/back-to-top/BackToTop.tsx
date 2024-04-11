@@ -1,12 +1,10 @@
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import React, { useEffect, useState } from "react";
 import { HiArrowUp } from "react-icons/hi2";
 
 const BackToTop = () => {
   const router = useRouter();
-
-  const [isBackToTopRendered, setIsBackToTopRendered] =
-    useState<boolean>(false);
+  const [isBackToTopRendered, setIsBackToTopRendered] = useState<boolean>(false);
 
   useEffect(() => {
     const alterStyles = () => {

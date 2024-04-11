@@ -3,13 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import Sidebar from "../sidebar/Sidebar";
 import DestinationsNavigation from "../destinations-navigation/DestinationsNavigation";
+import { usePathname, useRouter } from "next/navigation";
 import { AppDispatch } from "@/redux/store";
 import { useDispatch } from "react-redux";
+import { showDestinationsNav } from "@/redux/features/destinationsNav";
 import { showSidebar } from "@/redux/features/sidebar";
-import { usePathname, useRouter } from "next/navigation";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoChevronDownOutline } from "react-icons/io5";
-import { showDestinationsNav } from "@/redux/features/destinationsNav";
 
 const Header = () => {
   const dispatch = useDispatch<AppDispatch>();

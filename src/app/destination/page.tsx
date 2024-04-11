@@ -6,8 +6,8 @@ import DestinationBanner from "@/components/destination/DestinationBanner";
 import DestinationInfo from "@/components/destination/DestinationInfo";
 import DestinationServices from "@/components/destination/DestinationServices";
 import DestinationReviews from "@/components/destination/DestinationReviews";
-import Footer from "@/components/footer/Footer";
 import DestinationsRecommended from "@/components/destination/DestinationsRecommended";
+import Footer from "@/components/footer/Footer";
 
 const Destination = () => {
   const currentState = useAppSelector((state) => state.bookingPopupReducer.value.state);

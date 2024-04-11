@@ -1,6 +1,6 @@
 "use client"
-import Image from "next/image";
 import "@/app/globals.css";
+import Image from "next/image";
 import { FaLocationDot } from "react-icons/fa6";
 import { useRouter } from "next/navigation";
 

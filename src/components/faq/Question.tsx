@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
-import { IoChevronDownOutline } from "react-icons/io5";
-import { IoChevronForwardOutline } from "react-icons/io5";
 import { useAppSelector } from "@/redux/store";
 import { AppDispatch } from "@/redux/store";
 import { useDispatch } from "react-redux";
 import { updateFAQQuestion } from "@/redux/features/FAQQuestion";
+import { IoChevronDownOutline } from "react-icons/io5";
+import { IoChevronForwardOutline } from "react-icons/io5";
 
 interface Props {
   id: number;

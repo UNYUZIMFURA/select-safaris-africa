@@ -1,7 +1,7 @@
+import "@/app/globals.css";
 import Image from "next/image";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { IoIosPeople } from "react-icons/io";
-import "@/app/globals.css"
 
 type BookingProps = {
   image: string;

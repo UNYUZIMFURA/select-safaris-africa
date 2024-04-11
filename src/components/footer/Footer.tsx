@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import BackToTop from "../back-to-top/BackToTop";
 import { usePathname, useRouter } from "next/navigation";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdPhone } from "react-icons/md";
 import { LuMail } from "react-icons/lu";
-import BackToTop from "../back-to-top/BackToTop";
 
 const Footer = () => {
   const router = useRouter();

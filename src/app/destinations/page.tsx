@@ -1,7 +1,7 @@
 import "@/app/globals.css";
 import "@/components/travels/styles/travels.css";
-import Image from "next/image";
 import { BiSearch } from "react-icons/bi";
+import Image from "next/image";
 import Header from "@/components/header/Header";
 import Travel from "@/components/travels/Travel";
 import Footer from "@/components/footer/Footer";

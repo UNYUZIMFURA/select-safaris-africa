@@ -1,6 +1,6 @@
 "use client"
+import "@/app/globals.css";
 import Image from "next/image";
-import "@/app/globals.css"
 import { useAppSelector } from "@/redux/store";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "@/redux/store";

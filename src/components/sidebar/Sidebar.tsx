@@ -2,9 +2,9 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation"
 import { AppDispatch } from "@/redux/store"
+import { useDispatch } from "react-redux";
 import { useAppSelector } from "@/redux/store";
 import { hideSidebar } from "@/redux/features/sidebar";
-import { useDispatch } from "react-redux";
 import { GoHomeFill } from "react-icons/go";
 import { IoMdInformationCircle } from "react-icons/io";
 import { IoCloseOutline } from "react-icons/io5";
