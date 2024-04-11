@@ -20,23 +20,19 @@ const DestinationsNavigation = () => {
   );
 
   // Logic to close Destinations Navigation once there is a click that occured outside of it
-  
   useEffect(() => {
     const handleOutsideClick = (e: MouseEvent) => {
       const destinationsNav = document.getElementById("destinations-nav");
-      const clickedElement = e.target as Node;
-      if (destinationsNavOpen && (!destinationsNav || !destinationsNav.contains(clickedElement))) {
-        console.log("You can close!")
+      const clickedElement = e.target
+      if (destinationsNavOpen && clickedElement !== destinationsNav && !destinationsNav?.contains(clickedElement as Node)) {
         dispatch(hideDestinationsNav())
-      } else {
-        console.log("Cannot close")
-      }
+      } 
     };
-    document.addEventListener("mousedown", handleOutsideClick);
+    document.addEventListener("click", handleOutsideClick);
     return () => {
-      document.removeEventListener("mousedown", handleOutsideClick);
+      document.removeEventListener("click", handleOutsideClick);
     };
-  }, []);
+  }, [destinationsNavOpen]);
 
   const countries = [
     "Burundi",
