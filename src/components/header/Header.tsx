@@ -2,21 +2,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import Sidebar from "../sidebar/Sidebar";
-import { useAppSelector } from "@/redux/store";
+import DestinationsNavigation from "../destinations-navigation/DestinationsNavigation";
 import { AppDispatch } from "@/redux/store";
 import { useDispatch } from "react-redux";
-import sidebar, { showSidebar } from "@/redux/features/sidebar";
+import { showSidebar } from "@/redux/features/sidebar";
 import { usePathname, useRouter } from "next/navigation";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoChevronDownOutline } from "react-icons/io5";
-import DestinationsNavigation from "../destinations-navigation/DestinationsNavigation";
 import { showDestinationsNav } from "@/redux/features/destinationsNav";
 
 const Header = () => {
   const dispatch = useDispatch<AppDispatch>();
-  const destinationsNavOpen = useAppSelector(
-    (state) => state.DestinationsNavReducer.value.state,
-  );
   const router = useRouter();
   const pathname = usePathname();
   const links = [
@@ -24,11 +20,11 @@ const Header = () => {
     { linkName: "About Us", linkTo: "/about" },
     { linkName: "Destinations", linkTo: "/destinations" },
   ];
-
+  
   return (
     <div className="border-b border-[rgba(255,255,255,0.2)] sticky top-0 z-20 bg-theme1 w-full flex items-center justify-between px-6 py-3 text-tertiary1 min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
       <Sidebar />
-      {destinationsNavOpen && <DestinationsNavigation />}
+      <DestinationsNavigation />
       <div
         className="p-3 bg-white rounded-full cursor-pointer"
         onClick={() => router.push("/")}

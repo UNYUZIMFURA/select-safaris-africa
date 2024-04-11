@@ -1,4 +1,9 @@
-import Link from "next/link"
+import Link from "next/link";
+import { useEffect } from "react";
+import { AppDispatch } from "@/redux/store";
+import { useDispatch } from "react-redux";
+import { useAppSelector } from "@/redux/store";
+import { hideDestinationsNav } from "@/redux/features/destinationsNav";
 import { IoMdTrendingUp } from "react-icons/io";
 import { FaVolcano } from "react-icons/fa6";
 import { FaWater } from "react-icons/fa";
@@ -7,12 +12,28 @@ import { MdMuseum } from "react-icons/md";
 import { PiDotsThreeCircleFill } from "react-icons/pi";
 import { BsArrowRight } from "react-icons/bs";
 import { IoCloseOutline } from "react-icons/io5";
-import { AppDispatch } from "@/redux/store";
-import { useDispatch } from "react-redux";
-import { hideDestinationsNav } from "@/redux/features/destinationsNav";
 
 const DestinationsNavigation = () => {
   const dispatch = useDispatch<AppDispatch>();
+  const destinationsNavOpen = useAppSelector(
+    (state) => state.DestinationsNavReducer.value.state,
+  );
+
+  // Logic to close Destinations Navigation once there is a click that occured outside of it
+  
+  useEffect(() => {
+    const handleOutsideClick = (e: MouseEvent) => {
+      const destinationsNav = document.getElementById("destinations-nav");
+      const clickedElement = e.target as HTMLElement;
+      if (destinationsNavOpen && (!destinationsNav || !destinationsNav.contains(clickedElement))) {
+        dispatch(hideDestinationsNav())
+      }
+    };
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
 
   const countries = [
     "Burundi",
@@ -22,10 +43,11 @@ const DestinationsNavigation = () => {
     "Nigeria",
     "South Africa",
   ];
+
   const attractions = [
     {
       category: "Volcanoes",
-      icon: <FaVolcano size={20} fill="#10a969"/>,
+      icon: <FaVolcano size={20} fill="#10a969" />,
       names: [
         "Mount Muhabura",
         "Mount Sabyinyo",
@@ -36,7 +58,7 @@ const DestinationsNavigation = () => {
     },
     {
       category: "Water Bodies",
-      icon: <FaWater size={20} fill="#10a969"/>,
+      icon: <FaWater size={20} fill="#10a969" />,
       names: [
         "Lake Kivu",
         "Lake Muhazi",
@@ -49,7 +71,7 @@ const DestinationsNavigation = () => {
     },
     {
       category: "National Parks",
-      icon: <PiParkFill size={28} fill="#10a969"/>,
+      icon: <PiParkFill size={28} fill="#10a969" />,
       names: [
         "Volcanoes National Park",
         "Akagera National Park",
@@ -59,7 +81,7 @@ const DestinationsNavigation = () => {
     },
     {
       category: "Museums",
-      icon: <MdMuseum size={20} fill="#10a969"/>,
+      icon: <MdMuseum size={20} fill="#10a969" />,
       names: [
         "King's Palace Museum",
         "Kandt House Museum",
@@ -70,7 +92,7 @@ const DestinationsNavigation = () => {
     },
     {
       category: "Others",
-      icon: <PiDotsThreeCircleFill size={20} fill="#10a969"/>,
+      icon: <PiDotsThreeCircleFill size={20} fill="#10a969" />,
       names: [
         "Amahoro Stadium",
         "Kigali Convention Centre",
@@ -81,7 +103,10 @@ const DestinationsNavigation = () => {
   ];
 
   return (
-    <div className="hidden lg:flex bg-white shadow-md text-[#2C2C2C] rounded-xl absolute w-[98%] top-[5rem] min-[1200px]:w-[calc(100%-9rem)] left-1/2 -translate-x-1/2 2xl:w-[calc(100%-17rem)]">
+    <div
+      id="destinations-nav"
+      className={`${destinationsNavOpen ? "flex visible opacity-1" : "opacity-0 invisible"} transition-opacity ease-in-out duration-300 bg-white shadow-md text-[#2C2C2C] rounded-xl absolute w-[98%] top-[5rem] min-[1200px]:w-[calc(100%-9rem)] left-1/2 -translate-x-1/2 2xl:w-[calc(100%-22rem)]`}
+    >
       <div className="flex flex-col p-4 gap-2 bg-[rgba(16,169,105,0.2)] w-[16%]">
         <span className="flex  items-center gap-2 text-brand font-bold p-1">
           <IoMdTrendingUp size={22} /> Trending
