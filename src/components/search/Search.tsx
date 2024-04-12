@@ -1,6 +1,6 @@
 const Search = () => {
   const countries = ["Rwanda", "Kenya", "Tanzania", "Egypt", "South Sudan", "Morocco","Ethiopia","Namibia","More"]
-  const durations = ["Less than 7 Days", "Up to 7 Days", "8 to 14 Days", "15 to 28 Days", "A Month", "1-3 Months"]
+  const durations = ["1-3 Days", "4 Days", "5 Days", "6 Days", "7 Days", "15 Days"]
   const months = ["Apr 2024", "May 2024", "June 2024", "July 2024", "August 2024", "September 2024", "October 2024","November 2024","December 2024"];
   return (
     <div className="w-full max-w-[35rem] mb-4 mt-4 text-[#2C2C2C] flex flex-col items-center gap-3 py-5 bg-[rgba(16,169,105,0.3)] rounded-md md:max-w-[45rem] min-[1200px]:max-w-full">
