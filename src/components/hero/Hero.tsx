@@ -1,8 +1,8 @@
 "use client";
 import "@/app/globals.css";
 import Image from "next/image";
-import { useState, useEffect } from "react";
-import HeroButtons from "./HeroButtons";
+import { useState, useEffect } from "react"
+import Search from "../search/Search"
 import WaterBody1 from "../../../public/images/waterbody_1.webp";
 import WaterBody2 from "../../../public/images/waterbody_2.webp";
 import WaterBody3 from "../../../public/images/waterbody_3.webp";
@@ -65,7 +65,7 @@ const Hero = () => {
 
   return (
     <div className="flex flex-col gap-6 bg-theme1 text-tertiary1 min-[1200px]:flex-row min-[1200px]:justify-between min-[1200px]:pl-[3rem] min-[1200px]:pt-[2rem] min-[1200px] 2xl:pl-[8rem] bg-cover">
-      <div className="flex w-full flex-col items-center gap-6 px-4 pt-[4.5rem] text-center min-[370px]:gap-8 min-[1200px]:w-[40%] min-[1200px]:items-start min-[1200px]:text-start min-[1200px]:gap-12">
+      <div className="flex w-full flex-col items-center gap-6 px-4 pt-[4.5rem] text-center min-[370px]:gap-8 min-[1200px]:w-[40%] min-[1200px]:items-start min-[1200px]:text-start min-[1200px]:gap-10 2xl:gap-8">
         <h1 className="text-sm font-bold text-[#10A969] min-[370px]:text-[16px] min-[1200px]:text-[18px] 2xl:text-[20px]">
           SELECT SAFARIS AFRICA CO.
         </h1>
@@ -77,10 +77,9 @@ const Hero = () => {
           of Africa with us
         </p>
         <span className="max-w-[32rem] text-[1rem] leading-[28px] text-[#88939E] min-[370px]:text-lg min-[400px]:text-lg">
-          Lorem ipsum dolor sit amet, consecteuer adipiscing elit. Donec odio.
-          Quisque volutpat mattis eros.
+          Lorem ipsum dolor sit amet, consecteuer adipiscing elit
         </span>
-        <HeroButtons />
+        <Search />
       </div>
       <div className="flex items-end justify-center gap-1 min-[1200px]:h-[650px] min-[1200px]:w-[60%]">
         <div className="relative flex load-light overflow-hidden h-[150px] w-[30%] rounded-t-[144.5px] min-[900px]:h-[180px] lg:h-[250px] min-[1200px]:h-[215px] min-[1200px]:w-[300px cursor-pointer">
@@ -95,7 +94,7 @@ const Hero = () => {
               className="block h-full w-full shrink-0 grow-0 object-cover transition-all duration-1000 ease-in"
             />
           ))}
-          <div className="hidden sm:flex px-2 gap-2 z-20 w-full justify-between absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black pt-[5rem] pb-2 lg:px-4 min-[1200px]:px-2 xl:px-4 2xl:px-6">
+          <div className="hidden sm:flex px-2 gap-2 z-20 w-full justify-between absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black pt-[5rem] pb-4 lg:px-4 min-[1200px]:px-2 xl:px-4 2xl:px-6">
             {waterbodies.map((_, index) => (
               <div
                 key={index}
@@ -117,7 +116,7 @@ const Hero = () => {
               className="block h-full w-full shrink-0 grow-0 object-cover transition-all duration-1000 ease-in"
             />
           ))}
-          <div className="hidden sm:flex px-2 gap-2 z-20 w-full justify-between absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black pt-[5rem] pb-2 lg:px-4 min-[1200px]:px-2 xl:px-4 2xl:px-6">
+          <div className="hidden sm:flex px-2 gap-2 z-20 w-full justify-between absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black pt-[5rem] pb-4 lg:px-4 min-[1200px]:px-2 xl:px-4 2xl:px-6">
             {landscapes.map((_, index) => (
               <div
                 key={index}
@@ -139,7 +138,7 @@ const Hero = () => {
               className="block h-full w-full shrink-0 grow-0 object-cover transition-all duration-1000 ease-in"
             />
           ))}
-          <div className="hidden sm:flex px-2 gap-2 z-20 w-full justify-between absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black pt-[5rem] pb-2 lg:px-4 min-[1200px]:px-2 xl:px-4 2xl:px-6">
+          <div className="hidden sm:flex px-2 gap-2 z-20 w-full justify-between absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black pt-[5rem] pb-4 lg:px-4 min-[1200px]:px-2 xl:px-4 2xl:px-6">
             {wildlife.map((_, index) => (
               <div
                 key={index}
