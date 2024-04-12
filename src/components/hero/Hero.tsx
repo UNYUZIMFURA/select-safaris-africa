@@ -94,7 +94,7 @@ const Hero = () => {
               className="block h-full w-full shrink-0 grow-0 object-cover transition-all duration-1000 ease-in"
             />
           ))}
-          <div className="hidden sm:flex px-2 gap-2 z-20 w-full justify-between absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black pt-[5rem] pb-3 lg:px-4 min-[1200px]:px-2 xl:px-4 2xl:px-6">
+          <div className="hidden sm:flex px-2 gap-2 z-20 w-full justify-between absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black pt-[5rem] pb-2 lg:px-4 min-[1200px]:px-2 xl:px-4 2xl:px-6">
             {waterbodies.map((_, index) => (
               <div
                 key={index}
@@ -116,7 +116,7 @@ const Hero = () => {
               className="block h-full w-full shrink-0 grow-0 object-cover transition-all duration-1000 ease-in"
             />
           ))}
-          <div className="hidden sm:flex px-2 gap-2 z-20 w-full justify-between absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black pt-[5rem] pb-3 lg:px-4 min-[1200px]:px-2 xl:px-4 2xl:px-6">
+          <div className="hidden sm:flex px-2 gap-2 z-20 w-full justify-between absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black pt-[5rem] pb-2 lg:px-4 min-[1200px]:px-2 xl:px-4 2xl:px-6">
             {landscapes.map((_, index) => (
               <div
                 key={index}
@@ -138,7 +138,7 @@ const Hero = () => {
               className="block h-full w-full shrink-0 grow-0 object-cover transition-all duration-1000 ease-in"
             />
           ))}
-          <div className="hidden sm:flex px-2 gap-2 z-20 w-full justify-between absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black pt-[5rem] pb-3 lg:px-4 min-[1200px]:px-2 xl:px-4 2xl:px-6">
+          <div className="hidden sm:flex px-2 gap-2 z-20 w-full justify-between absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black pt-[5rem] pb-2 lg:px-4 min-[1200px]:px-2 xl:px-4 2xl:px-6">
             {wildlife.map((_, index) => (
               <div
                 key={index}
