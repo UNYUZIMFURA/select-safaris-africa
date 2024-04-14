@@ -1,4 +1,5 @@
 import "./itinerary.css"
+import "@/app/globals.css"
 import Image from "next/image"
 
 const Itinerary = () => {
@@ -21,7 +22,7 @@ const Itinerary = () => {
     }
   ]
     return (
-      <section className="bg-white flex flex-col items-center gap-10 min-h-screen py-10 md:gap-[4rem] text-secondary">
+      <section className="bg-white flex flex-col items-center gap-10 py-10 md:gap-[4rem] text-secondary">
         <div className="flex flex-col gap-4 items-center text-center max-w-[45rem] px-2 leading-[28px]">
           <h2 className="text-[#1E1E1E] font-bold text-2xl">Itinerary</h2>
           <p>
@@ -55,7 +56,7 @@ const Itinerary = () => {
                 </p>
               </div>
               <div
-                className={`h-[300px] w-[calc(100%-40px)] cursor-pointer relative overflow-hidden rounded-xl ml-[30px] md:w-[calc(50%-60px)] ${index % 2 === 0 ? "md:ml-[30px]" : "md:mr-[30px]"} md:mt-1 md:m-0`}
+                className={`load-dark h-[300px] w-[calc(100%-40px)] cursor-pointer relative overflow-hidden rounded-xl ml-[30px] md:w-[calc(50%-60px)] ${index % 2 === 0 ? "md:ml-[30px]" : "md:mr-[30px]"} md:mt-1 md:m-0`}
               >
                 <Image src={`/images/${el.image}`} fill={true} alt="" className="object-cover" />
               </div>
