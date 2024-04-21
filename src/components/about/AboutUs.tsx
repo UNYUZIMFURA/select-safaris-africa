@@ -6,7 +6,7 @@ const AboutUs = () => {
     <div className="relative flex flex-col lg:flex-row gap-6 items-center lg:justify-between lg:px-0 lg:py-[3rem] lg:items-start text-center px-4 py-8 bg-white">
       <div className="flex flex-col items-center gap-7 lg:w-1/2 lg:items-start lg:text-start lg:pl-10 min-[1200px]:pl-[4rem] 2xl:py-[1rem] 2xl:pl-[8.5rem] ">
         <span className="text-brand font-bold text-[22px]">JOYFUL & FAST</span>
-        <h2 className="text-tertiary2 text-2xl md:text-3xl font-bold md:max-w-[40rem] lg:max-w-[35rem] md:leading-[3rem] lg:leading-[2.5rem] xl:text-4xl xl:leading-[3.5rem] xl:max-w-[45rem]">
+        <h2 className="text-tertiary2 text-2xl md:text-3xl font-bold md:max-w-[40rem] lg:max-w-[35rem] md:leading-[3rem] lg:leading-[2.5rem] 2xl:text-4xl 2xl:leading-[3.5rem] 2xl:max-w-[45rem]">
           We're just a small dedicated team that believes adventures in{" "}
           <span className="text-brand">East Africa</span> can be better.
         </h2>

@@ -27,7 +27,7 @@ const Question: React.FC<Props> = ({ id, question, answer }) => {
 
   return (
     <div
-      className={`${questionOpen && activeQuestionId === id ? "border-2 border-brand shadow-none" : ""} shadow-[0px_5px_16px_0_rgba(8,15,52,0.06)] rounded-2xl flex flex-col md:max-w-[45rem] lg:max-w-[60rem] px-4 py-5`}
+      className={`${questionOpen && activeQuestionId === id ? "border-2 border-brand shadow-none" : ""} shadow-[0px_5px_16px_0_rgba(8,15,52,0.06)] rounded-2xl flex flex-col md:max-w-[45rem] lg:max-w-[55rem] px-4 py-4`}
     >
       <div
         className="flex items-start text-start px-4 gap-4 justify-between flex-col xs:items-center xs:flex-row cursor-pointer"

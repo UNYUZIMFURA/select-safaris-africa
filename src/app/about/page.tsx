@@ -10,15 +10,15 @@ const page = () => {
     <div className="max-w-[125rem] flex flex-col w-full text-white">
       <Header />
       <div
-        className="relative py-[7rem] w-full bg-slate-200 flex flex-col gap-8 bg-cover bg-center"
+        className="relative py-[5rem] w-full bg-slate-200 flex flex-col gap-6 bg-cover bg-center 2xl:py-[7rem]"
         style={{
           backgroundImage:
             "linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.6)),url('/images/sunset.webp')",
         }}
       >
         <div className="flex flex-col gap-3 items-center">
-          <h2 className="text-4xl font-bold">About us</h2>
-          <Image src="/images/underline.png" alt="" height={1} width={190} />
+          <h2 className="text-3xl font-bold">About us</h2>
+          <Image src="/images/underline.png" alt="" height={1} width={140} />
         </div>
       </div>
       <AboutUs />

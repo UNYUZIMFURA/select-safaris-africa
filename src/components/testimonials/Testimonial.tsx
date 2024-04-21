@@ -5,7 +5,12 @@ import { ImQuotesRight } from "react-icons/im";
 import { FaRegStar } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 
-const Review = () => {
+interface Props {
+  name: string
+  testimonial: string
+}
+
+const Testimonial: React.FC<Props> = ({name, testimonial}) => {
   return (
     <div className="relative flex flex-col items-center bg-[#10a9691c] px-4 py-[5rem] rounded-3xl">
       <ImQuotesLeft
@@ -29,11 +34,9 @@ const Review = () => {
         </div>
       </div>
       <div className="flex flex-col gap-6 text-center items-center">
-        <h2 className="font-bold text-[22px] md:text-[24px]">Jeff Davis</h2>
+        <h2 className="font-bold text-[22px] md:text-[24px]">{name}</h2>
         <span className="text-secondary leading-[28px] sm:max-w-[28rem] font-light">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
-          Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-          Suspendisse urna nibh viverra non semper suscipit posuere a pede
+          {testimonial}
         </span>
         <div className="flex items-center gap-4">
           <FaStar color="#10A969" size={20} />
@@ -47,4 +50,4 @@ const Review = () => {
   );
 };
 
-export default Review;
+export default Testimonial;

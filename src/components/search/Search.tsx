@@ -3,12 +3,12 @@ const Search = () => {
   const durations = ["1-3 Days", "4 Days", "5 Days", "6 Days", "7 Days", "15 Days"]
   const months = ["Apr 2024", "May 2024", "June 2024", "July 2024", "August 2024", "September 2024", "October 2024","November 2024","December 2024"];
   return (
-    <div className="w-full max-w-[35rem] mb-4 mt-4 text-[#2C2C2C] flex flex-col items-center gap-3 py-5 bg-[rgba(16,169,105,0.4)] rounded-md md:max-w-[45rem] min-[1200px]:max-w-full">
+    <div className="w-full max-w-[35rem] mb-4 mt-4 text-[#2C2C2C] flex flex-col items-center gap-3 py-4 bg-[rgba(16,169,105,0.4)] rounded-md md:max-w-[45rem] min-[1200px]:max-w-full">
       <div className="flex flex-col min-[500px]:flex-row w-full gap-3 px-3 sm:px-3 md:gap-4 2xl:px-4">
         <select
           defaultValue={"DEFAULT"}
           name="countries"
-          className="border-r-[0.625rem] border-transparent p-2.5 py-4 w-full rounded-md cursor-pointer"
+          className="border-r-[0.625rem] border-transparent p-2.5 py-3 2xl:py-4 w-full rounded-md cursor-pointer"
         >
           <option value="DEFAULT" disabled hidden>
             Where to?
@@ -22,7 +22,7 @@ const Search = () => {
         <select
           defaultValue={"DEFAULT"}
           name="months"
-          className="border-r-[0.625rem] border-transparent p-2.5 py-4 w-full rounded-md cursor-pointer"
+          className="border-r-[0.625rem] border-transparent p-2.5 py-3 2xl:py-4 w-full rounded-md cursor-pointer"
         >
           <option value="DEFAULT" disabled hidden>
             When?
@@ -38,7 +38,7 @@ const Search = () => {
         <select
           defaultValue={"DEFAULT"}
           name="duration"
-          className="border-r-[0.625rem] border-transparent p-2.5 py-4 w-full rounded-md cursor-pointer"
+          className="border-r-[0.625rem] border-transparent p-2.5 py-3 2xl:py-4 w-full rounded-md cursor-pointer"
         >
           <option value="DEFAULT" disabled hidden>
             How long?
@@ -49,7 +49,7 @@ const Search = () => {
             </option>
           ))}
         </select>
-        <button className="p-4 bg-brand w-full text-white rounded-full">
+        <button className="p-3 2xl:p-4 bg-brand w-full text-white rounded-full">
           Search
         </button>
       </div>

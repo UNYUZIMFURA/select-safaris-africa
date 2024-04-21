@@ -5,19 +5,32 @@ const Process = () => {
   return (
     <div className="py-10 px-5 flex flex-col gap-10 bg-white text-tertiary2 2xl:px-[8.5rem] min-[1200px]:px-[3rem] md:gap-[2rem] lg:py-[4rem] lg:gap-[3rem]">
       <div className="flex flex-col gap-5 max-w-[36rem]">
-        <p className="text-brand text-[20px] font-bold">JOYFUL & FAST</p>
-        <h2 className="text-[24px] font-bold lg:text-[32px] xl:text-[40px]">
+        <p className="text-brand text-lg font-bold">JOYFUL & FAST</p>
+        <h2 className="text-[24px] font-bold lg:text-[28px] 2xl:text-[40px]">
           It's just simple steps that turn your{" "}
           <span className="text-brand">adventure into enjoyment</span>
         </h2>
         <h3 className="text-secondary lg:max-w-[23rem] xl:text-[17px]">
-          Lorem ipsum dolor sit amet, consectetuer adipscing elit. Donec odio.
+          Turn your dream trip into reality with just a few clicks. We'll make
+          your journey unforgettable.
         </h3>
       </div>
       <div className="flex flex-col items-center gap-5 md:flex-row md:gap-2 lg:gap-4 xl:gap-8">
-        <Step no={1} title="Select a destination" />
-        <Step no={2} title="Submit a reservation" />
-        <Step no={3} title="Enjoy Adventure" />
+        <Step
+          no={1}
+          title="Select a destination"
+          description="From bustling cities to serene beaches, we offer something for every travel style."
+        />
+        <Step
+          no={2}
+          title="Submit a reservation"
+          description="Secure your hotel spot, grab meals from professionals and ensure an unforgettable stay!"
+        />
+        <Step
+          no={3}
+          title="Enjoy Adventure"
+          description="Crafted around your destination, your awaited itinerary ensures an enjoyable visit!"
+        />
       </div>
     </div>
   );

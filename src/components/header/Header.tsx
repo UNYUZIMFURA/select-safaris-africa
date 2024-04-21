@@ -22,7 +22,7 @@ const Header = () => {
   ];
   
   return (
-    <div className="border-b border-[rgba(255,255,255,0.2)] sticky top-0 z-20 bg-theme1 w-full flex items-center justify-between px-6 py-3 text-tertiary1 min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
+    <div className="border-b border-[rgba(255,255,255,0.2)] sticky top-0 z-30 bg-theme1 w-full flex items-center justify-between px-6 py-3 text-tertiary1 min-[1200px]:px-[4rem] 2xl:px-[8.5rem]">
       <Sidebar />
       <DestinationsNavigation />
       <div
@@ -79,7 +79,7 @@ const Header = () => {
           </div>
         </div>
         <button
-          className="py-3 px-10 rounded-lg border-2 border-brand text-brand"
+          className="py-2 px-10 rounded-lg border-2 border-brand text-brand"
           onClick={() => router.push("/login")}
         >
           Sign in
