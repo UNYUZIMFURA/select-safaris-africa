@@ -43,9 +43,10 @@ const Footer = () => {
             />
           </div>
           <span className="font-thin text-secondary leading-[2rem] max-w-[20rem] md:max-w-[15rem] xl:max-w-[30rem]">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-            odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-            Suspendisse
+            Embark on unforgettable memories in Africa's wilderness with Select
+            Safaris Africa, a leading tour operator. Craft your dream African
+            adventure with Personalized itineraries and meet expert drivers for
+            an unforgettable safari experience.
           </span>
           <div className="flex items-center gap-6">
             <FaLinkedin color="#10A969" size={24} className="cursor-pointer" />
