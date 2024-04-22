@@ -10,15 +10,17 @@ const DestinationInfo = () => {
   return (
     <div className="bg-white flex flex-col pt-[23rem] px-4 gap-10 md:flex-row md:justify-between min-[1200px]:px-14 2xl:px-[8.5rem]">
       <div className="flex flex-col gap-6">
-        <h3 className="text-2xl font-bold tracking-wide">Muhazi Lake Resort</h3>
+        <h3 className="text-2xl font-bold tracking-wide">About the Place</h3>
         <p className="text-secondary leading-[1.7rem] max-w-[34rem]">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elitLorem ipsum
-          dolor sit amet, consectetuer adipiscing elitLorem ipsum dolor sit
-          amet, consectetuer adipiscing elitLorem ipsum dolor sit amet,
-          consectetuer adipiscing elitLorem ipsum dolor sit amet, consectetuer
-          adipiscing elit
+          For over a century, visitors across the globe have been drawn to Virunga National Park,
+          Africa's oldest. Nestled in Congo, it boasts diverse landscapes from
+          volcanoes to forests, harboring endangered species like mountain
+          gorillas, captivating global attention
         </p>
-        <button className="bg-brand text-white py-3 px-4 rounded-lg max-w-[15rem]" onClick={() => dispatch(showDiv())}>
+        <button
+          className="bg-brand text-white py-3 px-4 rounded-lg max-w-[15rem]"
+          onClick={() => dispatch(showDiv())}
+        >
           Place a book
         </button>
       </div>

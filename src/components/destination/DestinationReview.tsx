@@ -4,9 +4,10 @@ import { FaStar } from "react-icons/fa";
 
 type Props = {
   reviewer: string;
+  review: string;
 };
 
-const DestinationReview: React.FC<Props> = ({ reviewer }) => {
+const DestinationReview: React.FC<Props> = ({ reviewer, review }) => {
   return (
     <div className="cursor-pointer border border-brand w-full flex flex-col gap-7 px-4 2xl:px-8 shadow-lg py-10 max-w-[40rem] rounded-lg">
       <div className="flex flex-col gap-4">
@@ -23,9 +24,7 @@ const DestinationReview: React.FC<Props> = ({ reviewer }) => {
         <FaRegStar color="#10A969" size={20} />
       </div>
       <span className="text-secondary leading-[1.8rem] max-w-[25rem]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-        mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-        voluptatum .
+       {review}
       </span>
     </div>
   );

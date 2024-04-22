@@ -17,14 +17,14 @@ const DestinationBanner = () => {
       <div className="flex items-center gap-4">
         <span>Destinations</span>
         <RiArrowRightSLine size={24} color="#10A969" />
-        <span>Muhazi Lake Resort</span>
+        <span>Volcanoes National Park</span>
       </div>
       <h3 className="text-xl md:text-2xl 2xl:text-3xl font-bold tracking-wide">
-        Muhazi Lake Resort Hotel & Restaurant
+        Virunga National Park Safari
       </h3>
       <div className="flex items-center gap-3">
         <FaLocationDot color="#10A969" size={22} />
-        <span className="font-medium text-brand">Kigali</span>
+        <span className="font-medium text-brand">Musanze</span>
       </div>
       <div className="flex lg:gap-3 transition h-[25rem] md:h-[28rem] 2xl:h-[32rem] md:-bottom-[18rem] absolute w-full px-3 min-[1200px]:px-14 -bottom-[20rem] left-0 right-0 mx-auto 2xl:px-[8rem]">
         <div
