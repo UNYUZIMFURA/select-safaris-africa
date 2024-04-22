@@ -1,21 +1,21 @@
-name: Production Deployemnt
+name: Production Deployment
 on:
-    push:
-        branches: [production]
+  push:
+    branches: [production]
 
 jobs:
-    deploy:
-        runs-on: [self-hosted, linux, x64]
-        strategy:
-            matrix:
-                node-version: [18.x]
+  deploy:
+    runs-on: [self-hosted, linux, x64]
+    strategy:
+      matrix:
+        node-version: [18.x]
 
-        steps:
-            - uses: actions/checkout@v2
-            - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v2
-              with:
-                  -version: ${{ matrix.node-version }}
-            - run: npm install
-            - run: npm run build
-            node- run: pm2 restart select-safaris-landing
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
+      - run: npm run build
+      - run: pm2 restart select-safaris-landing
