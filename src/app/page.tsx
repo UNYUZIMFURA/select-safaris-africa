@@ -4,6 +4,7 @@ import Process from "@/components/process/Process";
 import Testimonials from "@/components/testimonials/Testimonials";
 import FAQ from "@/components/faq/FAQ";
 import Footer from "@/components/footer/Footer";
+import LiveChat from "@/components/live-chat/LiveChat";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <Footer />
+      <LiveChat />
     </main>
   );
 }

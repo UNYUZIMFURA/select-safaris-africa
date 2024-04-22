@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
@@ -7,14 +7,20 @@ import { useRouter } from "next/navigation";
 
 type Props = {
   name: string;
-  buttonName: string
+  buttonName: string;
   title: string;
   subtitle: string;
   inputs: InputProps[];
 };
 
-const MainLayout: React.FC<Props> = ({ name, buttonName, title, subtitle, inputs }) => {
-  const router = useRouter()
+const MainLayout: React.FC<Props> = ({
+  name,
+  buttonName,
+  title,
+  subtitle,
+  inputs,
+}) => {
+  const router = useRouter();
   return (
     <div className="flex w-full min-h-screen">
       <div className="bg-white border w-full lg:w-[40%] h-full  flex flex-col items-center justify-center p-4">

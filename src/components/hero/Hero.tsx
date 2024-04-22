@@ -1,8 +1,8 @@
 "use client";
 import "@/app/globals.css";
 import Image from "next/image";
-import { useState, useEffect } from "react"
-import Search from "../search/Search"
+import { useState, useEffect } from "react";
+import Search from "../search/Search";
 import WaterBody1 from "../../../public/images/waterbody_1.webp";
 import WaterBody2 from "../../../public/images/waterbody_2.webp";
 import WaterBody3 from "../../../public/images/waterbody_3.webp";
