@@ -28,6 +28,7 @@ const Footer = () => {
     ]
     return (
         <div className="flex flex-col gap-10 bg-[#19211A] px-5 py-8 text-tertiary1 min-[600px]:px-14 md:justify-between md:gap-12 lg:flex-row lg:py-[4rem]  2xl:px-[8rem]">
+            <BackToTop />
             <div className="flex flex-col gap-8 md:flex-row md:justify-between lg:w-[calc(100%-20rem)] 2xl:w-[calc(90%-20rem)]">
                 <div className="flex flex-col gap-6">
                     <div
@@ -112,7 +113,6 @@ const Footer = () => {
                     </button>
                 </form>
             </div>
-            <BackToTop />
         </div>
     )
 }

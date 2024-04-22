@@ -1,5 +1,6 @@
 import "./globals.css"
 import { ReduxProvider } from "@/redux/provider"
+import LiveChat from "@/components/live-chat/LiveChat"
 import localFont from "next/font/local"
 
 const gensans = localFont({
@@ -25,6 +26,7 @@ export default function RootLayout({
         <html lang="en" className={`${gensans.variable}`}>
             <body>
                 <ReduxProvider>{children}</ReduxProvider>
+                <LiveChat />
             </body>
         </html>
     )

@@ -36,7 +36,7 @@ const BackToTop = () => {
     return (
         <div
             onClick={() => router.push("#")}
-            className={`back-to-top invisible fixed bottom-[4rem] right-[1rem] z-20 mt-2 flex h-[4rem] w-[4rem] cursor-pointer items-center justify-center rounded-full bg-brand text-tertiary1 min-[1200px]:right-[3rem] 2xl:right-[4rem]`}
+            className={`back-to-top invisible fixed bottom-[1rem] left-[1rem] z-20 mt-2 flex h-[60px] w-[60px] cursor-pointer items-center justify-center rounded-full bg-[#03A84E] text-tertiary1 min-[1200px]:left-[3rem] 2xl:left-[4rem]`}
         >
             <HiArrowUp size={20} />
         </div>
