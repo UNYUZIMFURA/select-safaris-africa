@@ -1,31 +1,31 @@
-import "./globals.css";
-import { ReduxProvider } from "@/redux/provider";
-import localFont from "next/font/local";
+import "./globals.css"
+import { ReduxProvider } from "@/redux/provider"
+import localFont from "next/font/local"
 
 const gensans = localFont({
-  src: [
-    {
-      path: "../../public/fonts/GeneralSans-Medium.otf",
-    },
-  ],
-  variable: "--font-gensans",
-});
+    src: [
+        {
+            path: "../../public/fonts/GeneralSans-Medium.otf",
+        },
+    ],
+    variable: "--font-gensans",
+})
 
 export const metadata = {
-  title: "Select Safaris Africa",
-  description: "Enjoy the Adventure of Africa",
-};
+    title: "Select Safaris Africa",
+    description: "Enjoy the Adventure of Africa",
+}
 
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode
 }) {
-  return (
-    <html lang="en" className={`${gensans.variable}`}>
-      <body>
-        <ReduxProvider>{children}</ReduxProvider>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en" className={`${gensans.variable}`}>
+            <body>
+                <ReduxProvider>{children}</ReduxProvider>
+            </body>
+        </html>
+    )
 }

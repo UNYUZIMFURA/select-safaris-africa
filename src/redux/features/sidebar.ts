@@ -1,35 +1,35 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit"
 
 type StateType = {
-  state: boolean;
-};
+    state: boolean
+}
 
 const initialState = {
-  value: {
-    state: false,
-  } as StateType,
-};
+    value: {
+        state: false,
+    } as StateType,
+}
 
 export const toggleSidebarVisibility = createSlice({
-  name: "Sidebar Visibility",
-  initialState,
-  reducers: {
-    showSidebar: (_) => {
-      return {
-        value: {
-          state: true,
+    name: "Sidebar Visibility",
+    initialState,
+    reducers: {
+        showSidebar: (_) => {
+            return {
+                value: {
+                    state: true,
+                },
+            }
         },
-      };
-    },
-    hideSidebar: (_) => {
-      return {
-        value: {
-          state: false,
+        hideSidebar: (_) => {
+            return {
+                value: {
+                    state: false,
+                },
+            }
         },
-      };
     },
-  },
-});
+})
 
-export const { showSidebar, hideSidebar } = toggleSidebarVisibility.actions;
-export default toggleSidebarVisibility.reducer;
+export const { showSidebar, hideSidebar } = toggleSidebarVisibility.actions
+export default toggleSidebarVisibility.reducer

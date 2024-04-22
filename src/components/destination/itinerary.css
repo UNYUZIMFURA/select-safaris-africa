@@ -1,14 +1,14 @@
-.timeline-items::before{
-    content: '';
+.timeline-items::before {
+    content: "";
     position: absolute;
     width: 2px;
     height: 100%;
-    background-color: #10969A;
-    left: calc(50% - 2px)
+    background-color: #10969a;
+    left: calc(50% - 2px);
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
     .timeline-items::before {
-        left:17px
+        left: 17px;
     }
 }

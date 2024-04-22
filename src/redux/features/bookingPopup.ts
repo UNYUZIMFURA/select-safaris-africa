@@ -1,36 +1,35 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit"
 
 type StateType = {
- state: boolean
+    state: boolean
 }
 
 const initialState = {
-  value: {
-    state: false,
-  } as StateType
-}; 
-
+    value: {
+        state: false,
+    } as StateType,
+}
 
 export const toggleVisibility = createSlice({
-    name: "visibility", 
+    name: "visibility",
     initialState,
-  reducers: {
-      showDiv: (_) => {
+    reducers: {
+        showDiv: (_) => {
             return {
                 value: {
-                  state: true
-              }
-          }
+                    state: true,
+                },
+            }
         },
         hideDiv: (_) => {
             return {
                 value: {
-                   state: false
-               }
-           }
-        }
-    }
+                    state: false,
+                },
+            }
+        },
+    },
 })
 
-export const { showDiv, hideDiv } = toggleVisibility.actions;
-export default toggleVisibility.reducer;
+export const { showDiv, hideDiv } = toggleVisibility.actions
+export default toggleVisibility.reducer

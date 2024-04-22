@@ -3,87 +3,88 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --color-1: #10a969;
-    --color-2: #aab2ba;
-    --color-3: #0e150f;
-    --color-4: #fff;
-    --color-5: #ffffff28;
-    --color-6: #000;
-    --color-7: #ffffff18;
-    --color-8: #73954318;
-  }
+    :root {
+        --color-1: #10a969;
+        --color-2: #aab2ba;
+        --color-3: #0e150f;
+        --color-4: #fff;
+        --color-5: #ffffff28;
+        --color-6: #000;
+        --color-7: #ffffff18;
+        --color-8: #73954318;
+    }
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  background-color: #0e150f;
-  font-family: var(--font-gensans);
+    display: flex;
+    justify-content: center;
+    background-color: #0e150f;
+    font-family: var(--font-gensans);
 }
 
-input, button, textarea, select {
-  outline: none;
+input,
+button,
+textarea,
+select {
+    outline: none;
 }
-
 
 @keyframes skeleton-light {
-  0% {
-    background-color: #5b8d783a;
-  }
+    0% {
+        background-color: #5b8d783a;
+    }
 
-  100% {
-    background-color: #3ebb8710;
-  }
+    100% {
+        background-color: #3ebb8710;
+    }
 }
 
 @keyframes skeleton-light-2 {
-  0% {
-    background-color: rgba(0, 0, 0, 0.603);
-  }
+    0% {
+        background-color: rgba(0, 0, 0, 0.603);
+    }
 
-  100% {
-    background-color: rgba(0, 0, 0, 0.801);
-  }
+    100% {
+        background-color: rgba(0, 0, 0, 0.801);
+    }
 }
 
 @keyframes skeleton-dark {
-  0% {
-    background-color: rgba(0, 0, 0, 0.137);
-  }
+    0% {
+        background-color: rgba(0, 0, 0, 0.137);
+    }
 
-  100% {
-    background-color: rgba(0, 0, 0, 0.048);
-  }
+    100% {
+        background-color: rgba(0, 0, 0, 0.048);
+    }
 }
 
 .load-light {
-  animation: skeleton-light 1s linear infinite alternate;
+    animation: skeleton-light 1s linear infinite alternate;
 }
 
 .load-dark {
-  animation: skeleton-dark 1s linear infinite alternate;
+    animation: skeleton-dark 1s linear infinite alternate;
 }
 
 .load-light-2 {
-  animation: skeleton-light-2 1s linear infinite alternate;
-
+    animation: skeleton-light-2 1s linear infinite alternate;
 }
 
 button {
-  outline: none;
+    outline: none;
 }
 
 .back-to-top {
-  transition: all 0.4s;
+    transition: all 0.4s;
 }
