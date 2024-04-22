@@ -77,7 +77,7 @@ const MainLayout: React.FC<Props> = ({ name, buttonName, title, subtitle, inputs
           className={`flex flex-col gap-8 mb-[5rem] ${name === "login" ? "max-w-[29rem] 2xl:max-w-[35rem]" : "max-w-[34rem] 2xl:max-w-[43rem]"} xl:gap-10`}
         >
           <span className="text-brand mr-[12rem] 2xl:text-lg">
-            SELECT SAFARIS EAST AFRICA CO.
+            SELECT SAFARIS EAST AFRICA
           </span>
           <h2 className="text-5xl font-bold tracking-wider leading-[4rem] 2xl:text-6xl 2xl:leading-[5rem]">
             {title}

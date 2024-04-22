@@ -67,7 +67,7 @@ const Hero = () => {
     <div className="flex flex-col gap-6 bg-theme1 text-tertiary1 min-[1200px]:flex-row min-[1200px]:justify-between min-[1200px]:pl-[3rem] min-[1200px]:pt-[2rem] 2xl:pl-[8rem] bg-cover">
       <div className="flex w-full flex-col items-center justify-between gap-6 px-4 pt-[4.5rem] text-center min-[370px]:gap-8 min-[1200px]:w-[40%] min-[1200px]:items-start min-[1200px]:text-start min-[1200px]:gap-7 2xl:gap-8">
         <h1 className="text-sm font-bold text-[#10A969] min-[370px]:text-[16px] min-[1200px]:text-[18px] 2xl:text-[20px]">
-          SELECT SAFARIS AFRICA CO.
+          SELECT SAFARIS AFRICA
         </h1>
         <p className="max-w-[50rem] text-2xl font-bold leading-10 min-[370px]:text-[30px] min-[370px]:leading-[3.5rem] min-[400px]:text-[36px] min-[700px]:text-[2.8rem] min-[700px]:leading-[4.2rem] min-[1200px]:text-[33px] min-[1200px]:leading-[3.3rem] 2xl:leading-[5rem] 2xl:text-[56px]">
           No dream, enjoy the{" "}
