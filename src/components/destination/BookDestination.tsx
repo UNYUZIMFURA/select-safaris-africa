@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import "@/app/globals.css"
 import Image from "next/image";
 import { useDispatch } from "react-redux";

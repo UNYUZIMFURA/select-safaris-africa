@@ -18,7 +18,7 @@ const Step: React.FC<Props> = ({no, title, description}) => {
       </div>
       <div className="flex flex-col gap-4">
         <h2 className="font-bold text-black text-[20px] pl-1">{title}</h2>
-        <p className="text-secondary pl-1 xl:max-w-[28rem] text-sm">
+        <p className="text-secondary pl-1 xl:max-w-[28rem]">
           {description}
         </p>
       </div>

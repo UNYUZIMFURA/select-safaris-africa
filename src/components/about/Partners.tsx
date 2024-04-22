@@ -28,7 +28,7 @@ const Partners = () => {
           <span className="text-brand">we partner with</span>
         </h2>
         <p className="text-[#000B0B] lg:text-[1.1rem] xl:max-w-[30rem]">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+          We are proud to partner with a network of trusted partners including:
         </p>
       </div>
       <div className="w-full grid grid-cols-2 justify-items-center gap-6 md:grid-cols-3 md:justify-between py-10 xl:py-[3rem] 2xl:px-[10rem]">

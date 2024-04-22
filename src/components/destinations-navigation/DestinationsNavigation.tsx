@@ -23,10 +23,14 @@ const DestinationsNavigation = () => {
   useEffect(() => {
     const handleOutsideClick = (e: MouseEvent) => {
       const destinationsNav = document.getElementById("destinations-nav");
-      const clickedElement = e.target
-      if (destinationsNavOpen && clickedElement !== destinationsNav && !destinationsNav?.contains(clickedElement as Node)) {
-        dispatch(hideDestinationsNav())
-      } 
+      const clickedElement = e.target;
+      if (
+        destinationsNavOpen &&
+        clickedElement !== destinationsNav &&
+        !destinationsNav?.contains(clickedElement as Node)
+      ) {
+        dispatch(hideDestinationsNav());
+      }
     };
     document.addEventListener("click", handleOutsideClick);
     return () => {

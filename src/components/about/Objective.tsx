@@ -6,9 +6,16 @@ type IconProps = {
 interface Props {
   Icon: (props: IconProps) => JSX.Element;
   title: string;
+  description?: string;
+  iterable?: string[];
 }
 
-const Objective: React.FC<Props> = ({ Icon, title }) => {
+const Objective: React.FC<Props> = ({
+  Icon,
+  title,
+  description,
+  iterable,
+}) => {
   return (
     <div className="border border-brand cursor-pointer shadow-lg w-full flex flex-col gap-5 py-12 px-3 md:px-5 xl:px-3 text-tertiary2 bg-white items-center rounded-[10px]">
       <div className="flex flex-col items-center gap-4">
@@ -17,11 +24,18 @@ const Objective: React.FC<Props> = ({ Icon, title }) => {
         </div>
         <h3 className="text-xl font-bold md:text-[1.3rem]">{title}</h3>
       </div>
-      <p className="text-center text-secondary max-w-[28rem] xl:w-full md:text-[1.2rem] 2xl:px-6 leading-[2rem] min-[880px]:text-[14px] 2xl:text-[16px]">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-        odio.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-        odio consectetuer adipiscing.
-      </p>
+      {description && (
+        <p className="text-center text-secondary max-w-[28rem] xl:w-full md:text-[1.2rem] 2xl:px-6 leading-[2rem] min-[880px]:text-[14px] 2xl:text-[16px]">
+          {description}
+        </p>
+      )}
+      {iterable && <ul className="flex flex-col w-full px-6 gap-4 text-secondary list-disc">
+        {iterable.map((item, index) => {
+          return (
+            <li key={index}>{item}</li>
+        )
+      })}
+      </ul>}
     </div>
   );
 };

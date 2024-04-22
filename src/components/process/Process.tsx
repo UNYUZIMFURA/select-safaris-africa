@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import Step from "./Step";
 
 const Process = () => {
