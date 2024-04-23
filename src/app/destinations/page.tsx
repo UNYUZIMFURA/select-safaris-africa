@@ -20,7 +20,7 @@ const Destinations = () => {
             image: "park_2",
             amount: 850,
             description:
-                " Embark on a safari adventure in Akagera Park. Witness a spectacle of wildlife, from majestic lions to graceful giraffes.",
+                " Embark on a safari adventure in Akagera Park. Witness a spectacle of wildlife including majestic lions and giraffes.",
             location: "Rwanda",
         },
         {
