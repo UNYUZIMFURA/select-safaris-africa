@@ -11,7 +11,7 @@ const DestinationBanner = () => {
             className="relative flex h-[20rem] w-full flex-col items-start gap-8 bg-slate-200 bg-cover px-4 py-10 text-tertiary1 sm:px-6 md:h-[25rem] min-[1200px]:pl-[4rem] 2xl:h-[28rem] 2xl:pl-[8.5rem]"
             style={{
                 backgroundImage:
-                    "linear-gradient(to bottom, rgba(0,0,0,0.9), transparent),url('/images/mountain.webp')",
+                    "linear-gradient(to bottom, rgba(0,0,0,0.9), transparent),url('/images/landscape_2.webp')",
             }}
         >
             <div className="flex items-center gap-4">
@@ -32,7 +32,7 @@ const DestinationBanner = () => {
                     className={`load-light-2 relative flex h-full w-full cursor-pointer flex-col justify-end gap-4 overflow-hidden rounded-lg bg-cover px-4 pb-4 md:px-8 md:pb-8 ${hoveredImg == "banner-1" ? "lg:w-[60%]" : "lg:w-[20%]"} `}
                 >
                     <Image
-                        src="/images/car.webp"
+                        src="/images/park_3.webp"
                         fill
                         alt=""
                         className="object-cover"
@@ -43,7 +43,7 @@ const DestinationBanner = () => {
                     onMouseOver={() => setHoveredImg("banner-2")}
                 >
                     <Image
-                        src="/images/mountains.webp"
+                        src="/images/landscape_1.webp"
                         fill
                         alt=""
                         className="object-cover"
@@ -54,7 +54,7 @@ const DestinationBanner = () => {
                     onMouseOver={() => setHoveredImg("banner-3")}
                 >
                     <Image
-                        src="/images/about.webp"
+                        src="/images/landscape_2.webp"
                         fill
                         alt=""
                         className="object-cover"
