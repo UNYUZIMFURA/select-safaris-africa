@@ -5,37 +5,40 @@ import { FaLocationDot } from "react-icons/fa6"
 import { useRouter } from "next/navigation"
 
 interface Props {
-    img: string
     name: string
+    image: string
+    amount: number
+    location: string
+    description: string
 }
 
-const Travel: React.FC<Props> = (props) => {
+const Travel: React.FC<Props> = ({name, image, amount, location, description}) => {
     const router = useRouter()
     return (
         <div className="flex w-full flex-col items-center gap-4 rounded-[20px] p-5 shadow-lg xl:max-w-[380px]">
             <div className="load-dark relative h-[20rem] w-full cursor-pointer overflow-hidden rounded-[20px] min-[600px]:h-[22rem] min-[700px]:h-[20rem]">
                 <Image
-                    src={`/images/${props.img}.webp`}
+                    src={`/images/${image}.webp`}
                     alt=""
                     fill={true}
-                    className="object-cover transition 2xl:brightness-75 2xl:hover:brightness-100"
+                    className="object-cover"
                 />
             </div>
             <div className="flex w-full flex-col gap-4 px-1 pt-4 sm:px-2">
                 <span className="cursor-pointer font-semibold text-brand">
-                    {props.name}
+                    {name}
                 </span>
                 <div className="flex justify-between">
-                    <span className="font-semibold text-brand">RWF 4,500</span>
-                    <div className="flex items-center gap-3">
+                    <span className="font-semibold text-brand">${amount}</span>
+                    <div className="flex items-center gap-2">
                         <FaLocationDot color="#10A969" />
                         <span className="text-base font-medium text-brand">
-                            Kigali
+                            {location}
                         </span>
                     </div>
                 </div>
                 <span className="text-base font-medium text-secondary">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                    {description}
                 </span>
                 <button
                     className="cursor-pointer rounded-lg bg-brand p-4 font-medium text-tertiary1"
