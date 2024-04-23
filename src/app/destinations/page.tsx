@@ -20,7 +20,7 @@ const Destinations = () => {
             image: "park_2",
             amount: 850,
             description:
-                " Embark on a safari adventure in Akagera Park. Witness a spectacle of wildlife including majestic lions and giraffes.",
+                " Embark on a safari adventure in Akagera Park. Witness a spectacle of wildlife including majestic lions.",
             location: "Rwanda",
         },
         {
@@ -36,7 +36,7 @@ const Destinations = () => {
             image: "park_4",
             amount: 500,
             description:
-                "  Embrace the emerald embrace of Gishwati Forest. Hike through a canopy teeming with chimpanzees and golden monkeys.",
+                "  Embrace the emerald embrace of Gishwati Forest. Hike through a canopy teeming with golden monkeys.",
             location: "Rwanda",
         },
     ]
