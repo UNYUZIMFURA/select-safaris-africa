@@ -5,6 +5,8 @@ import BackToTop from "../back-to-top/BackToTop"
 import { usePathname, useRouter } from "next/navigation"
 import { FaLinkedin } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
+import { FaFacebook } from "react-icons/fa"
+import { FaYoutube } from "react-icons/fa"
 import { MdPhone } from "react-icons/md"
 import { LuMail } from "react-icons/lu"
 
@@ -27,7 +29,7 @@ const Footer = () => {
         },
     ]
     return (
-        <div className="flex flex-col gap-10 bg-[#19211A] px-5 pt-8 pb-[5rem] text-tertiary1 min-[600px]:px-14 md:justify-between md:gap-12 lg:flex-row lg:py-[4rem] 2xl:px-[8rem]">
+        <div className="flex flex-col gap-10 bg-[#19211A] px-5 pb-[5rem] pt-8 text-tertiary1 min-[600px]:px-14 md:justify-between md:gap-12 lg:flex-row lg:py-[4rem] 2xl:px-[8rem]">
             <BackToTop />
             <div className="flex flex-col gap-8 md:flex-row md:justify-between lg:w-[calc(100%-20rem)] 2xl:w-[calc(90%-20rem)]">
                 <div className="flex flex-col gap-6">
@@ -51,12 +53,22 @@ const Footer = () => {
                         safari experience.
                     </span>
                     <div className="flex items-center gap-6">
-                        <FaLinkedin
+                        <FaFacebook
                             color="#10A969"
                             size={24}
                             className="cursor-pointer"
                         />
                         <FaInstagram
+                            color="#10A969"
+                            size={24}
+                            className="cursor-pointer"
+                        />
+                        <FaLinkedin
+                            color="#10A969"
+                            size={24}
+                            className="cursor-pointer"
+                        />
+                        <FaYoutube
                             color="#10A969"
                             size={24}
                             className="cursor-pointer"

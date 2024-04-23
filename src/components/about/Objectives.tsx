@@ -27,12 +27,7 @@ const Objectives = () => {
                 <Objective
                     Icon={IoDiamond}
                     title="Our values"
-                    iterable={[
-                        "Guest Centricity",
-                        "Authenticity",
-                        "Integrity",
-                        "Sustainability",
-                    ]}
+                    description="Building success and trust starts with our core values which are: Guest Centricity, Authenticity, Integrity, and Sustainability"
                 />
             </div>
         </div>

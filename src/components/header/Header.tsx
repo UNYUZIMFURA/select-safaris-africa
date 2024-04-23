@@ -73,10 +73,13 @@ const Header = () => {
                     <div className="relative h-[20px] w-[32px]">
                         <Image src={"/icons/us.png"} alt="" fill={true} />
                     </div>
-                    <div className="flex items-center gap-1">
                         <span className="text-sm font-bold">En</span>
-                        <IoChevronDownOutline size={16} />
+                </div>
+                <div className="flex cursor-pointer items-center gap-2 rounded-[30px] bg-[#ffffff15] p-3 text-white">
+                    <div className="relative h-[20px] w-[32px]">
+                        <Image src={"/icons/fr.png"} alt="" fill={true} />
                     </div>
+                        <span className="text-sm font-bold">Fr</span>         
                 </div>
                 <button
                     className="rounded-lg border-2 border-brand px-10 py-2 text-brand"
