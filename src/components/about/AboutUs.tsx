@@ -8,7 +8,7 @@ const AboutUs = () => {
                     Let Select Safaris Africa show you the soul of
                     <span className="text-brand"> Africa</span>
                 </h2>
-                <span className="text-[1.1rem] leading-[1.8rem] text-[#000B0B] md:px-10 lg:max-w-[45rem] lg:px-0 xl:max-w-[52rem]">
+                <span className="text-[1.1rem] leading-[1.8rem] text-[#363535] md:px-10 lg:max-w-[45rem] lg:px-0 xl:max-w-[52rem]">
                     Select Safaris Africa is a locally based top leading tourism
                     company. It is beyond a tour operator agency but also a
                     trusted team fueled by a deep love for Africa with
@@ -19,7 +19,7 @@ const AboutUs = () => {
                     welcoming and supportive environment throughout your
                     adventure.
                 </span>
-                <span className="text-[1.1rem] leading-[1.8rem] text-[#000B0B] md:px-10 lg:max-w-[45rem] lg:px-0">
+                <span className="text-[1.1rem] leading-[1.8rem] text-[#363636] md:px-10 lg:max-w-[45rem] lg:px-0">
                     For 11 years, Select Safaris Africa has been a trusted guide
                     to exploring the wonders of Africa. We curate a diverse
                     range of safaris and itineraries, from thrilling gorilla and
