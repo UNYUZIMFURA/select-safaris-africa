@@ -18,7 +18,7 @@ const Objective: React.FC<Props> = ({ image, title, description }) => {
                 <Image src={`/images/${image}.webp`} alt="" fill={true} />
             </div>
             <div className="flex">
-                <h3 className="text-xl font-bold md:text-[1.3rem]">{title}</h3>
+                <h3 className="text-xl text-brand font-bold md:text-[1.3rem]">{title}</h3>
             </div>
             {description && (
                 <p className="max-w-[28rem] text-start leading-[2rem] text-[#363535] md:text-[1.2rem] min-[880px]:text-[14px] xl:w-full 2xl:text-[16px]">
