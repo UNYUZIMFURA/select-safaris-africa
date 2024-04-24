@@ -1,21 +1,23 @@
+import Image from "next/image"
+
 type IconProps = {
     fill: string
     size: number
 }
 
 interface Props {
-    Icon: (props: IconProps) => JSX.Element
+    image: string;
     title: string
     description?: string
 }
 
-const Objective: React.FC<Props> = ({ Icon, title, description }) => {
+const Objective: React.FC<Props> = ({ image, title, description }) => {
     return (
-        <div className="h-[20rem] flex w-full cursor-pointer flex-col items-start gap-5 rounded-[10px] bg-white px-6 text-tertiary2 shadow-lg pt-12">
-            <div className="flex flex-col items-start gap-4">
-                <div className="flex h-[3.5rem] w-[3.5rem] items-center justify-center rounded-[18px] bg-[#E7F6F3]">
-                    <Icon fill="#10A969" size={20} />
-                </div>
+        <div className="relative flex h-[21rem] w-full cursor-pointer flex-col items-start justify-center gap-5 rounded-[10px] bg-white px-6 pt-12 text-tertiary2 shadow-lg">
+            <div className="load-dark absolute right-0 top-0 h-[95px] w-[135px] cursor-pointer overflow-hidden rounded-b-[60px] bg-white xl:h-[100px] xl:w-[140px]">
+                <Image src={`/images/${image}.webp`} alt="" fill={true} />
+            </div>
+            <div className="flex">
                 <h3 className="text-xl font-bold md:text-[1.3rem]">{title}</h3>
             </div>
             {description && (

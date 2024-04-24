@@ -21,17 +21,17 @@ const Objectives = () => {
             </div>
             <div className="flex flex-col items-center gap-5 md:gap-2 min-[880px]:flex-row lg:gap-4 xl:gap-8">
                 <Objective
-                    Icon={FaMountainSun}
+                   image="mission"
                     title="Our mission"
-                    description="We design and deliver unforgettable adventures that immerse our guests in local cultures, inspire personal growth, and create memories that last a lifetime."
+                    description="We purpose to design and deliver unforgettable adventures that immerse our guests in local cultures, inspire personal growth, and create memories that last a lifetime."
                 />
                 <Objective
-                    Icon={BiSolidBinoculars}
+                    image="vision"
                     title="Our vision"
                     description="We aim to be the leading force in crafting transformative travel experiences that ignite a passion for exploration of Africa's mysterious nature"
                 />
                 <Objective
-                    Icon={IoDiamond}
+                    image="values"
                     title="Our values"
                     description="Building success and trust starts with our core values which are: Guest Centricity, Authenticity, Integrity, and Sustainability"
                 />
