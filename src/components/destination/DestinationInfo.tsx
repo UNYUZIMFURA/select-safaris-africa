@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux"
 import { AppDispatch } from "@/redux/store"
-import { showDiv } from "@/redux/features/bookingPopup"
+import { showBookingModal } from "@/redux/features/bookingPopup"
 import { FaRegStar } from "react-icons/fa"
 import { FaStar } from "react-icons/fa"
 
@@ -22,7 +22,7 @@ const DestinationInfo = () => {
                 </p>
                 <button
                     className="max-w-[15rem] rounded-lg bg-brand px-4 py-3 text-white"
-                    onClick={() => dispatch(showDiv())}
+                    onClick={() => dispatch(showBookingModal())}
                 >
                     Place a book
                 </button>

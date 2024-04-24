@@ -14,14 +14,14 @@ export const toggleVisibility = createSlice({
     name: "visibility",
     initialState,
     reducers: {
-        showDiv: (_) => {
+        showBookingModal: (_) => {
             return {
                 value: {
                     state: true,
                 },
             }
         },
-        hideDiv: (_) => {
+        hideBookingModal: (_) => {
             return {
                 value: {
                     state: false,
@@ -31,5 +31,5 @@ export const toggleVisibility = createSlice({
     },
 })
 
-export const { showDiv, hideDiv } = toggleVisibility.actions
+export const { showBookingModal, hideBookingModal } = toggleVisibility.actions
 export default toggleVisibility.reducer

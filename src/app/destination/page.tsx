@@ -1,7 +1,7 @@
 "use client"
 import { useAppSelector } from "@/redux/store"
 import Header from "@/components/header/Header"
-import BookDestination from "@/components/destination/BookDestination"
+import BookingModal from "@/components/destination/BookingModal"
 import DestinationBanner from "@/components/destination/DestinationBanner"
 import DestinationInfo from "@/components/destination/DestinationInfo"
 import DestinationServices from "@/components/destination/DestinationServices"
@@ -19,7 +19,7 @@ const Destination = () => {
     return (
         <div className="flex w-full max-w-[125rem] flex-col">
             <Header />
-            {currentState && <BookDestination />}
+            {currentState && <BookingModal />}
             <DestinationBanner />
             <DestinationInfo />
             <DestinationServices />
