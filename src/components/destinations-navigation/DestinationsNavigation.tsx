@@ -19,6 +19,12 @@ const DestinationsNavigation = () => {
         (state) => state.DestinationsNavReducer.value.state,
     )
 
+    useEffect(() => {
+        if (destinationsNavOpen) {
+            dispatch(hideDestinationsNav())
+        }
+    }, [])
+
     // Logic to close Destinations Navigation once there is a click that occured outside of it
     useEffect(() => {
         const handleOutsideClick = (e: MouseEvent) => {
@@ -141,11 +147,15 @@ const DestinationsNavigation = () => {
                         {attraction.category}
                     </span>
                     {attraction.names.map((name, index) => (
-                        <div key={index} className="flex flex-col rounded-md">
+                        <Link
+                            href="/destination"
+                            key={index}
+                            className="flex flex-col rounded-md"
+                        >
                             <span className="cursor-pointer rounded-md p-2 hover:bg-[rgba(16,169,105,0.2)] min-[1630px]:pl-4">
                                 {name}
                             </span>
-                        </div>
+                        </Link>
                     ))}
                     <Link
                         href="/destinations"
