@@ -5,12 +5,18 @@ import { FaMountainSun } from "react-icons/fa6"
 
 const Objectives = () => {
     return (
-        <div className="flex flex-col items-center gap-14 bg-[#F5FBFA] px-4 py-8 lg:pl-10 min-[1200px]:pl-[4rem] xl:py-[6rem] 2xl:gap-20 2xl:pl-[8.5rem]">
+        <div
+            className="flex flex-col items-center gap-14 bg-[#F5FBFA] bg-cover px-4 py-8 lg:pl-10 min-[1200px]:pl-[4rem] xl:py-[6rem] 2xl:gap-20 2xl:pl-[8.5rem]"
+            style={{
+                backgroundPosition: "50% 70%",
+                backgroundImage:
+                    "linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('/images/park_3.webp')",
+            }}
+        >
             <div className="flex max-w-[30rem] flex-col items-center gap-5 text-center lg:max-w-[45rem]">
-                <span className="text-xl font-bold text-brand">WHO WE ARE</span>
-                <h2 className="text-2xl font-bold leading-10 text-tertiary2 md:text-[1.6rem] lg:text-[1.9rem] xl:text-[2.2rem] xl:leading-[3rem] 2xl:text-[2.3rem]">
-                    Our Guiding Principles towards crafting Unforgettable
-                    African Adventures
+                <span className="text-xl font-bold text-brand">FOUNDATION UNVEILED</span>
+                <h2 className="text-2xl text-white font-bold leading-10 text-tertiary2 md:text-[1.6rem] lg:text-[1.9rem] xl:text-[2.2rem] xl:leading-[3rem] 2xl:text-[2.3rem]">
+                    Our Guiding Principles
                 </h2>
             </div>
             <div className="flex flex-col items-center gap-5 md:gap-2 min-[880px]:flex-row lg:gap-4 xl:gap-8">
