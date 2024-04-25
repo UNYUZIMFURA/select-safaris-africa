@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Link from "next/link"
 import { useEffect } from "react"
 import { AppDispatch } from "@/redux/store"
@@ -160,6 +161,7 @@ const DestinationsNavigation = () => {
                     <Link
                         href="/destinations"
                         className="flex cursor-pointer items-center gap-3 p-2 font-bold text-brand min-[1630px]:pl-4"
+                        onClick={() => dispatch(hideDestinationsNav())}
                     >
                         See all
                         <BsArrowRight size={22} />

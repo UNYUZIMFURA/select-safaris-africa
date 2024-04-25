@@ -46,6 +46,7 @@ const Header = () => {
                             className={`${isActive ? "font-bold text-brand" : ""} flex cursor-pointer items-center gap-2 tracking-wide hover:text-brand`}
                             href=""
                             onClick={() => dispatch(showDestinationsNav())}
+                            onMouseEnter={() => dispatch(showDestinationsNav())}
                         >
                             {el.linkName}
                             <IoChevronDownOutline />
