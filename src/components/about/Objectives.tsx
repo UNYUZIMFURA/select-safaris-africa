@@ -1,7 +1,4 @@
 import Objective from "./Objective"
-import { BiSolidBinoculars } from "react-icons/bi"
-import { IoDiamond } from "react-icons/io5"
-import { FaMountainSun } from "react-icons/fa6"
 
 const Objectives = () => {
     return (

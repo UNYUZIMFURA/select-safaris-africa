@@ -17,7 +17,7 @@ const page = () => {
                 }}
             >
                 <div className="flex flex-col items-center gap-3">
-                    <h2 className="text-3xl font-bold">About us</h2>
+                    <h2 className="text-3xl font-bold cursor-pointer">About us</h2>
                     <Image
                         src="/images/underline.png"
                         alt=""
