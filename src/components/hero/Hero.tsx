@@ -81,11 +81,11 @@ const Hero = () => {
                     trips take people
                 </p>
                 <span className="max-w-[32rem] text-[1rem] leading-[28px] text-[#88939E] min-[370px]:text-lg min-[400px]:text-lg">
-                   Choose your dream trip today and enjoy Africa's majesty
+                   Choose your dream trip today and create unforgettable memories amidst Africa's wonders with us.
                 </span>
                 <Search />
             </div>
-            <div className="flex items-end justify-center gap-1 min-[1200px]:h-[510px] min-[1200px]:w-[60%] 2xl:h-[650px]">
+            <div className="flex items-end justify-center gap-1 min-[1200px]:h-[525px] min-[1200px]:w-[60%] 2xl:h-[650px]">
                 <div className="load-light min-[1200px]:w-[300px relative flex h-[150px] w-[30%] cursor-pointer overflow-hidden rounded-t-[144.5px] min-[900px]:h-[180px] lg:h-[250px] min-[1200px]:h-[215px]">
                     {waterbodies.map((waterbody, index) => (
                         <Image
