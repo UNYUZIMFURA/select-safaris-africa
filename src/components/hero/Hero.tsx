@@ -78,10 +78,15 @@ const Hero = () => {
                     <span className="inline-block bg-gradient-to-r from-white via-[rgb(93,189,183)] to-[rgb(85,183,103)] bg-clip-text text-transparent">
                         trips,
                     </span>{" "}
-                    trips take people
+                    trips{" "}
+                    <span className="inline-block bg-gradient-to-r from-white via-[rgb(93,189,183)] to-[rgb(85,183,103)] bg-clip-text text-transparent">
+                        take
+                    </span>{" "}
+                    people
                 </p>
                 <span className="max-w-[32rem] text-[1rem] leading-[28px] text-[#88939E] min-[370px]:text-lg min-[400px]:text-lg">
-                   Choose your dream trip today and create unforgettable memories amidst Africa's wonders with us.
+                    Choose your dream trip today and create unforgettable
+                    memories amidst Africa's wonders with us.
                 </span>
                 <Search />
             </div>
