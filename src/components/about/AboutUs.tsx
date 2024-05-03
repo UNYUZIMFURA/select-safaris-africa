@@ -14,7 +14,7 @@ const AboutUs = () => {
                         Africa,
                         <span className="font-bold text-brand">
                             {" "}
-                            [Select Safaris Africa]
+                            Select Safaris Africa
                         </span>{" "}
                         was founded in 2018 by{" "}
                         <span className="font-bold text-brand">

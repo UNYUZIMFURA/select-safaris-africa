@@ -46,11 +46,9 @@ const Footer = () => {
                         />
                     </div>
                     <span className="max-w-[20rem] font-thin leading-[2rem] text-secondary md:max-w-[15rem] xl:max-w-[30rem]">
-                        Embark on unforgettable memories in Africa's wilderness
-                        with Select Safaris Africa, a leading tour operator.
-                        Craft your dream African adventure with Personalized
-                        itineraries and meet expert drivers for an unforgettable
-                        safari experience.
+                        The gladest moment in human life is a departure to an
+                        unknown land, choose Select Safaris Africa your gateway
+                        to Africa's captivating landscapes and vibrant cultures
                     </span>
                     <div className="flex items-center gap-6">
                         <FaFacebook

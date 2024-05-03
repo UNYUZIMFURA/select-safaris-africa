@@ -81,7 +81,7 @@ const Hero = () => {
                     trips take people
                 </p>
                 <span className="max-w-[32rem] text-[1rem] leading-[28px] text-[#88939E] min-[370px]:text-lg min-[400px]:text-lg">
-                    Select Safaris Africa, your entrusted travel partner
+                   Choose your dream trip today and enjoy Africa's majesty
                 </span>
                 <Search />
             </div>
