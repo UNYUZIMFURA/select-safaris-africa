@@ -6,19 +6,26 @@ type IconProps = {
 }
 
 interface Props {
-    image: string;
+    image: string
     title: string
     description?: string
 }
 
 const Objective: React.FC<Props> = ({ image, title, description }) => {
     return (
-        <div className="relative flex h-[21rem] w-full cursor-pointer flex-col items-start justify-center gap-5 rounded-[10px] bg-white px-6 pt-12 text-tertiary2 shadow-lg">
-            <div className="load-dark absolute right-0 top-0 h-[95px] w-[135px] cursor-pointer overflow-hidden rounded-b-[60px] bg-white xl:h-[100px] xl:w-[140px]">
-                <Image src={`/images/${image}.webp`} alt="" fill={true} />
+        <div className="relative flex h-[19rem] w-full cursor-pointer flex-col items-start justify-center gap-5 rounded-[10px] bg-white px-6 py-8 text-tertiary2 shadow-lg">
+            <div className="load-dark relative h-[4rem] w-[4rem] cursor-pointer overflow-hidden rounded-full bg-white">
+                <Image
+                    src={`/images/${image}.webp`}
+                    alt=""
+                    fill={true}
+                    className="object-cover"
+                />
             </div>
             <div className="flex">
-                <h3 className="text-xl text-brand font-bold md:text-[1.3rem]">{title}</h3>
+                <h3 className="text-xl font-bold text-brand md:text-[1.3rem]">
+                    {title}
+                </h3>
             </div>
             {description && (
                 <p className="max-w-[28rem] text-start leading-[2rem] text-[#363535] md:text-[1.2rem] min-[880px]:text-[14px] xl:w-full 2xl:text-[16px]">

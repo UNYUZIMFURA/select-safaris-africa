@@ -27,17 +27,15 @@ const Question: React.FC<Props> = ({ id, question, answer }) => {
 
     return (
         <div
-            className={`${questionOpen && activeQuestionId === id ? "border-2 border-brand shadow-none" : ""} flex flex-col rounded-2xl px-4 py-4 shadow-[0px_5px_16px_0_rgba(8,15,52,0.06)] md:max-w-[45rem] lg:max-w-[55rem]`}
+            className={`${questionOpen && activeQuestionId === id ? "border-2 border-brand shadow-none" : ""} flex  cursor-pointer flex-col rounded-2xl px-4 py-4 shadow-[0px_5px_16px_0_rgba(8,15,52,0.06)] md:max-w-[45rem] lg:max-w-[55rem]`}
+            onClick={() => openAccordion(id)}
         >
             <div
-                className="flex cursor-pointer flex-col items-start justify-between gap-4 px-4 text-start xs:flex-row xs:items-center"
-                onClick={() => openAccordion(id)}
+                className={`flex ${questionOpen && activeQuestionId === id ? "items-start" : "items-center"} justify-between gap-4 px-4 text-start`}
             >
-                <span className="max-w-full text-lg xs:max-w-[80%]">
-                    {question}
-                </span>
+                <span className="max-w-full xs:max-w-[80%]">{question}</span>
                 {questionOpen && activeQuestionId === id ? (
-                    <div className="flex items-center justify-center rounded-full bg-brand p-2">
+                    <div className="hidden rounded-full bg-brand p-2 xs:flex">
                         <IoChevronDownOutline
                             size={25}
                             cursor="pointer"
@@ -45,7 +43,7 @@ const Question: React.FC<Props> = ({ id, question, answer }) => {
                         />
                     </div>
                 ) : (
-                    <div className="rounded-full p-2 shadow-[0px_5px_16px_0_rgba(8,15,52,0.06)]">
+                    <div className="hidden rounded-full   p-2 shadow-[0px_5px_16px_0_rgba(8,15,52,0.06)] xs:flex">
                         <IoChevronForwardOutline
                             size={25}
                             cursor="pointer"

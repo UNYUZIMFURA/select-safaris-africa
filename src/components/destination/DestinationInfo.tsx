@@ -33,7 +33,7 @@ const DestinationInfo = () => {
                 </span>
                 <div className="flex gap-4">
                     <span className="text-xl font-bold text-brand">4.0</span>
-                    <div className="flex items-center gap-4">
+                    <div className="hidden items-center gap-4 xs:flex">
                         <FaStar color="#10A969" size={20} />
                         <FaStar color="#10A969" size={20} />
                         <FaStar color="#10A969" size={20} />

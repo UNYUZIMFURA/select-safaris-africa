@@ -9,7 +9,9 @@ import { FaLocationDot } from "react-icons/fa6"
 const BookDestination = () => {
     const dispatch = useDispatch<AppDispatch>()
     const closeModal = (e: React.MouseEvent) => {
-        const bookingModalHolder = document.getElementById("booking-modal-holder")
+        const bookingModalHolder = document.getElementById(
+            "booking-modal-holder",
+        )
         const clickedElement = e.target as HTMLElement
         if (clickedElement === bookingModalHolder) {
             dispatch(hideBookingModal())
@@ -17,7 +19,11 @@ const BookDestination = () => {
     }
 
     return (
-        <div id="booking-modal-holder" className="fixed top-0 z-20 h-screen w-screen bg-[rgba(0,0,0,0.4)] px-2" onClick={(e) => closeModal(e)}>
+        <div
+            id="booking-modal-holder"
+            className="fixed top-0 z-20 h-screen w-screen bg-[rgba(0,0,0,0.4)] px-2"
+            onClick={(e) => closeModal(e)}
+        >
             <div className="mx-auto mt-[10rem] flex h-[37rem] w-full max-w-[45rem] flex-col overflow-x-hidden overflow-y-scroll rounded-md bg-white md:mt-[12rem]">
                 <div className="w-full border-b px-2 py-3 xs:px-5 md:px-9">
                     <div className="items-cente flex cursor-pointer flex-col gap-6 bg-[#F3F8F5] p-4 min-[500px]:flex-row min-[500px]:items-center">

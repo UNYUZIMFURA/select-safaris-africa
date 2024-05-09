@@ -13,16 +13,19 @@ const Testimonials = () => {
                     been talking about us
                 </p>
             </div>
-            <div className="flex flex-col items-center gap-[5rem] md:flex-row md:justify-center md:gap-2 min-[1200px]:gap-8">
+            <div className="flex flex-col items-center gap-[5rem] min-[800px]:flex-row min-[800px]:justify-center min-[800px]:gap-2 min-[1200px]:gap-6">
                 <Testimonial
+                    image="testimonial_1"
                     name="Jeff Davis"
-                    testimonial="My trip to Volcanoes National Park with Select Safaris Africa surpassed expectations. From booking to trek, their exceptional service made for a remarkable experience."
+                    testimonial="I recently had the best honeymoon with my girlfriend Anna on Lake Kivu. Select Safaris made this moment unforgettable. I can't wait to visit Rwanda again 😍"
                 />
                 <Testimonial
+                    image="testimonial_2"
                     name="Brian Adams"
                     testimonial="Select Safaris Africa made my Akagera trip formidable! From the culinary delights of hotels suggested to their seamless transport services, everything exceeded my expectations."
                 />
                 <Testimonial
+                    image="testimonial_3"
                     name="James William"
                     testimonial="I recently explored the serene beaches of Lake Kivu with Select Safaris Africa. Their impeccable service and peaceful lodgings ensured a truly unforgettable experience"
                 />

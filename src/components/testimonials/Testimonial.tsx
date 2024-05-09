@@ -8,34 +8,35 @@ import { FaStar } from "react-icons/fa"
 interface Props {
     name: string
     testimonial: string
+    image: string
 }
 
-const Testimonial: React.FC<Props> = ({ name, testimonial }) => {
+const Testimonial: React.FC<Props> = ({ name, testimonial, image }) => {
     return (
-        <div className="relative flex flex-col items-center rounded-3xl bg-[#10a9691c] px-4 py-[5rem]">
+        <div className="relative flex flex-col items-center rounded-3xl bg-[#10a9691c] px-2 pb-[2rem] pt-[3.5rem] min-[800px]:h-[23rem] min-[950px]:h-[19rem] xl:h-[17rem]">
             <ImQuotesLeft
-                className="absolute left-[2.5rem] top-[2.5rem]"
+                className="absolute left-[2.5rem] top-[2.5rem] min-[800px]:left-[1rem] lg:left-[2.5rem]"
                 fill="rgba(0,0,0,0.2)"
                 size={35}
             />
             <ImQuotesRight
-                className="absolute bottom-[2.5rem] right-[2.5rem]"
+                className="absolute bottom-[2.5rem] right-[2.5rem] min-[800px]:right-[0.5rem] lg:right-[2.5rem]"
                 fill="rgba(0,0,0,0.2)"
                 size={35}
             />
-            <div className="absolute -top-14 flex h-[7.5rem] w-[7.5rem] items-center justify-center rounded-full bg-white p-4">
+            <div className="absolute -top-14 flex h-[6rem] w-[6rem] items-center justify-center rounded-full bg-white p-3">
                 <div className="load-light relative h-full w-full cursor-pointer overflow-hidden rounded-full">
                     <Image
-                        src="/images/client.webp"
+                        src={`/images/${image}.webp`}
                         alt=""
                         fill={true}
                         className="object-cover object-top"
                     />
                 </div>
             </div>
-            <div className="flex flex-col items-center gap-6 text-center">
-                <h2 className="text-[22px] font-bold md:text-[24px]">{name}</h2>
-                <span className="font-light leading-[28px] text-secondary sm:max-w-[28rem]">
+            <div className="flex flex-col items-center gap-5 text-center">
+                <h2 className="text-[22px] font-bold tracking-wide">{name}</h2>
+                <span className="text-sm font-light leading-[28px] text-secondary sm:max-w-[28rem]">
                     {testimonial}
                 </span>
                 <div className="flex items-center gap-4">

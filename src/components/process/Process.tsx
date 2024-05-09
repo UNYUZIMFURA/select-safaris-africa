@@ -2,7 +2,7 @@ import Step from "./Step"
 
 const Process = () => {
     return (
-        <div className="flex flex-col gap-10 bg-white px-5 py-10 text-tertiary2 md:gap-[2rem] lg:gap-[3rem] lg:py-[4rem] min-[1200px]:px-[3rem] 2xl:px-[8.5rem]">
+        <div className="flex flex-col gap-10 bg-white px-5 py-10 text-tertiary2 md:gap-[2rem] lg:gap-[2rem] lg:py-[4rem] min-[1200px]:px-[3rem] 2xl:px-[8.5rem]">
             <div className="flex max-w-[36rem] flex-col gap-5">
                 <p className="text-lg font-bold text-brand">JOYFUL & FAST</p>
                 <h2 className="text-[24px] font-bold lg:text-[28px] 2xl:text-[40px]">
@@ -14,7 +14,7 @@ const Process = () => {
                     We'll make your journey unforgettable.
                 </h3>
             </div>
-            <div className="flex flex-col items-center gap-5 md:flex-row md:gap-2 lg:gap-4 xl:gap-8">
+            <div className="flex flex-wrap items-center justify-center gap-5 md:gap-2 min-[900px]:flex-row min-[900px]:flex-nowrap lg:gap-4 xl:gap-8">
                 <Step
                     no={1}
                     title="Select a destination"

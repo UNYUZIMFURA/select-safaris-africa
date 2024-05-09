@@ -8,7 +8,7 @@ const DestinationsBanner = () => {
             style={{
                 backgroundImage:
                     "linear-gradient(to bottom, rgba(0,0,0,0.6), transparent),url('/images/destinations-banner.webp')",
-                backgroundPosition: "100% 60%"
+                backgroundPosition: "100% 60%",
             }}
         >
             <div className="flex flex-col items-center gap-3">

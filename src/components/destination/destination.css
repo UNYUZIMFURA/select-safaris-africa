@@ -1,0 +1,7 @@
+.destination-div {
+    transition: width 0.5s;
+}
+
+.destination-div img {
+    transition: width 0.5s;
+}

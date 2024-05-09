@@ -7,6 +7,10 @@ module.exports = {
     ],
     theme: {
         extend: {
+            transitionProperty: {
+                width: "width",
+            },
+
             textColor: {
                 brand: "var(--color-1)",
                 secondary: "var(--color-2)",

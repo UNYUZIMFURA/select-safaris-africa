@@ -2,11 +2,7 @@ import Image from "next/image"
 import Company1 from "../../../public/icons/company_1.png"
 import Company2 from "../../../public/icons/company_2.png"
 import Company3 from "../../../public/icons/company_3.png"
-import Company4 from "../../../public/icons/company_4.png"
-import Company5 from "../../../public/icons/company_5.png"
-import Company6 from "../../../public/icons/company_6.png"
-import Company7 from "../../../public/icons/company_7.png"
-import Company8 from "../../../public/icons/company_8.png"
+import Company4 from "../../../public/icons/company_4.jpeg"
 
 const Partners = () => {
     const arrayImgs = [
@@ -14,10 +10,10 @@ const Partners = () => {
         Company2,
         Company3,
         Company4,
-        Company5,
-        Company6,
-        Company7,
-        Company8,
+        Company1,
+        Company2,
+        Company3,
+        Company4,
     ]
     return (
         <div className="flex flex-col items-center bg-white py-10 lg:py-[3rem]">
@@ -34,7 +30,7 @@ const Partners = () => {
                     including:
                 </p>
             </div>
-            <div className="grid w-full grid-cols-2 justify-items-center gap-6 py-10 md:grid-cols-3 md:justify-between xl:py-[3rem] 2xl:px-[10rem]">
+            <div className="grid w-full grid-cols-2 justify-items-center gap-2 px-4 py-10 md:grid-cols-3 md:justify-between xl:py-[3rem] 2xl:px-[10rem]">
                 {arrayImgs.map((img, index) => (
                     <Image
                         key={index}

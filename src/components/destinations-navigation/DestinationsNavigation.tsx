@@ -115,7 +115,7 @@ const DestinationsNavigation = () => {
     return (
         <div
             id="destinations-nav"
-            className={`${destinationsNavOpen ? "opacity-1 visible flex" : "invisible opacity-0"} absolute left-1/2 top-[5rem] w-[98%] -translate-x-1/2 rounded-xl bg-white text-[#2C2C2C] shadow-md transition-opacity duration-300 ease-in-out min-[1200px]:w-[calc(100%-9rem)] 2xl:w-[calc(100%-22rem)]`}
+            className={`${destinationsNavOpen ? "opacity-1 visible lg:flex" : "invisible opacity-0"} absolute left-1/2 top-[5rem] w-[98%] -translate-x-1/2 rounded-xl bg-white text-[#2C2C2C] shadow-md transition-opacity duration-300 ease-in-out min-[1200px]:w-[calc(100%-9rem)] 2xl:w-[calc(100%-22rem)]`}
         >
             <div className="flex w-[16%] flex-col gap-2 bg-[rgba(16,169,105,0.2)] p-4">
                 <span className="flex  items-center gap-2 p-1 font-bold text-brand">

@@ -12,7 +12,13 @@ interface Props {
     description: string
 }
 
-const Travel: React.FC<Props> = ({name, image, amount, location, description}) => {
+const Travel: React.FC<Props> = ({
+    name,
+    image,
+    amount,
+    location,
+    description,
+}) => {
     const router = useRouter()
     return (
         <div className="flex h-[37rem] w-full flex-col items-center gap-4 rounded-[20px] p-5 shadow-lg xl:max-w-[380px]">

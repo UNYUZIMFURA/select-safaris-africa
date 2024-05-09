@@ -21,7 +21,8 @@ const AboutUs = () => {
                             Mr. Phillip.{" "}
                         </span>
                         Recognizing his talent for creating exceptional
-                        experiences for international travelers, Phillip
+                        experiences for international travelers,{" "}
+                        <span className="font-bold text-brand">Phillip </span>
                         envisioned a company that not only crafted unforgettable
                         adventures but also serving back to the communities.
                         This is why 20% of the company profits directly support
