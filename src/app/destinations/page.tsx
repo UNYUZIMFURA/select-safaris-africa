@@ -77,7 +77,7 @@ const Destinations = () => {
     ]
 
     return (
-        <div className="flex w-full max-w-[125rem] flex-col text-white">
+        <div className="h-full flex w-full max-w-[125rem] flex-col text-white">
             <Header />
             <DestinationsBanner />
             <div className="flex w-full flex-col gap-[5rem] bg-white px-4 pb-[4rem] pt-[5rem] 2xl:px-[8rem]">

@@ -76,7 +76,6 @@ const Header = () => {
             <div className="hidden items-center gap-4 lg:flex lg:gap-8">
                 <button
                     className="rounded-lg border-2 border-brand px-10 py-2 text-brand"
-                    onClick={() => router.push("/login")}
                 >
                     Sign in
                 </button>
